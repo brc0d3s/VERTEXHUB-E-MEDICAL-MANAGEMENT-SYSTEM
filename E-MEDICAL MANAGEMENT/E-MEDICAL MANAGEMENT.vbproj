@@ -228,6 +228,12 @@
     <Compile Include="TableUpdate.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserHomePage.Designer.vb">
+      <DependentUpon>UserHomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserHomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdministratorPage.resx">
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TableUpdate.resx">
       <DependentUpon>TableUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHomePage.resx">
+      <DependentUpon>UserHomePage.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -339,6 +348,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Launcher.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

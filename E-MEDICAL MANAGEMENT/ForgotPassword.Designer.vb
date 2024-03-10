@@ -63,7 +63,7 @@ Partial Class ForgotPassword
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.ForeColor = System.Drawing.Color.RoyalBlue
         Me.Label7.Location = New System.Drawing.Point(100, 9)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(478, 42)
@@ -178,7 +178,7 @@ Partial Class ForgotPassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.ekg_monitor
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(709, 445)
         Me.Controls.Add(Me.btnChange)

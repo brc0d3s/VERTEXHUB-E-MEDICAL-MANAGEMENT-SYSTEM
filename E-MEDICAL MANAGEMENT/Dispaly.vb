@@ -32,20 +32,15 @@
     End Sub
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        StartPage.GrpBx.Visible = True
-        StartPage.btnLaboratories.Visible = False
-        StartPage.btnDiagnosis.Visible = False
-        StartPage.btnMedicalStore.Visible = False
-        StartPage.lblName.Text = ""
-        StartPage.txtPassword.Text = ""
-        StartPage.txtUser.Text = ""
-        StartPage.llLogOut.Visible = False
-        StartPage.llAdministrator.Visible = True
         Me.Hide()
         StartPage.Show()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
+    End Sub
+
+    Private Sub txtPhone_TextChanged(sender As Object, e As EventArgs) Handles txtPhone.TextChanged
+
     End Sub
 End Class

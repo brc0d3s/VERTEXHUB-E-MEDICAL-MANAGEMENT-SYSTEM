@@ -33,11 +33,15 @@ Partial Class Dispaly
         Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.txtTime = New System.Windows.Forms.TextBox()
         Me.txtAddress = New System.Windows.Forms.RichTextBox()
-        Me.lblName = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
-        Me.lblName1 = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblName1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.grpDetails.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,7 +50,7 @@ Partial Class Dispaly
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Mistral", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(582, 9)
+        Me.Label1.Location = New System.Drawing.Point(448, 122)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(199, 76)
         Me.Label1.TabIndex = 2
@@ -58,9 +62,9 @@ Partial Class Dispaly
         Me.grpDetails.Controls.Add(Me.lstName)
         Me.grpDetails.Font = New System.Drawing.Font("Modern No. 20", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDetails.ForeColor = System.Drawing.Color.Fuchsia
-        Me.grpDetails.Location = New System.Drawing.Point(12, 110)
+        Me.grpDetails.Location = New System.Drawing.Point(12, 149)
         Me.grpDetails.Name = "grpDetails"
-        Me.grpDetails.Size = New System.Drawing.Size(594, 619)
+        Me.grpDetails.Size = New System.Drawing.Size(400, 450)
         Me.grpDetails.TabIndex = 3
         Me.grpDetails.TabStop = False
         '
@@ -71,7 +75,7 @@ Partial Class Dispaly
         Me.lstName.ItemHeight = 31
         Me.lstName.Location = New System.Drawing.Point(6, 66)
         Me.lstName.Name = "lstName"
-        Me.lstName.Size = New System.Drawing.Size(582, 531)
+        Me.lstName.Size = New System.Drawing.Size(440, 407)
         Me.lstName.TabIndex = 0
         '
         'Label2
@@ -80,7 +84,7 @@ Partial Class Dispaly
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Lucida Handwriting", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(662, 195)
+        Me.Label2.Location = New System.Drawing.Point(488, 229)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(134, 45)
         Me.Label2.TabIndex = 4
@@ -92,7 +96,7 @@ Partial Class Dispaly
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Lucida Handwriting", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(612, 335)
+        Me.Label3.Location = New System.Drawing.Point(488, 345)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(204, 45)
         Me.Label3.TabIndex = 5
@@ -104,7 +108,7 @@ Partial Class Dispaly
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Lucida Handwriting", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(657, 479)
+        Me.Label4.Location = New System.Drawing.Point(488, 465)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(159, 45)
         Me.Label4.TabIndex = 6
@@ -116,7 +120,7 @@ Partial Class Dispaly
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Lucida Handwriting", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(675, 606)
+        Me.Label5.Location = New System.Drawing.Point(488, 577)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(121, 45)
         Me.Label5.TabIndex = 7
@@ -125,46 +129,35 @@ Partial Class Dispaly
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(822, 195)
+        Me.txtName.Location = New System.Drawing.Point(699, 233)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(462, 40)
+        Me.txtName.Size = New System.Drawing.Size(360, 40)
         Me.txtName.TabIndex = 8
         '
         'txtPhone
         '
         Me.txtPhone.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(822, 484)
+        Me.txtPhone.Location = New System.Drawing.Point(699, 470)
         Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(342, 40)
+        Me.txtPhone.Size = New System.Drawing.Size(360, 40)
         Me.txtPhone.TabIndex = 9
         '
         'txtTime
         '
         Me.txtTime.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTime.Location = New System.Drawing.Point(822, 610)
+        Me.txtTime.Location = New System.Drawing.Point(699, 577)
         Me.txtTime.Name = "txtTime"
-        Me.txtTime.Size = New System.Drawing.Size(269, 40)
+        Me.txtTime.Size = New System.Drawing.Size(360, 40)
         Me.txtTime.TabIndex = 10
         '
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(822, 301)
+        Me.txtAddress.Location = New System.Drawing.Point(699, 313)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(462, 111)
+        Me.txtAddress.Size = New System.Drawing.Size(360, 91)
         Me.txtAddress.TabIndex = 11
         Me.txtAddress.Text = ""
-        '
-        'lblName
-        '
-        Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.lblName.Location = New System.Drawing.Point(1094, 66)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(252, 31)
-        Me.lblName.TabIndex = 13
-        Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'llLogOut
         '
@@ -173,34 +166,68 @@ Partial Class Dispaly
         Me.llLogOut.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llLogOut.LinkColor = System.Drawing.Color.Yellow
-        Me.llLogOut.Location = New System.Drawing.Point(1173, 73)
+        Me.llLogOut.Location = New System.Drawing.Point(966, 109)
         Me.llLogOut.Name = "llLogOut"
         Me.llLogOut.Size = New System.Drawing.Size(83, 21)
         Me.llLogOut.TabIndex = 16
         Me.llLogOut.TabStop = True
         Me.llLogOut.Text = "Log Out"
         '
-        'lblName1
-        '
-        Me.lblName1.BackColor = System.Drawing.Color.Transparent
-        Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName1.ForeColor = System.Drawing.Color.Lime
-        Me.lblName1.Location = New System.Drawing.Point(915, 66)
-        Me.lblName1.Name = "lblName1"
-        Me.lblName1.Size = New System.Drawing.Size(252, 31)
-        Me.lblName1.TabIndex = 15
-        Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
         'btnBack
         '
         Me.btnBack.BackColor = System.Drawing.Color.Red
         Me.btnBack.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(18, 23)
+        Me.btnBack.Location = New System.Drawing.Point(12, 109)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(109, 42)
         Me.btnBack.TabIndex = 38
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel1.Controls.Add(Me.lblName1)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1071, 103)
+        Me.Panel1.TabIndex = 39
+        '
+        'lblName1
+        '
+        Me.lblName1.BackColor = System.Drawing.Color.Transparent
+        Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblName1.Location = New System.Drawing.Point(816, 69)
+        Me.lblName1.Name = "lblName1"
+        Me.lblName1.Size = New System.Drawing.Size(252, 31)
+        Me.lblName1.TabIndex = 21
+        Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label6.Location = New System.Drawing.Point(226, 18)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(612, 39)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "VERTEXHUB  E-MEDICAL SYSTEM"
         '
         'Dispaly
         '
@@ -208,11 +235,10 @@ Partial Class Dispaly
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.pS8ET0
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1358, 737)
+        Me.ClientSize = New System.Drawing.Size(1071, 655)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.llLogOut)
-        Me.Controls.Add(Me.lblName1)
-        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.txtTime)
         Me.Controls.Add(Me.txtPhone)
@@ -228,6 +254,9 @@ Partial Class Dispaly
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DISPLAY"
         Me.grpDetails.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -243,9 +272,11 @@ Partial Class Dispaly
     Friend WithEvents txtPhone As TextBox
     Friend WithEvents txtTime As TextBox
     Friend WithEvents txtAddress As RichTextBox
-    Friend WithEvents lblName As Label
     Friend WithEvents lstName As ListBox
     Friend WithEvents llLogOut As LinkLabel
-    Friend WithEvents lblName1 As Label
     Friend WithEvents btnBack As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents lblName1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label6 As Label
 End Class

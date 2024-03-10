@@ -26,12 +26,6 @@ Partial Class AdministratorPage
         Me.Label3 = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.GrpBx = New System.Windows.Forms.GroupBox()
-        Me.btnLogin = New System.Windows.Forms.Button()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.lblPassword = New System.Windows.Forms.Label()
-        Me.lblUserId = New System.Windows.Forms.Label()
         Me.llMedicalStore = New System.Windows.Forms.LinkLabel()
         Me.llGeneralStore = New System.Windows.Forms.LinkLabel()
         Me.llSpecializedStore = New System.Windows.Forms.LinkLabel()
@@ -40,7 +34,7 @@ Partial Class AdministratorPage
         Me.llDiagnosis = New System.Windows.Forms.LinkLabel()
         Me.llUsersDetails = New System.Windows.Forms.LinkLabel()
         Me.llAdministrators = New System.Windows.Forms.LinkLabel()
-        Me.GrpBx.SuspendLayout()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'Label3
@@ -49,7 +43,7 @@ Partial Class AdministratorPage
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Mistral", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(478, 9)
+        Me.Label3.Location = New System.Drawing.Point(313, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(317, 76)
         Me.Label3.TabIndex = 7
@@ -62,7 +56,7 @@ Partial Class AdministratorPage
         Me.llLogOut.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llLogOut.LinkColor = System.Drawing.Color.Yellow
-        Me.llLogOut.Location = New System.Drawing.Point(1159, 83)
+        Me.llLogOut.Location = New System.Drawing.Point(980, 19)
         Me.llLogOut.Name = "llLogOut"
         Me.llLogOut.Size = New System.Drawing.Size(83, 21)
         Me.llLogOut.TabIndex = 16
@@ -74,83 +68,11 @@ Partial Class AdministratorPage
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.ForeColor = System.Drawing.Color.Lime
-        Me.lblName.Location = New System.Drawing.Point(901, 76)
+        Me.lblName.Location = New System.Drawing.Point(822, 79)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(252, 31)
         Me.lblName.TabIndex = 15
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'GrpBx
-        '
-        Me.GrpBx.BackColor = System.Drawing.Color.Transparent
-        Me.GrpBx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.GrpBx.Controls.Add(Me.btnLogin)
-        Me.GrpBx.Controls.Add(Me.txtPassword)
-        Me.GrpBx.Controls.Add(Me.txtUser)
-        Me.GrpBx.Controls.Add(Me.lblPassword)
-        Me.GrpBx.Controls.Add(Me.lblUserId)
-        Me.GrpBx.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrpBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GrpBx.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.GrpBx.Location = New System.Drawing.Point(368, 240)
-        Me.GrpBx.Name = "GrpBx"
-        Me.GrpBx.Size = New System.Drawing.Size(633, 362)
-        Me.GrpBx.TabIndex = 17
-        Me.GrpBx.TabStop = False
-        Me.GrpBx.Text = "LOG IN"
-        '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnLogin.Font = New System.Drawing.Font("OCR A Extended", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.Color.Black
-        Me.btnLogin.Location = New System.Drawing.Point(431, 271)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(179, 58)
-        Me.btnLogin.TabIndex = 11
-        Me.btnLogin.Text = "Log In"
-        Me.btnLogin.UseVisualStyleBackColor = False
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(231, 205)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(379, 40)
-        Me.txtPassword.TabIndex = 10
-        Me.txtPassword.UseSystemPasswordChar = True
-        '
-        'txtUser
-        '
-        Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(231, 112)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(379, 40)
-        Me.txtUser.TabIndex = 9
-        '
-        'lblPassword
-        '
-        Me.lblPassword.AutoSize = True
-        Me.lblPassword.BackColor = System.Drawing.Color.Transparent
-        Me.lblPassword.Font = New System.Drawing.Font("Lucida Handwriting", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblPassword.Location = New System.Drawing.Point(15, 207)
-        Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(200, 37)
-        Me.lblPassword.TabIndex = 8
-        Me.lblPassword.Text = "PASSWORD"
-        '
-        'lblUserId
-        '
-        Me.lblUserId.AutoSize = True
-        Me.lblUserId.BackColor = System.Drawing.Color.Transparent
-        Me.lblUserId.Font = New System.Drawing.Font("Lucida Handwriting", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblUserId.Location = New System.Drawing.Point(58, 114)
-        Me.lblUserId.Name = "lblUserId"
-        Me.lblUserId.Size = New System.Drawing.Size(157, 37)
-        Me.lblUserId.TabIndex = 7
-        Me.lblUserId.Text = "USER ID"
         '
         'llMedicalStore
         '
@@ -229,7 +151,7 @@ Partial Class AdministratorPage
         Me.llDiagnosis.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llDiagnosis.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llDiagnosis.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llDiagnosis.Location = New System.Drawing.Point(984, 154)
+        Me.llDiagnosis.Location = New System.Drawing.Point(754, 154)
         Me.llDiagnosis.Name = "llDiagnosis"
         Me.llDiagnosis.Size = New System.Drawing.Size(211, 45)
         Me.llDiagnosis.TabIndex = 21
@@ -243,7 +165,7 @@ Partial Class AdministratorPage
         Me.llUsersDetails.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llUsersDetails.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llUsersDetails.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llUsersDetails.Location = New System.Drawing.Point(984, 372)
+        Me.llUsersDetails.Location = New System.Drawing.Point(754, 366)
         Me.llUsersDetails.Name = "llUsersDetails"
         Me.llUsersDetails.Size = New System.Drawing.Size(290, 45)
         Me.llUsersDetails.TabIndex = 22
@@ -257,20 +179,29 @@ Partial Class AdministratorPage
         Me.llAdministrators.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llAdministrators.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llAdministrators.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llAdministrators.Location = New System.Drawing.Point(969, 592)
+        Me.llAdministrators.Location = New System.Drawing.Point(754, 572)
         Me.llAdministrators.Name = "llAdministrators"
         Me.llAdministrators.Size = New System.Drawing.Size(329, 45)
         Me.llAdministrators.TabIndex = 23
         Me.llAdministrators.TabStop = True
         Me.llAdministrators.Text = "ADMINISTRATORS"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Location = New System.Drawing.Point(5, 113)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1078, 11)
+        Me.Panel1.TabIndex = 39
+        '
         'AdministratorPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.The_Darkness_Wall_By_Kon_2560X1600
+        Me.BackColor = System.Drawing.Color.DimGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1362, 741)
+        Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.llAdministrators)
         Me.Controls.Add(Me.llUsersDetails)
         Me.Controls.Add(Me.llDiagnosis)
@@ -279,7 +210,6 @@ Partial Class AdministratorPage
         Me.Controls.Add(Me.llSpecializedStore)
         Me.Controls.Add(Me.llGeneralStore)
         Me.Controls.Add(Me.llMedicalStore)
-        Me.Controls.Add(Me.GrpBx)
         Me.Controls.Add(Me.llLogOut)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.Label3)
@@ -287,8 +217,6 @@ Partial Class AdministratorPage
         Me.Name = "AdministratorPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ADMINISTRATOR"
-        Me.GrpBx.ResumeLayout(False)
-        Me.GrpBx.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -297,12 +225,6 @@ Partial Class AdministratorPage
     Friend WithEvents Label3 As Label
     Friend WithEvents llLogOut As LinkLabel
     Friend WithEvents lblName As Label
-    Friend WithEvents GrpBx As GroupBox
-    Friend WithEvents btnLogin As Button
-    Friend WithEvents txtPassword As TextBox
-    Friend WithEvents txtUser As TextBox
-    Friend WithEvents lblPassword As Label
-    Friend WithEvents lblUserId As Label
     Friend WithEvents llMedicalStore As LinkLabel
     Friend WithEvents llGeneralStore As LinkLabel
     Friend WithEvents llSpecializedStore As LinkLabel
@@ -311,4 +233,5 @@ Partial Class AdministratorPage
     Friend WithEvents llDiagnosis As LinkLabel
     Friend WithEvents llUsersDetails As LinkLabel
     Friend WithEvents llAdministrators As LinkLabel
+    Friend WithEvents Panel1 As Panel
 End Class

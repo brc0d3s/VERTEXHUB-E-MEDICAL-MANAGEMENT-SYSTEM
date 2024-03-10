@@ -32,24 +32,22 @@ Partial Class StartPage
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnMedicalStore = New System.Windows.Forms.Button()
-        Me.lblName = New System.Windows.Forms.Label()
-        Me.btnDiagnosis = New System.Windows.Forms.Button()
-        Me.btnLaboratories = New System.Windows.Forms.Button()
-        Me.llLogOut = New System.Windows.Forms.LinkLabel()
-        Me.llAdministrator = New System.Windows.Forms.LinkLabel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GrpBx.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(0, 0)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label3.Location = New System.Drawing.Point(169, 26)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(1218, 39)
+        Me.Label3.Size = New System.Drawing.Size(862, 29)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "WELCOME TO THE VERTEXHUB  E-MEDICAL MANAGEMENT SYSTEM"
         '
@@ -70,6 +68,8 @@ Partial Class StartPage
         '
         Me.GrpBx.BackColor = System.Drawing.Color.Transparent
         Me.GrpBx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.GrpBx.Controls.Add(Me.ComboBox1)
+        Me.GrpBx.Controls.Add(Me.Label4)
         Me.GrpBx.Controls.Add(Me.lblForgotPassword)
         Me.GrpBx.Controls.Add(Me.llSignUp)
         Me.GrpBx.Controls.Add(Me.btnLogin)
@@ -80,9 +80,9 @@ Partial Class StartPage
         Me.GrpBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.GrpBx.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.GrpBx.Location = New System.Drawing.Point(338, 201)
+        Me.GrpBx.Location = New System.Drawing.Point(214, 99)
         Me.GrpBx.Name = "GrpBx"
-        Me.GrpBx.Size = New System.Drawing.Size(633, 362)
+        Me.GrpBx.Size = New System.Drawing.Size(695, 511)
         Me.GrpBx.TabIndex = 9
         Me.GrpBx.TabStop = False
         Me.GrpBx.Text = "LOG IN"
@@ -94,7 +94,7 @@ Partial Class StartPage
         Me.lblForgotPassword.BackColor = System.Drawing.Color.Transparent
         Me.lblForgotPassword.ForeColor = System.Drawing.Color.Lime
         Me.lblForgotPassword.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.lblForgotPassword.Location = New System.Drawing.Point(226, 304)
+        Me.lblForgotPassword.Location = New System.Drawing.Point(202, 412)
         Me.lblForgotPassword.Name = "lblForgotPassword"
         Me.lblForgotPassword.Size = New System.Drawing.Size(189, 25)
         Me.lblForgotPassword.TabIndex = 12
@@ -107,7 +107,7 @@ Partial Class StartPage
         Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Black
-        Me.btnLogin.Location = New System.Drawing.Point(431, 271)
+        Me.btnLogin.Location = New System.Drawing.Point(431, 392)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(179, 58)
         Me.btnLogin.TabIndex = 11
@@ -117,7 +117,7 @@ Partial Class StartPage
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(231, 205)
+        Me.txtPassword.Location = New System.Drawing.Point(282, 283)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(379, 40)
         Me.txtPassword.TabIndex = 10
@@ -126,7 +126,7 @@ Partial Class StartPage
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(231, 112)
+        Me.txtUser.Location = New System.Drawing.Point(282, 168)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(379, 40)
         Me.txtUser.TabIndex = 9
@@ -137,7 +137,7 @@ Partial Class StartPage
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(15, 207)
+        Me.Label2.Location = New System.Drawing.Point(35, 283)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(191, 33)
         Me.Label2.TabIndex = 8
@@ -149,97 +149,52 @@ Partial Class StartPage
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(58, 114)
+        Me.Label1.Location = New System.Drawing.Point(35, 171)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(139, 33)
+        Me.Label1.Size = New System.Drawing.Size(186, 33)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "USER ID"
+        Me.Label1.Text = "ID NUMBER"
         '
-        'btnMedicalStore
+        'Label4
         '
-        Me.btnMedicalStore.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.b_logo5
-        Me.btnMedicalStore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMedicalStore.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMedicalStore.Location = New System.Drawing.Point(77, 427)
-        Me.btnMedicalStore.Name = "btnMedicalStore"
-        Me.btnMedicalStore.Size = New System.Drawing.Size(500, 212)
-        Me.btnMedicalStore.TabIndex = 12
-        Me.btnMedicalStore.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(35, 72)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(188, 33)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "USER TYPE"
         '
-        'lblName
+        'ComboBox1
         '
-        Me.lblName.BackColor = System.Drawing.Color.Transparent
-        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.ForeColor = System.Drawing.Color.Lime
-        Me.lblName.Location = New System.Drawing.Point(943, 54)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(252, 31)
-        Me.lblName.TabIndex = 10
-        Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"USER", "ADMIN"})
+        Me.ComboBox1.Location = New System.Drawing.Point(282, 72)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(379, 33)
+        Me.ComboBox1.TabIndex = 14
         '
-        'btnDiagnosis
+        'PictureBox1
         '
-        Me.btnDiagnosis.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.diagnosis_microsoft_image
-        Me.btnDiagnosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnDiagnosis.Location = New System.Drawing.Point(77, 108)
-        Me.btnDiagnosis.Name = "btnDiagnosis"
-        Me.btnDiagnosis.Size = New System.Drawing.Size(500, 243)
-        Me.btnDiagnosis.TabIndex = 11
-        Me.btnDiagnosis.UseVisualStyleBackColor = True
-        '
-        'btnLaboratories
-        '
-        Me.btnLaboratories.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.vector_laboratory_chemical_medical_test_logo_icon_colorful_modern_design_bulbs_bottles_49926491__2_
-        Me.btnLaboratories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnLaboratories.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnLaboratories.Location = New System.Drawing.Point(695, 108)
-        Me.btnLaboratories.Name = "btnLaboratories"
-        Me.btnLaboratories.Size = New System.Drawing.Size(500, 243)
-        Me.btnLaboratories.TabIndex = 13
-        Me.btnLaboratories.UseVisualStyleBackColor = True
-        '
-        'llLogOut
-        '
-        Me.llLogOut.AutoSize = True
-        Me.llLogOut.BackColor = System.Drawing.Color.Transparent
-        Me.llLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llLogOut.LinkColor = System.Drawing.Color.Yellow
-        Me.llLogOut.Location = New System.Drawing.Point(1201, 61)
-        Me.llLogOut.Name = "llLogOut"
-        Me.llLogOut.Size = New System.Drawing.Size(73, 20)
-        Me.llLogOut.TabIndex = 14
-        Me.llLogOut.TabStop = True
-        Me.llLogOut.Text = "Log Out"
-        '
-        'llAdministrator
-        '
-        Me.llAdministrator.AutoSize = True
-        Me.llAdministrator.BackColor = System.Drawing.Color.Transparent
-        Me.llAdministrator.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.llAdministrator.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llAdministrator.LinkColor = System.Drawing.Color.Yellow
-        Me.llAdministrator.Location = New System.Drawing.Point(12, 61)
-        Me.llAdministrator.Name = "llAdministrator"
-        Me.llAdministrator.Size = New System.Drawing.Size(116, 20)
-        Me.llAdministrator.TabIndex = 15
-        Me.llAdministrator.TabStop = True
-        Me.llAdministrator.Text = "Administrator"
+        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'StartPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.abstract_wallpaper_on_medical_subjects_to_dna_structure1
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1358, 737)
-        Me.Controls.Add(Me.llAdministrator)
-        Me.Controls.Add(Me.llLogOut)
-        Me.Controls.Add(Me.btnLaboratories)
-        Me.Controls.Add(Me.btnMedicalStore)
-        Me.Controls.Add(Me.btnDiagnosis)
-        Me.Controls.Add(Me.lblName)
+        Me.ClientSize = New System.Drawing.Size(1071, 655)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GrpBx)
         Me.Controls.Add(Me.Label3)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -251,6 +206,7 @@ Partial Class StartPage
         Me.Text = "E-MEDICAL MANAGEMENT"
         Me.GrpBx.ResumeLayout(False)
         Me.GrpBx.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -265,10 +221,7 @@ Partial Class StartPage
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents GrpBx As GroupBox
-    Friend WithEvents lblName As Label
-    Friend WithEvents btnDiagnosis As Button
-    Friend WithEvents btnMedicalStore As Button
-    Friend WithEvents btnLaboratories As Button
-    Friend WithEvents llLogOut As LinkLabel
-    Friend WithEvents llAdministrator As LinkLabel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

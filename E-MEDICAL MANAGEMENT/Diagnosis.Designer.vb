@@ -35,14 +35,19 @@ Partial Class Diagnosis
         Me.llNeuroSpecialists = New System.Windows.Forms.LinkLabel()
         Me.lblName = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblName1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnBack
         '
         Me.btnBack.BackColor = System.Drawing.Color.Red
         Me.btnBack.Font = New System.Drawing.Font("Niagara Engraved", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack.Location = New System.Drawing.Point(34, 41)
+        Me.btnBack.Location = New System.Drawing.Point(12, 130)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(93, 37)
         Me.btnBack.TabIndex = 0
@@ -55,7 +60,7 @@ Partial Class Diagnosis
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Mistral", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Magenta
-        Me.Label1.Location = New System.Drawing.Point(314, 24)
+        Me.Label1.Location = New System.Drawing.Point(254, 153)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(589, 76)
         Me.Label1.TabIndex = 1
@@ -68,7 +73,7 @@ Partial Class Diagnosis
         Me.llGeneralPhysician.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llGeneralPhysician.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llGeneralPhysician.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llGeneralPhysician.Location = New System.Drawing.Point(33, 131)
+        Me.llGeneralPhysician.Location = New System.Drawing.Point(33, 256)
         Me.llGeneralPhysician.Name = "llGeneralPhysician"
         Me.llGeneralPhysician.Size = New System.Drawing.Size(346, 57)
         Me.llGeneralPhysician.TabIndex = 2
@@ -82,7 +87,7 @@ Partial Class Diagnosis
         Me.llteethSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llteethSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llteethSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llteethSpecialists.Location = New System.Drawing.Point(825, 131)
+        Me.llteethSpecialists.Location = New System.Drawing.Point(733, 256)
         Me.llteethSpecialists.Name = "llteethSpecialists"
         Me.llteethSpecialists.Size = New System.Drawing.Size(305, 57)
         Me.llteethSpecialists.TabIndex = 3
@@ -96,7 +101,7 @@ Partial Class Diagnosis
         Me.llBoneSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llBoneSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llBoneSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llBoneSpecialists.Location = New System.Drawing.Point(33, 601)
+        Me.llBoneSpecialists.Location = New System.Drawing.Point(33, 593)
         Me.llBoneSpecialists.Name = "llBoneSpecialists"
         Me.llBoneSpecialists.Size = New System.Drawing.Size(314, 57)
         Me.llBoneSpecialists.TabIndex = 4
@@ -110,7 +115,7 @@ Partial Class Diagnosis
         Me.llAllegySpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llAllegySpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llAllegySpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llAllegySpecialists.Location = New System.Drawing.Point(777, 289)
+        Me.llAllegySpecialists.Location = New System.Drawing.Point(710, 372)
         Me.llAllegySpecialists.Name = "llAllegySpecialists"
         Me.llAllegySpecialists.Size = New System.Drawing.Size(353, 57)
         Me.llAllegySpecialists.TabIndex = 5
@@ -124,7 +129,7 @@ Partial Class Diagnosis
         Me.llENTSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llENTSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llENTSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llENTSpecialists.Location = New System.Drawing.Point(33, 289)
+        Me.llENTSpecialists.Location = New System.Drawing.Point(33, 372)
         Me.llENTSpecialists.Name = "llENTSpecialists"
         Me.llENTSpecialists.Size = New System.Drawing.Size(315, 57)
         Me.llENTSpecialists.TabIndex = 6
@@ -138,7 +143,7 @@ Partial Class Diagnosis
         Me.llHeartSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llHeartSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llHeartSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llHeartSpecialists.Location = New System.Drawing.Point(793, 453)
+        Me.llHeartSpecialists.Location = New System.Drawing.Point(711, 495)
         Me.llHeartSpecialists.Name = "llHeartSpecialists"
         Me.llHeartSpecialists.Size = New System.Drawing.Size(327, 57)
         Me.llHeartSpecialists.TabIndex = 7
@@ -152,7 +157,7 @@ Partial Class Diagnosis
         Me.llEyeSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llEyeSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llEyeSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llEyeSpecialists.Location = New System.Drawing.Point(33, 453)
+        Me.llEyeSpecialists.Location = New System.Drawing.Point(33, 495)
         Me.llEyeSpecialists.Name = "llEyeSpecialists"
         Me.llEyeSpecialists.Size = New System.Drawing.Size(292, 57)
         Me.llEyeSpecialists.TabIndex = 8
@@ -166,7 +171,7 @@ Partial Class Diagnosis
         Me.llNeuroSpecialists.Font = New System.Drawing.Font("Monotype Corsiva", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llNeuroSpecialists.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llNeuroSpecialists.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llNeuroSpecialists.Location = New System.Drawing.Point(786, 601)
+        Me.llNeuroSpecialists.Location = New System.Drawing.Point(711, 593)
         Me.llNeuroSpecialists.Name = "llNeuroSpecialists"
         Me.llNeuroSpecialists.Size = New System.Drawing.Size(334, 57)
         Me.llNeuroSpecialists.TabIndex = 9
@@ -191,33 +196,68 @@ Partial Class Diagnosis
         Me.llLogOut.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llLogOut.LinkColor = System.Drawing.Color.DarkGoldenrod
-        Me.llLogOut.Location = New System.Drawing.Point(1190, 76)
+        Me.llLogOut.Location = New System.Drawing.Point(981, 137)
         Me.llLogOut.Name = "llLogOut"
         Me.llLogOut.Size = New System.Drawing.Size(83, 21)
         Me.llLogOut.TabIndex = 16
         Me.llLogOut.TabStop = True
         Me.llLogOut.Text = "Log Out"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.Panel1.Controls.Add(Me.lblName1)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1075, 103)
+        Me.Panel1.TabIndex = 22
+        '
         'lblName1
         '
         Me.lblName1.BackColor = System.Drawing.Color.Transparent
         Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName1.ForeColor = System.Drawing.Color.Lime
-        Me.lblName1.Location = New System.Drawing.Point(909, 69)
+        Me.lblName1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblName1.Location = New System.Drawing.Point(816, 69)
         Me.lblName1.Name = "lblName1"
         Me.lblName1.Size = New System.Drawing.Size(252, 31)
-        Me.lblName1.TabIndex = 15
+        Me.lblName1.TabIndex = 21
         Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label3.Location = New System.Drawing.Point(226, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(612, 39)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "VERTEXHUB  E-MEDICAL SYSTEM"
         '
         'Diagnosis
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources._68201749_doctor_wallpapers
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Doctor
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1362, 741)
+        Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.llLogOut)
-        Me.Controls.Add(Me.lblName1)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.llNeuroSpecialists)
         Me.Controls.Add(Me.llEyeSpecialists)
@@ -233,6 +273,9 @@ Partial Class Diagnosis
         Me.Name = "Diagnosis"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DIAGNOSIS"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -250,5 +293,8 @@ Partial Class Diagnosis
     Friend WithEvents llNeuroSpecialists As LinkLabel
     Friend WithEvents lblName As Label
     Friend WithEvents llLogOut As LinkLabel
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents lblName1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label3 As Label
 End Class

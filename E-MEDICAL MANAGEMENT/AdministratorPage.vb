@@ -12,48 +12,6 @@ Public Class AdministratorPage
         StartPage.Show()
     End Sub
 
-    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-
-        'Hash the Entered password before comparison
-        AdminPasswordHash = PasswordUtility.HashPassword(txtPassword.Text)
-
-        Try
-            connection.Open()
-            Dim command As New NpgsqlCommand("SELECT * FROM administrator WHERE UserId = @UserId AND Password = @Password", connection)
-            command.Parameters.AddWithValue("@UserId", txtUser.Text)
-            command.Parameters.AddWithValue("@Password", AdminPasswordHash)
-            Dim adapter As New NpgsqlDataAdapter(command)
-            Dim table As New DataTable()
-            adapter.Fill(table)
-
-            If table.Rows.Count() <= 0 Then
-                If txtPassword.Text = "" Or txtUser.Text = "" Then
-                    MsgBox("Invalid Input")
-                    txtPassword.Text = ""
-                    txtUser.Text = ""
-                End If
-            Else
-                lblName.Text = table.Rows(0)(1).ToString()
-                str1 = lblName.Text
-                GrpBx.Visible = False
-                llAdministrators.Visible = True
-                llGeneralStore.Visible = False
-                llSpecializedStore.Visible = False
-                llDiagnosis.Visible = True
-                llPreventiveStore.Visible = False
-                llLaboratories.Visible = True
-                llLogOut.Visible = True
-                llMedicalStore.Visible = True
-                llUsersDetails.Visible = True
-            End If
-        Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
-        Finally
-            If connection.State = ConnectionState.Open Then
-                connection.Close()
-            End If
-        End Try
-    End Sub
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
         Me.Hide()
@@ -254,5 +212,9 @@ Public Class AdministratorPage
         If connection.State = ConnectionState.Open Then
             connection.Close()
         End If
+    End Sub
+
+    Private Sub lblName_Click(sender As Object, e As EventArgs) Handles lblName.Click
+
     End Sub
 End Class
