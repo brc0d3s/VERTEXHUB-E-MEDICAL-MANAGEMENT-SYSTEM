@@ -7,7 +7,7 @@ Public Class MedicalStore
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide()
-        StartPage.Show()
+        UserHomePage.Show()
     End Sub
 
     Private Sub MedicalStore_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -15,7 +15,7 @@ Public Class MedicalStore
     End Sub
 
     Private Sub MedicalStore_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblName1.Text = StartPage.str.ToString()
+        lblName1.Text = StartPage.userName.ToString()
     End Sub
 
     Private Sub ExecuteQueryAndDisplayResults(tableName As String, displayText As String)

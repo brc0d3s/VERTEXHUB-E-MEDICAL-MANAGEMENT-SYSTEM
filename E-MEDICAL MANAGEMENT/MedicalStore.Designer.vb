@@ -33,9 +33,9 @@ Partial Class MedicalStore
         Me.lblName = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblName1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -172,17 +172,16 @@ Partial Class MedicalStore
         Me.Panel1.Size = New System.Drawing.Size(1071, 103)
         Me.Panel1.TabIndex = 17
         '
-        'Label3
+        'lblName1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label3.Location = New System.Drawing.Point(226, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(612, 39)
-        Me.Label3.TabIndex = 19
-        Me.Label3.Text = "VERTEXHUB  E-MEDICAL SYSTEM"
+        Me.lblName1.BackColor = System.Drawing.Color.Transparent
+        Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblName1.Location = New System.Drawing.Point(816, 69)
+        Me.lblName1.Name = "lblName1"
+        Me.lblName1.Size = New System.Drawing.Size(226, 31)
+        Me.lblName1.TabIndex = 21
+        Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'PictureBox1
         '
@@ -194,16 +193,17 @@ Partial Class MedicalStore
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
-        'lblName1
+        'Label3
         '
-        Me.lblName1.BackColor = System.Drawing.Color.Transparent
-        Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblName1.Location = New System.Drawing.Point(816, 69)
-        Me.lblName1.Name = "lblName1"
-        Me.lblName1.Size = New System.Drawing.Size(252, 31)
-        Me.lblName1.TabIndex = 21
-        Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label3.Location = New System.Drawing.Point(226, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(612, 39)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "VERTEXHUB  E-MEDICAL SYSTEM"
         '
         'MedicalStore
         '

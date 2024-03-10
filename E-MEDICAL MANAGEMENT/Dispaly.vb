@@ -3,7 +3,7 @@
     Dim test As Integer = 0
     Dim general As New DataTable
     Private Sub Dispaly_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblName1.Text = StartPage.str.ToString()
+        lblName1.Text = StartPage.userName.ToString()
     End Sub
 
     Private Sub Dispaly_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

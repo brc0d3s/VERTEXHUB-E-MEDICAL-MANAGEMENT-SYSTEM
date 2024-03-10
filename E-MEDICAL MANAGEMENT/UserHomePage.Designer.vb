@@ -25,7 +25,7 @@ Partial Class UserHomePage
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
-        Me.lblName1 = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.btnMedicalStore = New System.Windows.Forms.Button()
         Me.btnLaboratories = New System.Windows.Forms.Button()
         Me.btnDiagnosis = New System.Windows.Forms.Button()
@@ -67,16 +67,16 @@ Partial Class UserHomePage
         Me.llLogOut.TabStop = True
         Me.llLogOut.Text = "Log Out"
         '
-        'lblName1
+        'lblName
         '
-        Me.lblName1.BackColor = System.Drawing.Color.Transparent
-        Me.lblName1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName1.ForeColor = System.Drawing.Color.Lime
-        Me.lblName1.Location = New System.Drawing.Point(811, 82)
-        Me.lblName1.Name = "lblName1"
-        Me.lblName1.Size = New System.Drawing.Size(252, 31)
-        Me.lblName1.TabIndex = 17
-        Me.lblName1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.Lime
+        Me.lblName.Location = New System.Drawing.Point(822, 70)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(241, 31)
+        Me.lblName.TabIndex = 17
+        Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'btnMedicalStore
         '
@@ -127,7 +127,7 @@ Partial Class UserHomePage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1075, 659)
-        Me.Controls.Add(Me.lblName1)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.llLogOut)
         Me.Controls.Add(Me.btnMedicalStore)
         Me.Controls.Add(Me.btnLaboratories)
@@ -152,5 +152,5 @@ Partial Class UserHomePage
     Friend WithEvents btnLaboratories As Button
     Friend WithEvents btnMedicalStore As Button
     Friend WithEvents llLogOut As LinkLabel
-    Friend WithEvents lblName1 As Label
+    Friend WithEvents lblName As Label
 End Class

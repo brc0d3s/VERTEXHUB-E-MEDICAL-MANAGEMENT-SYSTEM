@@ -6,12 +6,12 @@ Public Class Diagnosis
     Private connection As New NpgsqlConnection(GetConnectionString())
 
     Public Sub Diagnosis_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblName1.Text = StartPage.str.ToString()
+        lblName1.Text = StartPage.userName.ToString()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide()
-        StartPage.Show()
+        UserHomePage.Show()
     End Sub
 
     Private Sub Diagnosis_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

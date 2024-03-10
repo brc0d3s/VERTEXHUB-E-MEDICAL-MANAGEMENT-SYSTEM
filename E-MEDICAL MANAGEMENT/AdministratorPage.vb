@@ -2,10 +2,13 @@ Imports Npgsql
 Imports System.Data
 
 Public Class AdministratorPage
-    Public Property str1 As String
+    Public Property str1 As String = StartPage.adminName.ToString()
     Public Property TName As String
-    Dim AdminPasswordHash As String
     Dim connection As New NpgsqlConnection(GetConnectionString())
+
+    Private Sub AdministratorPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblName.Text = str1
+    End Sub
 
     Private Sub AdministratorPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Me.Hide()
@@ -214,7 +217,4 @@ Public Class AdministratorPage
         End If
     End Sub
 
-    Private Sub lblName_Click(sender As Object, e As EventArgs) Handles lblName.Click
-
-    End Sub
 End Class

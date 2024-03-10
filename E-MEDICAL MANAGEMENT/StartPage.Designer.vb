@@ -26,14 +26,14 @@ Partial Class StartPage
         Me.Label3 = New System.Windows.Forms.Label()
         Me.llSignUp = New System.Windows.Forms.LinkLabel()
         Me.GrpBx = New System.Windows.Forms.GroupBox()
+        Me.cmbUserType = New System.Windows.Forms.ComboBox()
+        Me.lblUserType = New System.Windows.Forms.Label()
         Me.lblForgotPassword = New System.Windows.Forms.LinkLabel()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtUserID = New System.Windows.Forms.TextBox()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.lblID = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GrpBx.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,15 +68,15 @@ Partial Class StartPage
         '
         Me.GrpBx.BackColor = System.Drawing.Color.Transparent
         Me.GrpBx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.GrpBx.Controls.Add(Me.ComboBox1)
-        Me.GrpBx.Controls.Add(Me.Label4)
+        Me.GrpBx.Controls.Add(Me.cmbUserType)
+        Me.GrpBx.Controls.Add(Me.lblUserType)
         Me.GrpBx.Controls.Add(Me.lblForgotPassword)
         Me.GrpBx.Controls.Add(Me.llSignUp)
         Me.GrpBx.Controls.Add(Me.btnLogin)
         Me.GrpBx.Controls.Add(Me.txtPassword)
-        Me.GrpBx.Controls.Add(Me.txtUser)
-        Me.GrpBx.Controls.Add(Me.Label2)
-        Me.GrpBx.Controls.Add(Me.Label1)
+        Me.GrpBx.Controls.Add(Me.txtUserID)
+        Me.GrpBx.Controls.Add(Me.lblPassword)
+        Me.GrpBx.Controls.Add(Me.lblID)
         Me.GrpBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GrpBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.GrpBx.ImeMode = System.Windows.Forms.ImeMode.Off
@@ -86,6 +86,28 @@ Partial Class StartPage
         Me.GrpBx.TabIndex = 9
         Me.GrpBx.TabStop = False
         Me.GrpBx.Text = "LOG IN"
+        '
+        'cmbUserType
+        '
+        Me.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbUserType.FormattingEnabled = True
+        Me.cmbUserType.Items.AddRange(New Object() {"USER", "ADMIN"})
+        Me.cmbUserType.Location = New System.Drawing.Point(282, 72)
+        Me.cmbUserType.Name = "cmbUserType"
+        Me.cmbUserType.Size = New System.Drawing.Size(379, 33)
+        Me.cmbUserType.TabIndex = 14
+        '
+        'lblUserType
+        '
+        Me.lblUserType.AutoSize = True
+        Me.lblUserType.BackColor = System.Drawing.Color.Transparent
+        Me.lblUserType.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUserType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblUserType.Location = New System.Drawing.Point(35, 72)
+        Me.lblUserType.Name = "lblUserType"
+        Me.lblUserType.Size = New System.Drawing.Size(188, 33)
+        Me.lblUserType.TabIndex = 13
+        Me.lblUserType.Text = "USER TYPE"
         '
         'lblForgotPassword
         '
@@ -123,59 +145,37 @@ Partial Class StartPage
         Me.txtPassword.TabIndex = 10
         Me.txtPassword.UseSystemPasswordChar = True
         '
-        'txtUser
+        'txtUserID
         '
-        Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(282, 168)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(379, 40)
-        Me.txtUser.TabIndex = 9
+        Me.txtUserID.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserID.Location = New System.Drawing.Point(282, 168)
+        Me.txtUserID.Name = "txtUserID"
+        Me.txtUserID.Size = New System.Drawing.Size(379, 40)
+        Me.txtUserID.TabIndex = 9
         '
-        'Label2
+        'lblPassword
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(35, 283)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(191, 33)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "PASSWORD"
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.BackColor = System.Drawing.Color.Transparent
+        Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
+        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPassword.Location = New System.Drawing.Point(35, 283)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(191, 33)
+        Me.lblPassword.TabIndex = 8
+        Me.lblPassword.Text = "PASSWORD"
         '
-        'Label1
+        'lblID
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(35, 171)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(186, 33)
-        Me.Label1.TabIndex = 7
-        Me.Label1.Text = "ID NUMBER"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(35, 72)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(188, 33)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "USER TYPE"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"USER", "ADMIN"})
-        Me.ComboBox1.Location = New System.Drawing.Point(282, 72)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(379, 33)
-        Me.ComboBox1.TabIndex = 14
+        Me.lblID.AutoSize = True
+        Me.lblID.BackColor = System.Drawing.Color.Transparent
+        Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblID.Location = New System.Drawing.Point(35, 171)
+        Me.lblID.Name = "lblID"
+        Me.lblID.Size = New System.Drawing.Size(186, 33)
+        Me.lblID.TabIndex = 7
+        Me.lblID.Text = "ID NUMBER"
         '
         'PictureBox1
         '
@@ -217,11 +217,11 @@ Partial Class StartPage
     Friend WithEvents lblForgotPassword As LinkLabel
     Friend WithEvents btnLogin As Button
     Friend WithEvents txtPassword As TextBox
-    Friend WithEvents txtUser As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents txtUserID As TextBox
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents lblID As Label
     Friend WithEvents GrpBx As GroupBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents lblUserType As Label
+    Friend WithEvents cmbUserType As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
 End Class

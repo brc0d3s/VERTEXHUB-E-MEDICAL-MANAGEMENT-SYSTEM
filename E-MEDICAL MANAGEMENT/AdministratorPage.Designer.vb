@@ -68,7 +68,7 @@ Partial Class AdministratorPage
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.ForeColor = System.Drawing.Color.Lime
-        Me.lblName.Location = New System.Drawing.Point(822, 79)
+        Me.lblName.Location = New System.Drawing.Point(811, 70)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(252, 31)
         Me.lblName.TabIndex = 15
@@ -189,7 +189,7 @@ Partial Class AdministratorPage
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Location = New System.Drawing.Point(5, 113)
+        Me.Panel1.Location = New System.Drawing.Point(-4, 113)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1078, 11)
         Me.Panel1.TabIndex = 39

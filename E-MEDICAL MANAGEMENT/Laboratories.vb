@@ -7,7 +7,7 @@ Public Class Laboratories
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide()
-        StartPage.Show()
+        UserHomePage.Show()
     End Sub
 
     Private Sub Laboratories_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -15,7 +15,7 @@ Public Class Laboratories
     End Sub
 
     Private Sub Laboratories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblName1.Text = StartPage.str.ToString()
+        lblName1.Text = StartPage.userName.ToString()
         llBloodTest.Visible = False
         llSugarTest.Visible = False
         llUrineTest.Visible = False

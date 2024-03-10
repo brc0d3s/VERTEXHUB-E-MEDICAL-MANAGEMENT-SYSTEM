@@ -233,7 +233,7 @@ Partial Class Laboratories
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(816, 69)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(252, 31)
+        Me.Label1.Size = New System.Drawing.Size(232, 31)
         Me.Label1.TabIndex = 21
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
         '

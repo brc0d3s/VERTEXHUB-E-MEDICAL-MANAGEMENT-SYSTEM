@@ -60,7 +60,7 @@ Partial Class TableUpdate
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Mistral", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(455, 0)
+        Me.Label3.Location = New System.Drawing.Point(459, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(206, 44)
         Me.Label3.TabIndex = 8
@@ -87,7 +87,7 @@ Partial Class TableUpdate
         Me.lblName.ForeColor = System.Drawing.Color.Lime
         Me.lblName.Location = New System.Drawing.Point(839, 54)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(236, 31)
+        Me.lblName.Size = New System.Drawing.Size(224, 31)
         Me.lblName.TabIndex = 17
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
@@ -299,7 +299,7 @@ Partial Class TableUpdate
         'lblTableName
         '
         Me.lblTableName.BackColor = System.Drawing.Color.Transparent
-        Me.lblTableName.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
+        Me.lblTableName.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic) _
                 Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTableName.ForeColor = System.Drawing.Color.Fuchsia
         Me.lblTableName.Location = New System.Drawing.Point(324, 44)
