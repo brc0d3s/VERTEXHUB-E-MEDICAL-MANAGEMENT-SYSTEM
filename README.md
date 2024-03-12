@@ -12,7 +12,7 @@
 
 ## Login
 <div align="center">
-<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/screenshots/userLogin.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvc2NyZWVuc2hvdHMvdXNlckxvZ2luLnBuZyIsImlhdCI6MTcwODU2MzQ5MywiZXhwIjozMjg1MzYzNDkzfQ.FTcVeYSdtlMFE8yiwawVRefaQjmP9QDn-F8Sg65Xae0&t=2024-02-22T00%3A58%3A13.868Z"/>
+<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/login.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL2xvZ2luLlBORyIsImlhdCI6MTcxMDIzNDk3OCwiZXhwIjozMTI5MzU0OTc4fQ.0iFYtu7WE4S64jn54p7R9sJUCusnYHKob6PgX8noDBE&t=2024-03-12T09%3A16%3A19.429Z"/>
 </div>
 
 #
@@ -20,7 +20,7 @@
 ## User Home
 
 <div align="center">
-<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/screenshots/userHome.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvc2NyZWVuc2hvdHMvdXNlckhvbWUucG5nIiwiaWF0IjoxNzA4NTYzNTUxLCJleHAiOjMyODUzNjM1NTF9.jwjX6jx4dlbLpUMxIt2x_JFSfPY0Gvd-9-YASUCBZoI&t=2024-02-22T00%3A59%3A11.464Z"/>
+<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/UserHome.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL1VzZXJIb21lLlBORyIsImlhdCI6MTcxMDIzNTA0MywiZXhwIjozMTI5MzU1MDQzfQ.LbFIFOxiRndxcC94E83OPwNxpP6EjTb0PVssjfaoxYg&t=2024-03-12T09%3A17%3A24.397Z"/>
 </div>
 
 #
@@ -28,5 +28,5 @@
 ## Admin Home
 
 <div align="center">
-<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/screenshots/adminHome.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvc2NyZWVuc2hvdHMvYWRtaW5Ib21lLnBuZyIsImlhdCI6MTcwODU2MzYwOSwiZXhwIjozMjg1MzYzNjA5fQ.UuX9ouWEz8S5khee2lS3JCeutG8iM2UVjODHGkgKNfk&t=2024-02-22T01%3A00%3A09.361Z"/>
+<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/AdminHome.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL0FkbWluSG9tZS5QTkciLCJpYXQiOjE3MTAyMzUwNzYsImV4cCI6MzEyOTM1NTA3Nn0.6M5Iz_ge1Yo1ykhn3wpVImlgTTNu4Bfhs0GFl2iSnE4&t=2024-03-12T09%3A17%3A56.562Z"/>
 </div>
