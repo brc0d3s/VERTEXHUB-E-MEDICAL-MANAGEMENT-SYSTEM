@@ -117,4 +117,7 @@ Public Class StartPage
         SignUp.Show()
     End Sub
 
+    Private Sub llHelp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llHelp.LinkClicked
+        Help.Show()
+    End Sub
 End Class

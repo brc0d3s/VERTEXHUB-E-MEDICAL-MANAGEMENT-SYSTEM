@@ -35,6 +35,7 @@ Partial Class StartPage
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.llHelp = New System.Windows.Forms.LinkLabel()
         Me.GrpBx.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -187,6 +188,21 @@ Partial Class StartPage
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'llHelp
+        '
+        Me.llHelp.AutoSize = True
+        Me.llHelp.BackColor = System.Drawing.Color.Transparent
+        Me.llHelp.Font = New System.Drawing.Font("MS Gothic", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llHelp.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llHelp.LinkColor = System.Drawing.Color.Blue
+        Me.llHelp.Location = New System.Drawing.Point(7, 601)
+        Me.llHelp.Name = "llHelp"
+        Me.llHelp.Size = New System.Drawing.Size(186, 21)
+        Me.llHelp.TabIndex = 11
+        Me.llHelp.TabStop = True
+        Me.llHelp.Text = "Help and Support"
+        Me.llHelp.VisitedLinkColor = System.Drawing.Color.SkyBlue
+        '
         'StartPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
@@ -194,6 +210,7 @@ Partial Class StartPage
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1071, 655)
+        Me.Controls.Add(Me.llHelp)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GrpBx)
         Me.Controls.Add(Me.Label3)
@@ -224,4 +241,5 @@ Partial Class StartPage
     Friend WithEvents lblUserType As Label
     Friend WithEvents cmbUserType As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents llHelp As LinkLabel
 End Class
