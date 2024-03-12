@@ -13,9 +13,11 @@ Public Class StartPage
 
     Private Sub cmbUserType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbUserType.SelectedIndexChanged
         If cmbUserType.Text.ToString().ToUpper() = "ADMIN" Then
+            lblID.Text = "ADMIN ID"
             llSignUp.Visible = False
             lblForgotPassword.Visible = False
         Else
+            lblID.Text = "USER ID"
             llSignUp.Visible = True
             lblForgotPassword.Visible = True
         End If

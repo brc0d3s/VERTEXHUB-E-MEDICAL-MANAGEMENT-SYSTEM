@@ -86,9 +86,9 @@ Partial Class ForgotPassword
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(188, 90)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 31)
+        Me.Label5.Size = New System.Drawing.Size(132, 31)
         Me.Label5.TabIndex = 28
-        Me.Label5.Text = "USER_ID"
+        Me.Label5.Text = "USER ID"
         '
         'txtPhone
         '

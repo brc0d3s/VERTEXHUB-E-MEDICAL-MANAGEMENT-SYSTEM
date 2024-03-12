@@ -152,7 +152,7 @@ Partial Class MedicalStore
         Me.llLogOut.BackColor = System.Drawing.Color.Transparent
         Me.llLogOut.Font = New System.Drawing.Font("Lucida Calligraphy", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llLogOut.LinkColor = System.Drawing.Color.Yellow
+        Me.llLogOut.LinkColor = System.Drawing.Color.Lime
         Me.llLogOut.Location = New System.Drawing.Point(959, 106)
         Me.llLogOut.Name = "llLogOut"
         Me.llLogOut.Size = New System.Drawing.Size(83, 21)

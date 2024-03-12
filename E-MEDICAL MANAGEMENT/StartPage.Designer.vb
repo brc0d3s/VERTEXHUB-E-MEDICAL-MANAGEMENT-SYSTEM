@@ -78,7 +78,7 @@ Partial Class StartPage
         Me.GrpBx.Controls.Add(Me.lblPassword)
         Me.GrpBx.Controls.Add(Me.lblID)
         Me.GrpBx.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GrpBx.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.GrpBx.ForeColor = System.Drawing.Color.IndianRed
         Me.GrpBx.ImeMode = System.Windows.Forms.ImeMode.Off
         Me.GrpBx.Location = New System.Drawing.Point(214, 99)
         Me.GrpBx.Name = "GrpBx"
@@ -102,7 +102,7 @@ Partial Class StartPage
         Me.lblUserType.AutoSize = True
         Me.lblUserType.BackColor = System.Drawing.Color.Transparent
         Me.lblUserType.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblUserType.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblUserType.Location = New System.Drawing.Point(35, 72)
         Me.lblUserType.Name = "lblUserType"
         Me.lblUserType.Size = New System.Drawing.Size(188, 33)
@@ -115,7 +115,7 @@ Partial Class StartPage
         Me.lblForgotPassword.AutoSize = True
         Me.lblForgotPassword.BackColor = System.Drawing.Color.Transparent
         Me.lblForgotPassword.ForeColor = System.Drawing.Color.Lime
-        Me.lblForgotPassword.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblForgotPassword.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblForgotPassword.Location = New System.Drawing.Point(202, 412)
         Me.lblForgotPassword.Name = "lblForgotPassword"
         Me.lblForgotPassword.Size = New System.Drawing.Size(189, 25)
@@ -158,7 +158,7 @@ Partial Class StartPage
         Me.lblPassword.AutoSize = True
         Me.lblPassword.BackColor = System.Drawing.Color.Transparent
         Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold)
-        Me.lblPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPassword.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblPassword.Location = New System.Drawing.Point(35, 283)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(191, 33)
@@ -170,12 +170,12 @@ Partial Class StartPage
         Me.lblID.AutoSize = True
         Me.lblID.BackColor = System.Drawing.Color.Transparent
         Me.lblID.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblID.ForeColor = System.Drawing.Color.RoyalBlue
         Me.lblID.Location = New System.Drawing.Point(35, 171)
         Me.lblID.Name = "lblID"
-        Me.lblID.Size = New System.Drawing.Size(186, 33)
+        Me.lblID.Size = New System.Drawing.Size(139, 33)
         Me.lblID.TabIndex = 7
-        Me.lblID.Text = "ID NUMBER"
+        Me.lblID.Text = "USER ID"
         '
         'PictureBox1
         '

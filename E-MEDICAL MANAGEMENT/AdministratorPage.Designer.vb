@@ -82,7 +82,7 @@ Partial Class AdministratorPage
         Me.llMedicalStore.BackColor = System.Drawing.Color.Transparent
         Me.llMedicalStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llMedicalStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llMedicalStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llMedicalStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llMedicalStore.Location = New System.Drawing.Point(12, 154)
         Me.llMedicalStore.Name = "llMedicalStore"
         Me.llMedicalStore.Size = New System.Drawing.Size(301, 45)
@@ -138,7 +138,7 @@ Partial Class AdministratorPage
         Me.llLaboratories.BackColor = System.Drawing.Color.Transparent
         Me.llLaboratories.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLaboratories.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llLaboratories.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llLaboratories.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llLaboratories.Location = New System.Drawing.Point(12, 572)
         Me.llLaboratories.Name = "llLaboratories"
         Me.llLaboratories.Size = New System.Drawing.Size(282, 45)
@@ -152,7 +152,7 @@ Partial Class AdministratorPage
         Me.llDiagnosis.BackColor = System.Drawing.Color.Transparent
         Me.llDiagnosis.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llDiagnosis.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llDiagnosis.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llDiagnosis.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llDiagnosis.Location = New System.Drawing.Point(12, 466)
         Me.llDiagnosis.Name = "llDiagnosis"
         Me.llDiagnosis.Size = New System.Drawing.Size(211, 45)
@@ -166,7 +166,7 @@ Partial Class AdministratorPage
         Me.llUsersDetails.BackColor = System.Drawing.Color.Transparent
         Me.llUsersDetails.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llUsersDetails.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llUsersDetails.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llUsersDetails.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llUsersDetails.Location = New System.Drawing.Point(754, 434)
         Me.llUsersDetails.Name = "llUsersDetails"
         Me.llUsersDetails.Size = New System.Drawing.Size(290, 45)
@@ -180,7 +180,7 @@ Partial Class AdministratorPage
         Me.llAdministrators.BackColor = System.Drawing.Color.Transparent
         Me.llAdministrators.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llAdministrators.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llAdministrators.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llAdministrators.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llAdministrators.Location = New System.Drawing.Point(754, 572)
         Me.llAdministrators.Name = "llAdministrators"
         Me.llAdministrators.Size = New System.Drawing.Size(329, 45)
@@ -202,7 +202,7 @@ Partial Class AdministratorPage
         Me.llblSystemLogs.BackColor = System.Drawing.Color.Transparent
         Me.llblSystemLogs.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llblSystemLogs.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llblSystemLogs.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llblSystemLogs.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llblSystemLogs.Location = New System.Drawing.Point(754, 289)
         Me.llblSystemLogs.Name = "llblSystemLogs"
         Me.llblSystemLogs.Size = New System.Drawing.Size(250, 45)
@@ -216,7 +216,7 @@ Partial Class AdministratorPage
         Me.llblBookings.BackColor = System.Drawing.Color.Transparent
         Me.llblBookings.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llblBookings.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llblBookings.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llblBookings.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.llblBookings.Location = New System.Drawing.Point(754, 154)
         Me.llblBookings.Name = "llblBookings"
         Me.llblBookings.Size = New System.Drawing.Size(198, 45)

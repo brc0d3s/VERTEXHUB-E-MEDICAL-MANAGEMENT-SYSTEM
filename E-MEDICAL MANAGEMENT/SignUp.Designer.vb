@@ -112,9 +112,9 @@ Partial Class SignUp
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(43, 99)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(140, 31)
+        Me.Label5.Size = New System.Drawing.Size(132, 31)
         Me.Label5.TabIndex = 17
-        Me.Label5.Text = "USER_ID"
+        Me.Label5.Text = "USER ID"
         '
         'Label4
         '
