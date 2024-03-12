@@ -29,14 +29,14 @@ Partial Class Laboratories
         Me.llMRIScan = New System.Windows.Forms.LinkLabel()
         Me.llECGScan = New System.Windows.Forms.LinkLabel()
         Me.llUltraSound = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.llblTEST = New System.Windows.Forms.LinkLabel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.lblName1 = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblUsername = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -141,19 +141,19 @@ Partial Class Laboratories
         Me.llUltraSound.TabStop = True
         Me.llUltraSound.Text = "ULTRASOUND"
         '
-        'LinkLabel1
+        'llblTEST
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Lucida Handwriting", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(35, 235)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(152, 63)
-        Me.LinkLabel1.TabIndex = 10
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "TEST"
+        Me.llblTEST.AutoSize = True
+        Me.llblTEST.BackColor = System.Drawing.Color.Transparent
+        Me.llblTEST.Font = New System.Drawing.Font("Lucida Handwriting", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblTEST.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblTEST.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.llblTEST.Location = New System.Drawing.Point(35, 235)
+        Me.llblTEST.Name = "llblTEST"
+        Me.llblTEST.Size = New System.Drawing.Size(152, 63)
+        Me.llblTEST.TabIndex = 10
+        Me.llblTEST.TabStop = True
+        Me.llblTEST.Text = "TEST"
         '
         'Label4
         '
@@ -217,7 +217,7 @@ Partial Class Laboratories
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.lblUsername)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -226,16 +226,16 @@ Partial Class Laboratories
         Me.Panel1.Size = New System.Drawing.Size(1075, 103)
         Me.Panel1.TabIndex = 18
         '
-        'Label1
+        'lblUsername
         '
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(816, 69)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(232, 31)
-        Me.Label1.TabIndex = 21
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.lblUsername.BackColor = System.Drawing.Color.Transparent
+        Me.lblUsername.Font = New System.Drawing.Font("Harrington", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblUsername.Location = New System.Drawing.Point(816, 69)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(232, 31)
+        Me.lblUsername.TabIndex = 21
+        Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'PictureBox1
         '
@@ -272,7 +272,7 @@ Partial Class Laboratories
         Me.Controls.Add(Me.lblName1)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.llblTEST)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.llUltraSound)
         Me.Controls.Add(Me.llECGScan)
@@ -299,14 +299,14 @@ Partial Class Laboratories
     Friend WithEvents llMRIScan As LinkLabel
     Friend WithEvents llECGScan As LinkLabel
     Friend WithEvents llUltraSound As LinkLabel
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents llblTEST As LinkLabel
     Friend WithEvents Label4 As Label
     Friend WithEvents lblName As Label
     Friend WithEvents llLogOut As LinkLabel
     Friend WithEvents lblName1 As Label
     Friend WithEvents btnBack As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblUsername As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
 End Class

@@ -1,8 +1,7 @@
 Imports Npgsql
-Imports System.Data
 
 Public Class AdministratorPage
-    Public Property str1 As String = StartPage.adminName.ToString()
+    Public Property str1 As String = StartPage.userName.ToString()
     Public Property TName As String
     Dim connection As New NpgsqlConnection(GetConnectionString())
 
@@ -10,14 +9,10 @@ Public Class AdministratorPage
         lblName.Text = str1
     End Sub
 
-    Private Sub AdministratorPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Me.Hide()
-        StartPage.Show()
-    End Sub
-
-
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        Me.Hide()
+        ' Log logout time
+        LogLogoutTime()
+        Me.Close()
         StartPage.Show()
     End Sub
 
@@ -40,7 +35,6 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgv.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
-            TableUpdate.txt1.Width = 391
             TableUpdate.Show()
             Me.Hide()
             TableUpdate.lblName.Text = str1
@@ -67,7 +61,6 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgv.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
-            TableUpdate.txt1.Width = 391
             TableUpdate.Show()
             Me.Hide()
             TableUpdate.lblName.Text = str1
@@ -104,9 +97,6 @@ Public Class AdministratorPage
             TableUpdate.lbl3.Text = "SEX"
             TableUpdate.lbl4.Text = "AGE"
             TableUpdate.lbl5.Text = "PHONE"
-            TableUpdate.txt1.Width = 391
-            TableUpdate.txt3.Width = 99
-            TableUpdate.txt4.Width = 99
             TableUpdate.lblTableName.Text = "USERS DETAILS"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -139,9 +129,6 @@ Public Class AdministratorPage
             TableUpdate.lbl1.Text = "USER ID"
             TableUpdate.lbl2.Text = "USER NAME"
             TableUpdate.lbl3.Text = "PASSWORD"
-            TableUpdate.txt1.Width = 391
-            TableUpdate.txt2.Width = 391
-            TableUpdate.txt3.Width = 391
             TableUpdate.lblTableName.Text = "ADMINISTRATOR TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -217,4 +204,57 @@ Public Class AdministratorPage
         End If
     End Sub
 
+    Private Sub llblBookings_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblBookings.LinkClicked
+        Try
+            TName = "bookings"
+            Dim cmd As New NpgsqlCommand("SELECT * FROM bookings", connection)
+            Dim ad As New NpgsqlDataAdapter(cmd)
+            Dim table As New DataTable
+            ad.Fill(table)
+            TableUpdate.dgv.DataSource = table
+            TableUpdate.lbl1.Text = "TYPE"
+            TableUpdate.Show()
+            Me.Hide()
+            TableUpdate.lblName.Text = str1
+            llPreventiveStore.Visible = False
+            llGeneralStore.Visible = False
+            llSpecializedStore.Visible = False
+            TableUpdate.lblTableName.Text = "USER BOOKINGS TABLE"
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        End Try
+        If connection.State = ConnectionState.Open Then
+            connection.Close()
+        End If
+    End Sub
+
+    Private Sub llblSystemLogs_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblSystemLogs.LinkClicked
+        Try
+            TName = "sys_log"
+            Dim cmd As New NpgsqlCommand("SELECT * FROM sys_log", connection)
+            Dim ad As New NpgsqlDataAdapter(cmd)
+            Dim table As New DataTable
+            ad.Fill(table)
+            TableUpdate.dgv.DataSource = table
+            TableUpdate.Show()
+            Me.Hide()
+            TableUpdate.lblName.Text = str1
+            llPreventiveStore.Visible = False
+            llGeneralStore.Visible = False
+            llSpecializedStore.Visible = False
+            TableUpdate.lbl6.Visible = False
+            TableUpdate.txt6.Visible = False
+            TableUpdate.lbl1.Text = "SYSTEM LOG ID"
+            TableUpdate.lbl2.Text = "USER ID"
+            TableUpdate.lbl3.Text = "USER NAME"
+            TableUpdate.lbl4.Text = "LOGIN TIME"
+            TableUpdate.lbl5.Text = "LOGOUT TIME"
+            TableUpdate.lblTableName.Text = "SYSTEM LOGS"
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        End Try
+        If connection.State = ConnectionState.Open Then
+            connection.Close()
+        End If
+    End Sub
 End Class

@@ -1,5 +1,4 @@
 Imports Npgsql
-Imports System.Data
 
 Public Class Laboratories
     Private gen As New DataTable()
@@ -15,13 +14,13 @@ Public Class Laboratories
     End Sub
 
     Private Sub Laboratories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lblName1.Text = StartPage.userName.ToString()
+        lblUsername.Text = StartPage.userName.ToString()
         llBloodTest.Visible = False
         llSugarTest.Visible = False
         llUrineTest.Visible = False
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llblTEST.LinkClicked
         llBloodTest.Visible = True
         llSugarTest.Visible = True
         llUrineTest.Visible = True
@@ -81,11 +80,10 @@ Public Class Laboratories
     End Sub
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        Me.Hide()
+        ' Log logout time
+        LogLogoutTime()
+        Me.Close()
         StartPage.Show()
     End Sub
 
-    Private Sub lblName1_Click(sender As Object, e As EventArgs) Handles lblName1.Click
-
-    End Sub
 End Class

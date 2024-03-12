@@ -1,5 +1,4 @@
 ﻿Imports Npgsql
-Imports System.Data
 
 Public Class MedicalStore
     Public gen As New DataTable()
@@ -71,11 +70,9 @@ Public Class MedicalStore
     End Sub
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        Me.Hide()
+        ' Log logout time
+        LogLogoutTime()
+        Me.Close()
         StartPage.Show()
-    End Sub
-
-    Private Sub lblName1_Click(sender As Object, e As EventArgs)
-
     End Sub
 End Class

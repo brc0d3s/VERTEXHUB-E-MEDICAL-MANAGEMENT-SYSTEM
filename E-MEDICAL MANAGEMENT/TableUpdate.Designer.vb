@@ -49,8 +49,8 @@ Partial Class TableUpdate
         Me.btnBak = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnPriview = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -95,7 +95,7 @@ Partial Class TableUpdate
         '
         Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgv.BackgroundColor = System.Drawing.Color.White
+        Me.dgv.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dgv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
@@ -335,29 +335,29 @@ Partial Class TableUpdate
         Me.Panel2.Size = New System.Drawing.Size(1078, 11)
         Me.Panel2.TabIndex = 39
         '
-        'Button1
+        'btnPrint
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(160, 593)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(229, 54)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "PRINT"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPrint.Location = New System.Drawing.Point(160, 593)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(229, 54)
+        Me.btnPrint.TabIndex = 40
+        Me.btnPrint.Text = "PRINT"
+        Me.btnPrint.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnPriview
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button2.Location = New System.Drawing.Point(622, 593)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(229, 54)
-        Me.Button2.TabIndex = 41
-        Me.Button2.Text = "PRINT PRIVIEW"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnPriview.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPriview.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPriview.ForeColor = System.Drawing.Color.Gainsboro
+        Me.btnPriview.Location = New System.Drawing.Point(622, 593)
+        Me.btnPriview.Name = "btnPriview"
+        Me.btnPriview.Size = New System.Drawing.Size(229, 54)
+        Me.btnPriview.TabIndex = 41
+        Me.btnPriview.Text = "PRINT PRIVIEW"
+        Me.btnPriview.UseVisualStyleBackColor = False
         '
         'TableUpdate
         '
@@ -366,8 +366,8 @@ Partial Class TableUpdate
         Me.BackColor = System.Drawing.Color.DimGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 659)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnPriview)
+        Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBak)
@@ -426,6 +426,6 @@ Partial Class TableUpdate
     Friend WithEvents btnBak As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnPriview As Button
 End Class

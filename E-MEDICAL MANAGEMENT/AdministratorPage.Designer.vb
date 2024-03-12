@@ -35,6 +35,8 @@ Partial Class AdministratorPage
         Me.llUsersDetails = New System.Windows.Forms.LinkLabel()
         Me.llAdministrators = New System.Windows.Forms.LinkLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.llblSystemLogs = New System.Windows.Forms.LinkLabel()
+        Me.llblBookings = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'Label3
@@ -109,7 +111,7 @@ Partial Class AdministratorPage
         Me.llSpecializedStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llSpecializedStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llSpecializedStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llSpecializedStore.Location = New System.Drawing.Point(27, 309)
+        Me.llSpecializedStore.Location = New System.Drawing.Point(27, 289)
         Me.llSpecializedStore.Name = "llSpecializedStore"
         Me.llSpecializedStore.Size = New System.Drawing.Size(371, 45)
         Me.llSpecializedStore.TabIndex = 20
@@ -123,7 +125,7 @@ Partial Class AdministratorPage
         Me.llPreventiveStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llPreventiveStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llPreventiveStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.llPreventiveStore.Location = New System.Drawing.Point(27, 402)
+        Me.llPreventiveStore.Location = New System.Drawing.Point(27, 366)
         Me.llPreventiveStore.Name = "llPreventiveStore"
         Me.llPreventiveStore.Size = New System.Drawing.Size(365, 45)
         Me.llPreventiveStore.TabIndex = 19
@@ -151,7 +153,7 @@ Partial Class AdministratorPage
         Me.llDiagnosis.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llDiagnosis.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llDiagnosis.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llDiagnosis.Location = New System.Drawing.Point(754, 154)
+        Me.llDiagnosis.Location = New System.Drawing.Point(12, 466)
         Me.llDiagnosis.Name = "llDiagnosis"
         Me.llDiagnosis.Size = New System.Drawing.Size(211, 45)
         Me.llDiagnosis.TabIndex = 21
@@ -165,7 +167,7 @@ Partial Class AdministratorPage
         Me.llUsersDetails.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llUsersDetails.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llUsersDetails.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llUsersDetails.Location = New System.Drawing.Point(754, 366)
+        Me.llUsersDetails.Location = New System.Drawing.Point(754, 434)
         Me.llUsersDetails.Name = "llUsersDetails"
         Me.llUsersDetails.Size = New System.Drawing.Size(290, 45)
         Me.llUsersDetails.TabIndex = 22
@@ -194,6 +196,34 @@ Partial Class AdministratorPage
         Me.Panel1.Size = New System.Drawing.Size(1078, 11)
         Me.Panel1.TabIndex = 39
         '
+        'llblSystemLogs
+        '
+        Me.llblSystemLogs.AutoSize = True
+        Me.llblSystemLogs.BackColor = System.Drawing.Color.Transparent
+        Me.llblSystemLogs.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblSystemLogs.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblSystemLogs.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llblSystemLogs.Location = New System.Drawing.Point(754, 289)
+        Me.llblSystemLogs.Name = "llblSystemLogs"
+        Me.llblSystemLogs.Size = New System.Drawing.Size(250, 45)
+        Me.llblSystemLogs.TabIndex = 40
+        Me.llblSystemLogs.TabStop = True
+        Me.llblSystemLogs.Text = "SYSTEM LOGS"
+        '
+        'llblBookings
+        '
+        Me.llblBookings.AutoSize = True
+        Me.llblBookings.BackColor = System.Drawing.Color.Transparent
+        Me.llblBookings.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.llblBookings.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
+        Me.llblBookings.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.llblBookings.Location = New System.Drawing.Point(754, 154)
+        Me.llblBookings.Name = "llblBookings"
+        Me.llblBookings.Size = New System.Drawing.Size(198, 45)
+        Me.llblBookings.TabIndex = 41
+        Me.llblBookings.TabStop = True
+        Me.llblBookings.Text = "BOOKINGS"
+        '
         'AdministratorPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -201,6 +231,8 @@ Partial Class AdministratorPage
         Me.BackColor = System.Drawing.Color.DimGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.llblBookings)
+        Me.Controls.Add(Me.llblSystemLogs)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.llAdministrators)
         Me.Controls.Add(Me.llUsersDetails)
@@ -234,4 +266,6 @@ Partial Class AdministratorPage
     Friend WithEvents llUsersDetails As LinkLabel
     Friend WithEvents llAdministrators As LinkLabel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents llblSystemLogs As LinkLabel
+    Friend WithEvents llblBookings As LinkLabel
 End Class

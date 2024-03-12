@@ -1,11 +1,12 @@
 ﻿Imports Npgsql
-Imports System.Data
 
 Public Class TableUpdate
     Private connection As New NpgsqlConnection(GetConnectionString())
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        Me.Hide()
+        ' Log logout time
+        LogLogoutTime()
+        Me.Close()
         StartPage.Show()
     End Sub
 
@@ -120,4 +121,11 @@ Public Class TableUpdate
         txt6.Clear()
     End Sub
 
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+
+    End Sub
+
+    Private Sub btnPriview_Click(sender As Object, e As EventArgs) Handles btnPriview.Click
+
+    End Sub
 End Class

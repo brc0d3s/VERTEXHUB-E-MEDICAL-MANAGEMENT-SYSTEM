@@ -4,22 +4,24 @@
     End Sub
 
     Private Sub btnLaboratories_Click(sender As Object, e As EventArgs) Handles btnLaboratories.Click
-        Me.Hide()
+        Me.Close()
         Laboratories.Show()
     End Sub
 
     Private Sub btnDiagnosis_Click(sender As Object, e As EventArgs) Handles btnDiagnosis.Click
-        Me.Hide()
+        Me.Close()
         Diagnosis.Show()
     End Sub
 
     Private Sub btnMedicalStore_Click(sender As Object, e As EventArgs) Handles btnMedicalStore.Click
-        Me.Hide()
+        Me.Close()
         MedicalStore.Show()
     End Sub
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
-        Me.Hide()
+        ' Log logout time
+        LogLogoutTime()
+        Me.Close()
         StartPage.Show()
     End Sub
 End Class

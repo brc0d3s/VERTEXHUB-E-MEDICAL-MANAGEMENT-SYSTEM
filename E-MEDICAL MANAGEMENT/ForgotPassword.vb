@@ -1,5 +1,4 @@
 Imports Npgsql
-Imports System.Data
 
 Public Class ForgotPassword
     Dim ResetPasswordHash As String

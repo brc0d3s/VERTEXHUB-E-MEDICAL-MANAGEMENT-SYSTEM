@@ -222,6 +222,7 @@
     <Compile Include="StartPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="System_Log.vb" />
     <Compile Include="TableUpdate.Designer.vb">
       <DependentUpon>TableUpdate.vb</DependentUpon>
     </Compile>

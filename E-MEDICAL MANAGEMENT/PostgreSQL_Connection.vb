@@ -1,8 +1,6 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports Npgsql
-
 Module PostgreSQL_Connection
 
     Public Function GetConnectionString() As String
