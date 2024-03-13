@@ -49,23 +49,28 @@ Public Class Dispaly
     Private Sub btnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
         'Printing to be implemented after booking
         Try
-            Dim col1 As String = txtName.Text
-            Dim col2 As String = txtAddress.Text
-            Dim col3 As String = txtPhone.Text
-            Dim col4 As String = txtTime.Text
             Dim bookingDate As DateTime = DateTime.Now
+            Dim service As String = grpDetails.Text
+            Dim DocCenterName As String = txtName.Text
             Dim consultDate As Date = dtpkConsult.Value
+            Dim Address As String = txtAddress.Text
+            Dim Phone As String = txtPhone.Text
+            Dim Ohours As String = txtTime.Text
+
+
 
             connection.Open()
-            Using cmd As New NpgsqlCommand("INSERT INTO bookings(user_id, user_name, colum1, colum2, colum3, colum4, booking_date, consultation_date) VALUES(@UserId, @Name, @Col1, @Col2, @Col3, @Col4, @bookingDate, @consultDate)", connection)
+            Using cmd As New NpgsqlCommand("INSERT INTO bookings(booking_date, user_id, user_name, service, doctor_or_center, consultation_date,  address, operation_hours, phone) VALUES(@bookingDate, @UserId, @Name, @service, @DocCenterName, @consultDate, @Address, @OperationHours, @Phone)", connection)
+                cmd.Parameters.AddWithValue("@bookingDate", bookingDate)
                 cmd.Parameters.AddWithValue("@UserId", StartPage.userID)
                 cmd.Parameters.AddWithValue("@Name", StartPage.userName)
-                cmd.Parameters.AddWithValue("@Col1", col1)
-                cmd.Parameters.AddWithValue("@Col2", col2)
-                cmd.Parameters.AddWithValue("@Col3", col3)
-                cmd.Parameters.AddWithValue("@Col4", col4)
-                cmd.Parameters.AddWithValue("@bookingDate", bookingDate)
+                cmd.Parameters.AddWithValue("@service", service)
+                cmd.Parameters.AddWithValue("@DocCenterName", DocCenterName)
                 cmd.Parameters.AddWithValue("@consultDate", consultDate)
+                cmd.Parameters.AddWithValue("@Address", Address)
+                cmd.Parameters.AddWithValue("@OperationHours", Ohours)
+                cmd.Parameters.AddWithValue("@Phone", Phone)
+
                 i = cmd.ExecuteNonQuery()
             End Using
 

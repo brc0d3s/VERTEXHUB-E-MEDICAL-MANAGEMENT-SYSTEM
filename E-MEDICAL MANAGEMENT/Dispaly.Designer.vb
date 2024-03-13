@@ -261,10 +261,13 @@ Partial Class Dispaly
         Me.dtpkConsult.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpkConsult.CalendarMonthBackground = System.Drawing.Color.WhiteSmoke
         Me.dtpkConsult.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtpkConsult.Location = New System.Drawing.Point(820, 498)
+        Me.dtpkConsult.Location = New System.Drawing.Point(761, 498)
+        Me.dtpkConsult.MaxDate = New Date(2034, 6, 21, 0, 0, 0, 0)
+        Me.dtpkConsult.MinDate = New Date(2024, 3, 13, 12, 0, 54, 0)
         Me.dtpkConsult.Name = "dtpkConsult"
-        Me.dtpkConsult.Size = New System.Drawing.Size(238, 29)
+        Me.dtpkConsult.Size = New System.Drawing.Size(297, 29)
         Me.dtpkConsult.TabIndex = 42
+        Me.dtpkConsult.Value = New Date(2024, 3, 13, 12, 0, 54, 0)
         '
         'Dispaly
         '
