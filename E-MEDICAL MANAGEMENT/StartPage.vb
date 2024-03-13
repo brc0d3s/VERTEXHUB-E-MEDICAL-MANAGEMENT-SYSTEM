@@ -16,10 +16,12 @@ Public Class StartPage
             lblID.Text = "ADMIN ID"
             llSignUp.Visible = False
             lblForgotPassword.Visible = False
+            llHelp.Visible = False
         Else
             lblID.Text = "USER ID"
             llSignUp.Visible = True
             lblForgotPassword.Visible = True
+            llHelp.Visible = True
         End If
     End Sub
 
