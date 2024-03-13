@@ -35,10 +35,13 @@ Public Class Laboratories
             cmd.Parameters.AddWithValue("@name", labType)
             Dim pd As New NpgsqlDataAdapter(cmd)
             pd.Fill(gen)
-            For i = 0 To gen.Rows.Count - 1
-                Dispaly.lstName.Items.Add(gen.Rows(i)(1).ToString)
+           For i = 1 To gen.Columns.Count - 1 ' Start from index 1 to skip the first column
+            For j = 0 To gen.Rows.Count - 1
+                Dispaly.lstName.Items.Add(gen.Rows(j)(i).ToString)
                 Dispaly.lstName.Items.Add(vbNewLine)
             Next
+            Dispaly.lstName.Items.Add(vbNewLine) ' Add a new line between columns
+        Next
             Dispaly.result(gen)
             Dispaly.Show()
         Catch ex As Exception
