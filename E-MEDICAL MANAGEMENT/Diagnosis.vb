@@ -32,8 +32,9 @@ Public Class Diagnosis
                     Dispaly.lstName.Items.Clear()
 
                     ' Add items to Dispaly.lstName using gen DataTable
-                    For Each row As DataRow In gen.Rows
-                        Dispaly.lstName.Items.Add(row(1).ToString())
+                   ' Start from the second column (index 1)
+                    For i As Integer = 1 To gen.Columns.Count - 1
+                        Dispaly.lstName.Items.Add(row(i).ToString())
                         Dispaly.lstName.Items.Add(vbNewLine)
                     Next
                 End Using
