@@ -31,27 +31,25 @@ Public Class Laboratories
             gen.Clear()
             connection.Open()
             Dispaly.grpDetails.Text = labType
-            Dim cmd As New NpgsqlCommand("SELECT * FROM Laboratories WHERE TYPE=@name", connection)
+            Dim cmd As New NpgsqlCommand("SELECT type, name, address, phone, time FROM Laboratories WHERE TYPE=@name", connection)
             cmd.Parameters.AddWithValue("@name", labType)
             Dim pd As New NpgsqlDataAdapter(cmd)
             pd.Fill(gen)
-           For i = 1 To gen.Columns.Count - 1 ' Start from index 1 to skip the first column
-            For j = 0 To gen.Rows.Count - 1
-                Dispaly.lstName.Items.Add(gen.Rows(j)(i).ToString)
+            For i = 0 To gen.Rows.Count - 1 ' Start the loop from index 0
+                Dispaly.lstName.Items.Add(gen.Rows(i)(1).ToString)
                 Dispaly.lstName.Items.Add(vbNewLine)
             Next
-            Dispaly.lstName.Items.Add(vbNewLine) ' Add a new line between columns
-        Next
             Dispaly.result(gen)
             Dispaly.Show()
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         Finally
             connection.Close()
+            ' Make sure to move the control hiding inside the Finally block
+            llBloodTest.Visible = False
+            llSugarTest.Visible = False
+            llUrineTest.Visible = False
         End Try
-        llBloodTest.Visible = False
-        llSugarTest.Visible = False
-        llUrineTest.Visible = False
     End Sub
 
     Private Sub llXRay_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llXRay.LinkClicked

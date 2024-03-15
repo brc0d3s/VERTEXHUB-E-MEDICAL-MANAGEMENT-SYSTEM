@@ -20,7 +20,7 @@ Public Class Diagnosis
     Private Sub ExecuteQueryAndDisplayResults(type As String, displayText As String)
         Try
             gen.Clear()
-            Dim query As String = "SELECT * FROM diagnosis WHERE TYPE = @name"
+            Dim query As String = "SELECT type, name, address, phone, time FROM diagnosis WHERE TYPE = @name"
             Using cmd As New NpgsqlCommand(query, connection)
                 cmd.Parameters.AddWithValue("@name", type)
                 connection.Open()
@@ -32,9 +32,8 @@ Public Class Diagnosis
                     Dispaly.lstName.Items.Clear()
 
                     ' Add items to Dispaly.lstName using gen DataTable
-                   ' Start from the second column (index 1)
-                    For i As Integer = 1 To gen.Columns.Count - 1
-                        Dispaly.lstName.Items.Add(row(i).ToString())
+                    For Each row As DataRow In gen.Rows
+                        Dispaly.lstName.Items.Add(row(1).ToString())
                         Dispaly.lstName.Items.Add(vbNewLine)
                     Next
                 End Using
