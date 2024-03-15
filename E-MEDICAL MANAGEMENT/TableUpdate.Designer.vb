@@ -172,9 +172,10 @@ Partial Class TableUpdate
         Me.lbl1.BackColor = System.Drawing.Color.Transparent
         Me.lbl1.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl1.ForeColor = System.Drawing.Color.Lime
-        Me.lbl1.Location = New System.Drawing.Point(43, 110)
+        Me.lbl1.Location = New System.Drawing.Point(38, 110)
         Me.lbl1.Name = "lbl1"
-        Me.lbl1.Size = New System.Drawing.Size(79, 37)
+        Me.lbl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl1.Size = New System.Drawing.Size(168, 37)
         Me.lbl1.TabIndex = 24
         Me.lbl1.Text = "S.NO"
         Me.lbl1.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -186,7 +187,8 @@ Partial Class TableUpdate
         Me.lbl2.ForeColor = System.Drawing.Color.Lime
         Me.lbl2.Location = New System.Drawing.Point(38, 168)
         Me.lbl2.Name = "lbl2"
-        Me.lbl2.Size = New System.Drawing.Size(104, 37)
+        Me.lbl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl2.Size = New System.Drawing.Size(171, 37)
         Me.lbl2.TabIndex = 25
         Me.lbl2.Text = "NAME"
         Me.lbl2.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -196,9 +198,10 @@ Partial Class TableUpdate
         Me.lbl3.BackColor = System.Drawing.Color.Transparent
         Me.lbl3.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl3.ForeColor = System.Drawing.Color.Lime
-        Me.lbl3.Location = New System.Drawing.Point(32, 225)
+        Me.lbl3.Location = New System.Drawing.Point(38, 225)
         Me.lbl3.Name = "lbl3"
-        Me.lbl3.Size = New System.Drawing.Size(145, 37)
+        Me.lbl3.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl3.Size = New System.Drawing.Size(174, 37)
         Me.lbl3.TabIndex = 26
         Me.lbl3.Text = "ADDRESS"
         Me.lbl3.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -210,7 +213,8 @@ Partial Class TableUpdate
         Me.lbl4.ForeColor = System.Drawing.Color.Lime
         Me.lbl4.Location = New System.Drawing.Point(38, 284)
         Me.lbl4.Name = "lbl4"
-        Me.lbl4.Size = New System.Drawing.Size(110, 37)
+        Me.lbl4.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl4.Size = New System.Drawing.Size(177, 37)
         Me.lbl4.TabIndex = 27
         Me.lbl4.Text = "PHONE"
         Me.lbl4.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -222,7 +226,8 @@ Partial Class TableUpdate
         Me.lbl5.ForeColor = System.Drawing.Color.Lime
         Me.lbl5.Location = New System.Drawing.Point(38, 345)
         Me.lbl5.Name = "lbl5"
-        Me.lbl5.Size = New System.Drawing.Size(89, 37)
+        Me.lbl5.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl5.Size = New System.Drawing.Size(174, 37)
         Me.lbl5.TabIndex = 28
         Me.lbl5.Text = "TIME"
         Me.lbl5.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -232,9 +237,10 @@ Partial Class TableUpdate
         Me.lbl6.BackColor = System.Drawing.Color.Transparent
         Me.lbl6.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl6.ForeColor = System.Drawing.Color.Lime
-        Me.lbl6.Location = New System.Drawing.Point(32, 400)
+        Me.lbl6.Location = New System.Drawing.Point(38, 400)
         Me.lbl6.Name = "lbl6"
-        Me.lbl6.Size = New System.Drawing.Size(156, 37)
+        Me.lbl6.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lbl6.Size = New System.Drawing.Size(176, 37)
         Me.lbl6.TabIndex = 29
         Me.lbl6.Text = "PASSWORD"
         Me.lbl6.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -243,7 +249,7 @@ Partial Class TableUpdate
         '
         Me.txt1.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt1.ForeColor = System.Drawing.Color.Black
-        Me.txt1.Location = New System.Drawing.Point(209, 105)
+        Me.txt1.Location = New System.Drawing.Point(259, 105)
         Me.txt1.Name = "txt1"
         Me.txt1.Size = New System.Drawing.Size(346, 42)
         Me.txt1.TabIndex = 30
@@ -253,7 +259,7 @@ Partial Class TableUpdate
         Me.txt2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txt2.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt2.ForeColor = System.Drawing.Color.Black
-        Me.txt2.Location = New System.Drawing.Point(209, 163)
+        Me.txt2.Location = New System.Drawing.Point(259, 163)
         Me.txt2.Name = "txt2"
         Me.txt2.Size = New System.Drawing.Size(346, 42)
         Me.txt2.TabIndex = 31
@@ -264,7 +270,7 @@ Partial Class TableUpdate
         Me.txt3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
         Me.txt3.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt3.ForeColor = System.Drawing.Color.Black
-        Me.txt3.Location = New System.Drawing.Point(209, 220)
+        Me.txt3.Location = New System.Drawing.Point(259, 220)
         Me.txt3.Name = "txt3"
         Me.txt3.Size = New System.Drawing.Size(346, 42)
         Me.txt3.TabIndex = 32
@@ -273,7 +279,7 @@ Partial Class TableUpdate
         '
         Me.txt4.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt4.ForeColor = System.Drawing.Color.Black
-        Me.txt4.Location = New System.Drawing.Point(209, 279)
+        Me.txt4.Location = New System.Drawing.Point(259, 279)
         Me.txt4.Name = "txt4"
         Me.txt4.Size = New System.Drawing.Size(346, 42)
         Me.txt4.TabIndex = 33
@@ -282,7 +288,7 @@ Partial Class TableUpdate
         '
         Me.txt5.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt5.ForeColor = System.Drawing.Color.Black
-        Me.txt5.Location = New System.Drawing.Point(209, 340)
+        Me.txt5.Location = New System.Drawing.Point(259, 340)
         Me.txt5.Name = "txt5"
         Me.txt5.Size = New System.Drawing.Size(346, 42)
         Me.txt5.TabIndex = 34
@@ -291,7 +297,7 @@ Partial Class TableUpdate
         '
         Me.txt6.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt6.ForeColor = System.Drawing.Color.Black
-        Me.txt6.Location = New System.Drawing.Point(209, 395)
+        Me.txt6.Location = New System.Drawing.Point(259, 395)
         Me.txt6.Name = "txt6"
         Me.txt6.Size = New System.Drawing.Size(346, 42)
         Me.txt6.TabIndex = 35

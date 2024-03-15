@@ -41,8 +41,12 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
-            TableUpdate.lbl6.Visible = False
-            TableUpdate.txt6.Visible = False
+            TableUpdate.lbl1.Text = "ID"
+            TableUpdate.lbl2.Text = "TYPE"
+            TableUpdate.lbl3.Text = "NAME"
+            TableUpdate.lbl4.Text = "ADDRESS"
+            TableUpdate.lbl5.Text = "PHONE"
+            TableUpdate.lbl6.Text = "TIME"
             TableUpdate.lblTableName.Text = "LABORATORIES TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -67,8 +71,12 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
-            TableUpdate.lbl6.Visible = False
-            TableUpdate.txt6.Visible = False
+            TableUpdate.lbl1.Text = "ID"
+            TableUpdate.lbl2.Text = "TYPE"
+            TableUpdate.lbl3.Text = "NAME"
+            TableUpdate.lbl4.Text = "ADDRESS"
+            TableUpdate.lbl5.Text = "PHONE"
+            TableUpdate.lbl6.Text = "TIME"
             TableUpdate.lblTableName.Text = "DIAGNOSIS TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -92,8 +100,10 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
-            TableUpdate.lbl1.Text = "USER ID"
-            TableUpdate.lbl2.Text = "USER NAME"
+            TableUpdate.lbl6.Visible = False
+            TableUpdate.txt6.Visible = False
+            TableUpdate.lbl1.Text = "ID"
+            TableUpdate.lbl2.Text = "NAME"
             TableUpdate.lbl3.Text = "SEX"
             TableUpdate.lbl4.Text = "AGE"
             TableUpdate.lbl5.Text = "PHONE"
@@ -120,15 +130,16 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
+            TableUpdate.lbl3.Visible = False
+            TableUpdate.txt3.Visible = False
             TableUpdate.lbl4.Visible = False
             TableUpdate.txt4.Visible = False
             TableUpdate.lbl5.Visible = False
             TableUpdate.txt5.Visible = False
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
-            TableUpdate.lbl1.Text = "USER ID"
-            TableUpdate.lbl2.Text = "USER NAME"
-            TableUpdate.lbl3.Text = "PASSWORD"
+            TableUpdate.lbl1.Text = "ID"
+            TableUpdate.lbl2.Text = "NAME"
             TableUpdate.lblTableName.Text = "ADMINISTRATOR TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -219,6 +230,12 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
+            TableUpdate.lbl1.Text = "BK ID"
+            TableUpdate.lbl2.Text = "ID"
+            TableUpdate.lbl3.Text = "Service"
+            TableUpdate.lbl4.Text = "Name"
+            TableUpdate.lbl5.Text = "Con Date"
+            TableUpdate.lbl6.Text = "Address"
             TableUpdate.lblTableName.Text = "USER BOOKINGS TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -244,11 +261,13 @@ Public Class AdministratorPage
             llSpecializedStore.Visible = False
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
-            TableUpdate.lbl1.Text = "SYSTEM LOG ID"
-            TableUpdate.lbl2.Text = "USER ID"
-            TableUpdate.lbl3.Text = "USER NAME"
-            TableUpdate.lbl4.Text = "LOGIN TIME"
-            TableUpdate.lbl5.Text = "LOGOUT TIME"
+            TableUpdate.btnAddNew.Visible = False
+            TableUpdate.btnUpdate.Visible = False
+            TableUpdate.lbl1.Text = "LOG ID"
+            TableUpdate.lbl2.Text = "ID"
+            TableUpdate.lbl3.Text = "NAME"
+            TableUpdate.lbl4.Text = "L.IN TIME"
+            TableUpdate.lbl5.Text = "L.OUT TIME"
             TableUpdate.lblTableName.Text = "SYSTEM LOGS"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)

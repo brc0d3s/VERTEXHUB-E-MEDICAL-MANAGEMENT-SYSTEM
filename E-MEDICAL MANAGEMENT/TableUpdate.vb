@@ -117,7 +117,7 @@ Public Class TableUpdate
     End Sub
 
     Private Sub btnBak_Click(sender As Object, e As EventArgs) Handles btnBak.Click
-        Me.Hide()
+        Me.Close()
         AdministratorPage.Show()
         txt3.Clear()
         txt1.Clear()
