@@ -33,7 +33,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
             TableUpdate.Show()
             Me.Hide()
@@ -59,7 +59,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
             TableUpdate.Show()
             Me.Hide()
@@ -85,7 +85,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.Show()
             Me.Hide()
             TableUpdate.lblName.Text = str1
@@ -113,7 +113,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.Show()
             Me.Hide()
             TableUpdate.lblName.Text = str1
@@ -145,7 +145,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "GENERAL STORE TABLE"
             TableUpdate.Show()
             Me.Hide()
@@ -167,7 +167,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "SPECIALIZED STORE TABLE"
             TableUpdate.Show()
             Me.Hide()
@@ -189,7 +189,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "PREVENTIVE STORE TABLE"
             TableUpdate.Show()
             Me.Hide()
@@ -211,7 +211,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
             TableUpdate.Show()
             Me.Hide()
@@ -235,7 +235,7 @@ Public Class AdministratorPage
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            TableUpdate.dgv.DataSource = table
+            TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.Show()
             Me.Hide()
             TableUpdate.lblName.Text = str1

@@ -132,33 +132,45 @@ Partial Class Dispaly
         '
         'txtName
         '
+        Me.txtName.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtName.Enabled = False
         Me.txtName.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtName.Location = New System.Drawing.Point(699, 219)
         Me.txtName.Name = "txtName"
+        Me.txtName.ReadOnly = True
         Me.txtName.Size = New System.Drawing.Size(360, 40)
         Me.txtName.TabIndex = 8
         '
         'txtPhone
         '
+        Me.txtPhone.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtPhone.Enabled = False
         Me.txtPhone.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPhone.Location = New System.Drawing.Point(698, 348)
         Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.ReadOnly = True
         Me.txtPhone.Size = New System.Drawing.Size(360, 40)
         Me.txtPhone.TabIndex = 9
         '
         'txtTime
         '
+        Me.txtTime.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtTime.Enabled = False
         Me.txtTime.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTime.Location = New System.Drawing.Point(698, 414)
         Me.txtTime.Name = "txtTime"
+        Me.txtTime.ReadOnly = True
         Me.txtTime.Size = New System.Drawing.Size(360, 40)
         Me.txtTime.TabIndex = 10
         '
         'txtAddress
         '
+        Me.txtAddress.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.txtAddress.Enabled = False
         Me.txtAddress.Font = New System.Drawing.Font("Monotype Corsiva", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddress.Location = New System.Drawing.Point(698, 276)
         Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.ReadOnly = True
         Me.txtAddress.Size = New System.Drawing.Size(360, 47)
         Me.txtAddress.TabIndex = 11
         Me.txtAddress.Text = ""

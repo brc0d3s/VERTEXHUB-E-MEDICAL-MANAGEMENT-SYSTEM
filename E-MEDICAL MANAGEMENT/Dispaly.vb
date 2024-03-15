@@ -14,6 +14,7 @@ Public Class Dispaly
 
     Private Sub Dispaly_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblName1.Text = StartPage.userName.ToString()
+        dtpkConsult.Value = DateTime.Today
     End Sub
 
     Private Sub Dispaly_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
@@ -51,7 +52,6 @@ Public Class Dispaly
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
     End Sub
-
 
     ' Print functionalities
     Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
@@ -117,39 +117,54 @@ Public Class Dispaly
     Private Sub btnBook_Click(sender As Object, e As EventArgs) Handles btnBook.Click
         'Printing to be implemented after booking
         Try
-            'Booking data
-            Dim bookingDate As DateTime = DateTime.Now
-            Dim service As String = grpDetails.Text
-            Dim DocCenterName As String = txtName.Text
-            Dim consultDate As Date = dtpkConsult.Value
-            Dim Address As String = txtAddress.Text
-            Dim Phone As String = txtPhone.Text
-            Dim Ohours As String = txtTime.Text
+            If ValidateConsultationDate() Then
+                'Booking data
+                Dim bookingDate As DateTime = DateTime.Now
+                Dim service As String = grpDetails.Text
+                Dim DocCenterName As String = txtName.Text
+                Dim consultDate As Date = dtpkConsult.Value
+                Dim Address As String = txtAddress.Text
+                Dim Phone As String = txtPhone.Text
+                Dim Ohours As String = txtTime.Text
 
-            connection.Open()
-            Using cmd As New NpgsqlCommand("INSERT INTO bookings(booking_date, user_id, user_name, service, doctor_or_center, consultation_date,  address, operation_hours, phone) VALUES(@bookingDate, @UserId, @Name, @service, @DocCenterName, @consultDate, @Address, @OperationHours, @Phone)", connection)
-                cmd.Parameters.AddWithValue("@bookingDate", bookingDate)
-                cmd.Parameters.AddWithValue("@UserId", StartPage.userID)
-                cmd.Parameters.AddWithValue("@Name", StartPage.userName)
-                cmd.Parameters.AddWithValue("@service", service)
-                cmd.Parameters.AddWithValue("@DocCenterName", DocCenterName)
-                cmd.Parameters.AddWithValue("@consultDate", consultDate)
-                cmd.Parameters.AddWithValue("@Address", Address)
-                cmd.Parameters.AddWithValue("@OperationHours", Ohours)
-                cmd.Parameters.AddWithValue("@Phone", Phone)
+                connection.Open()
+                Using cmd As New NpgsqlCommand("INSERT INTO bookings(booking_date, user_id, user_name, service, doctor_or_center, consultation_date,  address, operation_hours, phone) VALUES(@bookingDate, @UserId, @Name, @service, @DocCenterName, @consultDate, @Address, @OperationHours, @Phone)", connection)
+                    cmd.Parameters.AddWithValue("@bookingDate", bookingDate)
+                    cmd.Parameters.AddWithValue("@UserId", StartPage.userID)
+                    cmd.Parameters.AddWithValue("@Name", StartPage.userName)
+                    cmd.Parameters.AddWithValue("@service", service)
+                    cmd.Parameters.AddWithValue("@DocCenterName", DocCenterName)
+                    cmd.Parameters.AddWithValue("@consultDate", consultDate)
+                    cmd.Parameters.AddWithValue("@Address", Address)
+                    cmd.Parameters.AddWithValue("@OperationHours", Ohours)
+                    cmd.Parameters.AddWithValue("@Phone", Phone)
 
-                i = cmd.ExecuteNonQuery()
-            End Using
+                    i = cmd.ExecuteNonQuery()
+                End Using
 
-            If (i > 0) Then
-                MsgBox("Service Successfully Booked! Please Wait Printing your Receipt")
-                PPD.Document = PD
-                PPD.ShowDialog()
+                If (i > 0) Then
+                    MsgBox("Service Successfully Booked! Please Wait Printing your Receipt")
+                    PPD.Document = PD
+                    PPD.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         Finally
-            connection.Close()
+            If connection.State = ConnectionState.Open Then
+                connection.Close()
+            End If
         End Try
     End Sub
+
+    'Consultation date setting
+    Private Function ValidateConsultationDate() As Boolean
+        If dtpkConsult.Value < DateTime.Today Then
+            MessageBox.Show("Please select a date from today onwards.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            dtpkConsult.Value = DateTime.Today ' Reset the value to today
+            Return False
+        Else
+            Return True
+        End If
+    End Function
 End Class

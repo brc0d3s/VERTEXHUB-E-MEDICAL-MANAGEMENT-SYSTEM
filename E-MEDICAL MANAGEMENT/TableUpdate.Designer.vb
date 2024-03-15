@@ -28,7 +28,7 @@ Partial Class TableUpdate
         Me.Label3 = New System.Windows.Forms.Label()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.dgvAdmin = New System.Windows.Forms.DataGridView()
         Me.btnAddNew = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
@@ -49,9 +49,8 @@ Partial Class TableUpdate
         Me.btnBak = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnPrint = New System.Windows.Forms.Button()
-        Me.btnPriview = New System.Windows.Forms.Button()
-        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnPrintData = New System.Windows.Forms.Button()
+        CType(Me.dgvAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -91,12 +90,12 @@ Partial Class TableUpdate
         Me.lblName.TabIndex = 17
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'dgv
+        'dgvAdmin
         '
-        Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.dgv.BackgroundColor = System.Drawing.Color.WhiteSmoke
-        Me.dgv.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.dgvAdmin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.dgvAdmin.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.dgvAdmin.BackgroundColor = System.Drawing.Color.WhiteSmoke
+        Me.dgvAdmin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Monotype Corsiva", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -104,8 +103,8 @@ Partial Class TableUpdate
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgv.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvAdmin.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Maiandra GD", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -113,11 +112,12 @@ Partial Class TableUpdate
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgv.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgv.Location = New System.Drawing.Point(28, 460)
-        Me.dgv.Name = "dgv"
-        Me.dgv.Size = New System.Drawing.Size(1031, 126)
-        Me.dgv.TabIndex = 20
+        Me.dgvAdmin.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvAdmin.Location = New System.Drawing.Point(28, 460)
+        Me.dgvAdmin.Name = "dgvAdmin"
+        Me.dgvAdmin.ReadOnly = True
+        Me.dgvAdmin.Size = New System.Drawing.Size(1031, 126)
+        Me.dgvAdmin.TabIndex = 20
         '
         'btnAddNew
         '
@@ -335,29 +335,17 @@ Partial Class TableUpdate
         Me.Panel2.Size = New System.Drawing.Size(1078, 11)
         Me.Panel2.TabIndex = 39
         '
-        'btnPrint
+        'btnPrintData
         '
-        Me.btnPrint.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPrint.Location = New System.Drawing.Point(160, 593)
-        Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(229, 54)
-        Me.btnPrint.TabIndex = 40
-        Me.btnPrint.Text = "PRINT"
-        Me.btnPrint.UseVisualStyleBackColor = False
-        '
-        'btnPriview
-        '
-        Me.btnPriview.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPriview.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPriview.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnPriview.Location = New System.Drawing.Point(622, 593)
-        Me.btnPriview.Name = "btnPriview"
-        Me.btnPriview.Size = New System.Drawing.Size(229, 54)
-        Me.btnPriview.TabIndex = 41
-        Me.btnPriview.Text = "PRINT PRIVIEW"
-        Me.btnPriview.UseVisualStyleBackColor = False
+        Me.btnPrintData.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnPrintData.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrintData.ForeColor = System.Drawing.Color.Red
+        Me.btnPrintData.Location = New System.Drawing.Point(408, 593)
+        Me.btnPrintData.Name = "btnPrintData"
+        Me.btnPrintData.Size = New System.Drawing.Size(298, 54)
+        Me.btnPrintData.TabIndex = 41
+        Me.btnPrintData.Text = "PRINT TABLE DATA"
+        Me.btnPrintData.UseVisualStyleBackColor = False
         '
         'TableUpdate
         '
@@ -366,13 +354,12 @@ Partial Class TableUpdate
         Me.BackColor = System.Drawing.Color.DimGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 659)
-        Me.Controls.Add(Me.btnPriview)
-        Me.Controls.Add(Me.btnPrint)
+        Me.Controls.Add(Me.btnPrintData)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBak)
         Me.Controls.Add(Me.lblTableName)
-        Me.Controls.Add(Me.dgv)
+        Me.Controls.Add(Me.dgvAdmin)
         Me.Controls.Add(Me.txt6)
         Me.Controls.Add(Me.txt5)
         Me.Controls.Add(Me.txt4)
@@ -396,7 +383,7 @@ Partial Class TableUpdate
         Me.Name = "TableUpdate"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TABLE UPDATION"
-        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvAdmin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -405,7 +392,7 @@ Partial Class TableUpdate
     Friend WithEvents Label3 As Label
     Friend WithEvents llLogOut As LinkLabel
     Friend WithEvents lblName As Label
-    Friend WithEvents dgv As DataGridView
+    Friend WithEvents dgvAdmin As DataGridView
     Friend WithEvents btnAddNew As Button
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnUpdate As Button
@@ -426,6 +413,5 @@ Partial Class TableUpdate
     Friend WithEvents btnBak As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnPrint As Button
-    Friend WithEvents btnPriview As Button
+    Friend WithEvents btnPrintData As Button
 End Class
