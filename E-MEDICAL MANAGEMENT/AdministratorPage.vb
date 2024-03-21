@@ -254,7 +254,7 @@ Public Class AdministratorPage
             TableUpdate.lbl1.Text = "BK ID"
             TableUpdate.lbl2.Text = "ID"
             TableUpdate.lbl3.Text = "Service"
-            TableUpdate.lbl4.Text = "Name"
+            TableUpdate.lbl4.Text = "Doc Name"
             TableUpdate.lbl5.Text = "Con Date"
             TableUpdate.lbl6.Text = "Address"
             TableUpdate.lblTableName.Text = "USER BOOKINGS TABLE"

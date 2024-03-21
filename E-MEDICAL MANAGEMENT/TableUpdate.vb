@@ -98,14 +98,16 @@ Public Class TableUpdate
         Try
             Dim query As String = ""
 
-            If AdministratorPage.TName = "Laboratories" Then
-                query = "update Laboratories set ADDRESS='" & txt3.Text & "',PHONE='" & txt4.Text & "',TIME='" & txt5.Text & "' where TYPE='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
-            ElseIf {"General", "Specialized", "Preventive", "diagnosis"}.Contains(AdministratorPage.TName) Then
-                query = "update " & AdministratorPage.TName & " set ADDRESS='" & txt3.Text & "',PHONE='" & txt4.Text & "',TIME='" & txt5.Text & "' where S_NO='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                query = "update " & AdministratorPage.TName & " set type='" & txt2.Text & "',name='" & txt3.Text & "',address='" & txt4.Text & "',phone='" & txt5.Text & "',time='" & txt6.Text & "' where id='" & txt1.Text & "'"
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                query = "update " & AdministratorPage.TName & " set name='" & txt2.Text & "',address='" & txt3.Text & "',phone='" & txt4.Text & "',time='" & txt5.Text & "' where s_no='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "administrator" Then
-                query = "update administrator set PASSWORD='" & txt3.Text & "' where USERS_ID='" & txt1.Text & "' and USERS_NAME='" & txt2.Text & "'"
+                query = "update administrator set userid='" & txt1.Text & "',name='" & txt2.Text & "',password='" & AdminpassHash & "' where userid='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "SignUpPage" Then
-                query = "update SignUpPage set Age='" & txt4.Text & "',Phone='" & txt5.Text & "',Password='" & txt6.Text & "' where UserId='" & txt1.Text & "' and Name='" & txt2.Text & "' and Sex='" & txt3.Text & "'"
+                query = "update SignUpPage set userid='" & txt1.Text & "',name='" & txt2.Text & "',sex='" & txt3.Text & "',age='" & txt4.Text & "',phone='" & txt5.Text & "',password='" & UserpassHash & "' where userid='" & txt1.Text & "'"
+            ElseIf AdministratorPage.TName = "bookings" Then
+                query = "update bookings set service='" & txt3.Text & "',doctor_or_center='" & txt4.Text & "',consultation_date='" & txt5.Text & "',address='" & txt6.Text & "' where booking_id='" & txt1.Text & "'"
             End If
 
             ExecuteQueryAndLoadData(query)
