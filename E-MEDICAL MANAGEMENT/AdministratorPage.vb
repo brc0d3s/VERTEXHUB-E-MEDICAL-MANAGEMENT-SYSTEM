@@ -250,6 +250,7 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
+            TableUpdate.btnAddNew.Visible = False
             TableUpdate.lbl1.Text = "BK ID"
             TableUpdate.lbl2.Text = "ID"
             TableUpdate.lbl3.Text = "Service"

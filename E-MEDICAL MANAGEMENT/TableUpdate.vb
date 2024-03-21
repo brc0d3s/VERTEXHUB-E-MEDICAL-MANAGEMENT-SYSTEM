@@ -5,6 +5,9 @@ Imports Npgsql
 Public Class TableUpdate
     Private connection As New NpgsqlConnection(GetConnectionString())
 
+    Dim UserpassHash As String
+    Dim AdminpassHash As String
+
     'Printing variables
     Dim WithEvents PD As New PrintDocument
     Dim PPD As New PrintPreviewDialog
@@ -39,17 +42,21 @@ Public Class TableUpdate
     End Sub
 
     Private Sub btnAddNew_Click(sender As Object, e As EventArgs) Handles btnAddNew.Click
+        'Hash Passwords before storing
+        UserpassHash = PasswordUtility.HashPassword(txt6.Text)
+        AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
+
         Try
             Dim query As String = ""
 
             If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
-                query = "insert into" & AdministratorPage.TName & "(type,name,address,phone,time) VALUES ('" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "','" & txt6.Text & "')"
+                query = "insert into " & AdministratorPage.TName & "(type,name,address,phone,time) VALUES ('" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "','" & txt6.Text & "')"
             ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
                 query = "insert into " & AdministratorPage.TName & "(name,address,phone,time) VALUES ('" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "')"
             ElseIf AdministratorPage.TName = "administrator" Then
-                query = "insert into administrator(USERS_ID,USERS_NAME,PASSWORD) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "')"
+                query = "insert into administrator(userid,name,password) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & AdminpassHash & "')"
             ElseIf AdministratorPage.TName = "SignUpPage" Then
-                query = "insert into SignUpPage(UserId,Name,Sex,Age,Phone,Password) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "','" & txt6.Text & "')"
+                query = "insert into SignUpPage(userid,name,sex,age,phone,password) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "','" & UserpassHash & "')"
             End If
 
             ExecuteQueryAndLoadData(query)
@@ -62,14 +69,18 @@ Public Class TableUpdate
         Try
             Dim query As String = ""
 
-            If AdministratorPage.TName = "Laboratories" Then
-                query = "select * from Laboratories where TYPE='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
-            ElseIf {"General", "Specialized", "Preventive", "diagnosis"}.Contains(AdministratorPage.TName) Then
-                query = "select * from " & AdministratorPage.TName & " where S_NO='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                query = "select * from " & AdministratorPage.TName & " where id='" & txt1.Text & "'"
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                query = "select * from " & AdministratorPage.TName & " where s_no='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "administrator" Then
-                query = "select * from administrator where USERS_ID='" & txt1.Text & "'"
+                query = "select * from administrator where userid='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "SignUpPage" Then
-                query = "select * from SignUpPage where UserId='" & txt1.Text & "'"
+                query = "select * from SignUpPage where userid='" & txt1.Text & "'"
+            ElseIf AdministratorPage.TName = "bookings" Then
+                query = "select * from bookings where booking_id='" & txt1.Text & "'"
+            ElseIf AdministratorPage.TName = "sys_log" Then
+                query = "select * from sys_log where syslog_id='" & txt1.Text & "'"
             End If
 
             ExecuteQueryAndLoadData(query)
@@ -79,6 +90,11 @@ Public Class TableUpdate
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        'Hash Passwords before updating
+        UserpassHash = PasswordUtility.HashPassword(txt6.Text)
+        AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
+
+        'update to be corrected
         Try
             Dim query As String = ""
 
@@ -102,14 +118,18 @@ Public Class TableUpdate
         Try
             Dim query As String = ""
 
-            If AdministratorPage.TName = "Laboratories" Then
-                query = "delete from Laboratories where TYPE='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
-            ElseIf {"General", "Specialized", "Preventive", "diagnosis"}.Contains(AdministratorPage.TName) Then
-                query = "delete from " & AdministratorPage.TName & " where S_NO='" & txt1.Text & "' and NAME='" & txt2.Text & "'"
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                query = "delete from " & AdministratorPage.TName & " where id='" & txt1.Text & "'"
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                query = "delete from " & AdministratorPage.TName & " where s_no='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "administrator" Then
-                query = "delete from administrator where USERS_ID='" & txt1.Text & "'"
+                query = "delete from administrator where userid='" & txt1.Text & "'"
             ElseIf AdministratorPage.TName = "SignUpPage" Then
-                query = "delete from SignUpPage where UserId='" & txt1.Text & "'"
+                query = "delete from SignUpPage where userid='" & txt1.Text & "'"
+            ElseIf AdministratorPage.TName = "bookings" Then
+                query = "delete from bookings where booking_id='" & txt1.Text & "'"
+            ElseIf AdministratorPage.TName = "sys_log" Then
+                query = "delete from sys_log where syslog_id='" & txt1.Text & "'"
             End If
 
             ExecuteQueryAndLoadData(query)
