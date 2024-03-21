@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Printing
+Imports System.IO
 Imports Npgsql
 
 Public Class TableUpdate
@@ -29,6 +30,7 @@ Public Class TableUpdate
             Dim table As New DataTable
             ad.Fill(table)
             dgvAdmin.DataSource = table
+            MsgBox("Operation successful!")
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         Finally
@@ -40,10 +42,10 @@ Public Class TableUpdate
         Try
             Dim query As String = ""
 
-            If AdministratorPage.TName = "Laboratories" Then
-                query = "insert into Laboratories(TYPE,NAME,ADDRESS,PHONE,TIME) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "')"
-            ElseIf {"General", "Specialized", "Preventive", "diagnosis"}.Contains(AdministratorPage.TName) Then
-                query = "insert into " & AdministratorPage.TName & "(S.NO,NAME,ADDRESS,PHONE,TIME) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "')"
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                query = "insert into" & AdministratorPage.TName & "(type,name,address,phone,time) VALUES ('" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "','" & txt6.Text & "')"
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                query = "insert into " & AdministratorPage.TName & "(name,address,phone,time) VALUES ('" & txt2.Text & "','" & txt3.Text & "','" & txt4.Text & "','" & txt5.Text & "')"
             ElseIf AdministratorPage.TName = "administrator" Then
                 query = "insert into administrator(USERS_ID,USERS_NAME,PASSWORD) VALUES ('" & txt1.Text & "','" & txt2.Text & "','" & txt3.Text & "')"
             ElseIf AdministratorPage.TName = "SignUpPage" Then
@@ -143,6 +145,9 @@ Public Class TableUpdate
 
         Dim leftmargin As Integer = 50 ' Adjusted left margin
 
+        ' Define the default name for the PDF
+        Dim pdfName As String = $"{lblTableName.Text}_{StartPage.userName}_{DateTime.Now.ToString("yyyyMMdd")}.pdf"
+
         ' Define string formats for alignment
         Dim leftFormat As New StringFormat()
         leftFormat.Alignment = StringAlignment.Near
@@ -197,6 +202,13 @@ Public Class TableUpdate
             rowTop += lineHeight ' Move to the next row
             columnLeft = leftmargin ' Reset drawing position to the left margin
         Next
+
+
+        ' Save the PDF with the default name
+        PD.DocumentName = pdfName
+        Dim filePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfName)
+        PD.PrinterSettings.PrintToFile = True
+        PD.PrinterSettings.PrintFileName = filePath
     End Sub
 
     Private Sub btnPrintData_Click(sender As Object, e As EventArgs) Handles btnPrintData.Click

@@ -96,7 +96,7 @@ Partial Class AdministratorPage
         Me.llGeneralStore.BackColor = System.Drawing.Color.Transparent
         Me.llGeneralStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llGeneralStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llGeneralStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.llGeneralStore.LinkColor = System.Drawing.Color.Gold
         Me.llGeneralStore.Location = New System.Drawing.Point(27, 217)
         Me.llGeneralStore.Name = "llGeneralStore"
         Me.llGeneralStore.Size = New System.Drawing.Size(305, 45)
@@ -110,7 +110,7 @@ Partial Class AdministratorPage
         Me.llSpecializedStore.BackColor = System.Drawing.Color.Transparent
         Me.llSpecializedStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llSpecializedStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llSpecializedStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.llSpecializedStore.LinkColor = System.Drawing.Color.Gold
         Me.llSpecializedStore.Location = New System.Drawing.Point(27, 289)
         Me.llSpecializedStore.Name = "llSpecializedStore"
         Me.llSpecializedStore.Size = New System.Drawing.Size(371, 45)
@@ -124,7 +124,7 @@ Partial Class AdministratorPage
         Me.llPreventiveStore.BackColor = System.Drawing.Color.Transparent
         Me.llPreventiveStore.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llPreventiveStore.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.llPreventiveStore.LinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.llPreventiveStore.LinkColor = System.Drawing.Color.Gold
         Me.llPreventiveStore.Location = New System.Drawing.Point(27, 366)
         Me.llPreventiveStore.Name = "llPreventiveStore"
         Me.llPreventiveStore.Size = New System.Drawing.Size(365, 45)

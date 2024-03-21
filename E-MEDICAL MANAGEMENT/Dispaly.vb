@@ -1,4 +1,5 @@
 ﻿Imports System.Drawing.Printing
+Imports System.IO
 Imports Npgsql
 
 Public Class Dispaly
@@ -68,6 +69,9 @@ Public Class Dispaly
 
         Dim leftmargin As Integer = 50 ' Adjusted left margin
 
+        ' Define the default name for the PDF
+        Dim pdfName As String = $"{StartPage.userName}_{DateTime.Now.ToString("yyyyMMdd")}.pdf"
+
         ' Booking data
         Dim bookingDate As DateTime = DateTime.Now
         Dim service As String = grpDetails.Text
@@ -111,6 +115,14 @@ Public Class Dispaly
         e.Graphics.DrawString("Phone: " & Phone, f10b, Brushes.Black, leftmargin, startY)
         startY += lineHeight
         e.Graphics.DrawString("Operation Hours: " & Ohours, f10b, Brushes.Black, leftmargin, startY)
+
+
+
+        ' Save the PDF with the default name
+        PD.DocumentName = pdfName
+        Dim filePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfName)
+        PD.PrinterSettings.PrintToFile = True
+        PD.PrinterSettings.PrintFileName = filePath
     End Sub
 
 

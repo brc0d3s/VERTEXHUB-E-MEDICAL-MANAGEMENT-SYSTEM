@@ -24,4 +24,9 @@
         Me.Close()
         StartPage.Show()
     End Sub
+
+    Private Sub btnAppointments_Click(sender As Object, e As EventArgs) Handles btnAppointments.Click
+        Me.Close()
+        BookedAppointments.Show()
+    End Sub
 End Class

@@ -156,6 +156,12 @@
     <Compile Include="AdministratorPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BookedAppointments.Designer.vb">
+      <DependentUpon>BookedAppointments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookedAppointments.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Diagnosis.Designer.vb">
       <DependentUpon>Diagnosis.vb</DependentUpon>
     </Compile>
@@ -245,6 +251,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AdministratorPage.resx">
       <DependentUpon>AdministratorPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookedAppointments.resx">
+      <DependentUpon>BookedAppointments.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diagnosis.resx">
       <DependentUpon>Diagnosis.vb</DependentUpon>
@@ -367,6 +376,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Doctor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_appontment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

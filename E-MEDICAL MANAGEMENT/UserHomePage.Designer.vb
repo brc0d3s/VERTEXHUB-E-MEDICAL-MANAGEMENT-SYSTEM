@@ -26,6 +26,7 @@ Partial Class UserHomePage
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.lblName = New System.Windows.Forms.Label()
+        Me.btnAppointments = New System.Windows.Forms.Button()
         Me.btnMedicalStore = New System.Windows.Forms.Button()
         Me.btnLaboratories = New System.Windows.Forms.Button()
         Me.btnDiagnosis = New System.Windows.Forms.Button()
@@ -78,6 +79,17 @@ Partial Class UserHomePage
         Me.lblName.TabIndex = 17
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'btnAppointments
+        '
+        Me.btnAppointments.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.home_appontment
+        Me.btnAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnAppointments.Location = New System.Drawing.Point(593, 449)
+        Me.btnAppointments.Name = "btnAppointments"
+        Me.btnAppointments.Size = New System.Drawing.Size(389, 181)
+        Me.btnAppointments.TabIndex = 18
+        Me.btnAppointments.UseVisualStyleBackColor = True
+        '
         'btnMedicalStore
         '
         Me.btnMedicalStore.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.b_logo5
@@ -127,6 +139,7 @@ Partial Class UserHomePage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.btnAppointments)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.llLogOut)
         Me.Controls.Add(Me.btnMedicalStore)
@@ -153,4 +166,5 @@ Partial Class UserHomePage
     Friend WithEvents btnMedicalStore As Button
     Friend WithEvents llLogOut As LinkLabel
     Friend WithEvents lblName As Label
+    Friend WithEvents btnAppointments As Button
 End Class
