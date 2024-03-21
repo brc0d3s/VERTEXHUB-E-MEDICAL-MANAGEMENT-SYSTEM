@@ -156,6 +156,10 @@ Public Class Dispaly
 
                 If (i > 0) Then
                     MsgBox("Service Successfully Booked! Please Wait Printing your Receipt")
+
+                    ' Call the RefreshAppointmentsDisplay method
+                    BookedAppointments.RefreshAppointmentsDisplay()
+
                     PPD.Document = PD
                     PPD.ShowDialog()
                 End If

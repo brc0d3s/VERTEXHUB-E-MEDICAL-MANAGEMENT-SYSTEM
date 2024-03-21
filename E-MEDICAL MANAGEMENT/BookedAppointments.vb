@@ -1,12 +1,14 @@
 ﻿Imports Npgsql
-Imports System.Windows.Forms
-
 Public Class BookedAppointments
 
     Private connection As New NpgsqlConnection(GetConnectionString())
 
     Private Sub BookedAppointments_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblName1.Text = StartPage.userName
+        RefreshAppointmentsDisplay()
+    End Sub
+
+    Public Sub RefreshAppointmentsDisplay()
         Try
             ' Clear existing columns
             DataGridViewAppointments.Columns.Clear()
@@ -53,6 +55,8 @@ Public Class BookedAppointments
         End Try
     End Sub
 
+
+
     Private Sub DataGridViewAppointments_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewAppointments.CellContentClick
         Try
             If e.ColumnIndex = DataGridViewAppointments.Columns("cancelButtonColumn").Index AndAlso e.RowIndex >= 0 Then
@@ -70,7 +74,7 @@ Public Class BookedAppointments
                             If rowsAffected > 0 Then
                                 MessageBox.Show("Appointment cancelled successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
                                 ' Refresh the appointments display
-                                BookedAppointments_Load(Nothing, Nothing)
+                                RefreshAppointmentsDisplay()
                             Else
                                 MessageBox.Show("Failed to cancel appointment.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             End If

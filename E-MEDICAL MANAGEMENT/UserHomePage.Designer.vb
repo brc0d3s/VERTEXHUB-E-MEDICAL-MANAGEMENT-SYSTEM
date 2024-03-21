@@ -22,6 +22,7 @@ Partial Class UserHomePage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
@@ -31,6 +32,9 @@ Partial Class UserHomePage
         Me.btnLaboratories = New System.Windows.Forms.Button()
         Me.btnDiagnosis = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,11 +42,11 @@ Partial Class UserHomePage
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label3.Location = New System.Drawing.Point(241, 22)
+        Me.Label3.Location = New System.Drawing.Point(220, 12)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(612, 39)
+        Me.Label3.Size = New System.Drawing.Size(660, 42)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "VERTEXHUB  E-MEDICAL SYSTEM"
         '
@@ -61,7 +65,7 @@ Partial Class UserHomePage
         Me.llLogOut.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llLogOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.llLogOut.LinkColor = System.Drawing.Color.Yellow
-        Me.llLogOut.Location = New System.Drawing.Point(990, 158)
+        Me.llLogOut.Location = New System.Drawing.Point(990, 199)
         Me.llLogOut.Name = "llLogOut"
         Me.llLogOut.Size = New System.Drawing.Size(73, 20)
         Me.llLogOut.TabIndex = 16
@@ -84,7 +88,7 @@ Partial Class UserHomePage
         Me.btnAppointments.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.home_appontment
         Me.btnAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnAppointments.Location = New System.Drawing.Point(593, 449)
+        Me.btnAppointments.Location = New System.Drawing.Point(593, 466)
         Me.btnAppointments.Name = "btnAppointments"
         Me.btnAppointments.Size = New System.Drawing.Size(389, 181)
         Me.btnAppointments.TabIndex = 18
@@ -95,7 +99,7 @@ Partial Class UserHomePage
         Me.btnMedicalStore.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.b_logo5
         Me.btnMedicalStore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnMedicalStore.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMedicalStore.Location = New System.Drawing.Point(78, 449)
+        Me.btnMedicalStore.Location = New System.Drawing.Point(78, 466)
         Me.btnMedicalStore.Name = "btnMedicalStore"
         Me.btnMedicalStore.Size = New System.Drawing.Size(389, 181)
         Me.btnMedicalStore.TabIndex = 15
@@ -106,7 +110,7 @@ Partial Class UserHomePage
         Me.btnLaboratories.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.vector_laboratory_chemical_medical_test_logo_icon_colorful_modern_design_bulbs_bottles_49926491__2_
         Me.btnLaboratories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnLaboratories.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnLaboratories.Location = New System.Drawing.Point(593, 206)
+        Me.btnLaboratories.Location = New System.Drawing.Point(593, 234)
         Me.btnLaboratories.Name = "btnLaboratories"
         Me.btnLaboratories.Size = New System.Drawing.Size(389, 181)
         Me.btnLaboratories.TabIndex = 14
@@ -117,7 +121,7 @@ Partial Class UserHomePage
         Me.btnDiagnosis.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.diagnosis_microsoft_image
         Me.btnDiagnosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnDiagnosis.Location = New System.Drawing.Point(78, 206)
+        Me.btnDiagnosis.Location = New System.Drawing.Point(78, 232)
         Me.btnDiagnosis.Name = "btnDiagnosis"
         Me.btnDiagnosis.Size = New System.Drawing.Size(389, 183)
         Me.btnDiagnosis.TabIndex = 12
@@ -133,12 +137,36 @@ Partial Class UserHomePage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Stencil", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label1.Location = New System.Drawing.Point(241, 130)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(639, 42)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "EMPOWERING HEALTHCARE DIGITALY"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(0, 175)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1078, 11)
+        Me.Panel2.TabIndex = 9
+        '
+        'Timer1
+        '
+        '
         'UserHomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAppointments)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.llLogOut)
@@ -167,4 +195,7 @@ Partial Class UserHomePage
     Friend WithEvents llLogOut As LinkLabel
     Friend WithEvents lblName As Label
     Friend WithEvents btnAppointments As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Timer1 As Timer
 End Class
