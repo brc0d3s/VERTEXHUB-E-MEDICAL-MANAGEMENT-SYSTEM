@@ -128,6 +128,7 @@ Public Class AdministratorPage
             TableUpdate.lbl4.Text = "AGE"
             TableUpdate.lbl5.Text = "PHONE"
             TableUpdate.lbl6.Text = "PASSWORD"
+            TableUpdate.txt6.UseSystemPasswordChar = True
             TableUpdate.lblTableName.Text = "USERS DETAILS"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
@@ -160,6 +161,7 @@ Public Class AdministratorPage
             TableUpdate.lbl1.Text = "ID"
             TableUpdate.lbl2.Text = "NAME"
             TableUpdate.lbl3.Text = "PASSWORD"
+            TableUpdate.txt3.UseSystemPasswordChar = True
             TableUpdate.lblTableName.Text = "ADMINISTRATOR TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)
