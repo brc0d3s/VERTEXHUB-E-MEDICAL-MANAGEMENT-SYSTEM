@@ -189,13 +189,13 @@ Public Class TableUpdate
         startY += lineHeight * 2 ' Add extra space after header
 
         ' Draw ADMIN Information
-        e.Graphics.DrawString("User ID: " & StartPage.userID, f10b, Brushes.Black, leftmargin, startY)
+        e.Graphics.DrawString("Admin ID: " & StartPage.userID, f10b, Brushes.Black, leftmargin, startY)
         startY += lineHeight
-        e.Graphics.DrawString("User Name: " & StartPage.userName, f10b, Brushes.Black, leftmargin, startY)
+        e.Graphics.DrawString("Admin Name: " & StartPage.userName, f10b, Brushes.Black, leftmargin, startY)
         startY += lineHeight * 2 ' Add extra space after user info
 
         ' Draw Printing Date
-        e.Graphics.DrawString("Booking Date: " & PrintingTime.ToString("dd/MM/yyyy"), f10b, Brushes.Black, leftmargin, startY)
+        e.Graphics.DrawString("Printing Date: " & PrintingTime.ToString("dd/MM/yyyy"), f10b, Brushes.Black, leftmargin, startY)
         startY += lineHeight
 
         ' Draw Data table (Data Grid View) dgv

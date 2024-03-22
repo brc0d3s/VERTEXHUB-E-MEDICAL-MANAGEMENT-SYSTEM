@@ -282,15 +282,19 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
+            TableUpdate.lbl2.Visible = False
+            TableUpdate.txt2.Visible = False
+            TableUpdate.lbl3.Visible = False
+            TableUpdate.txt3.Visible = False
+            TableUpdate.lbl4.Visible = False
+            TableUpdate.txt4.Visible = False
+            TableUpdate.lbl5.Visible = False
+            TableUpdate.txt5.Visible = False
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
             TableUpdate.btnAddNew.Visible = False
             TableUpdate.btnUpdate.Visible = False
             TableUpdate.lbl1.Text = "LOG ID"
-            TableUpdate.lbl2.Text = "ID"
-            TableUpdate.lbl3.Text = "NAME"
-            TableUpdate.lbl4.Text = "L.IN TIME"
-            TableUpdate.lbl5.Text = "L.OUT TIME"
             TableUpdate.lblTableName.Text = "SYSTEM LOGS"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)

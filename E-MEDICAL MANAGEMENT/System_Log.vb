@@ -1,4 +1,5 @@
 ﻿Imports Npgsql
+Imports System.Net
 
 Module System_Log
 
@@ -7,9 +8,11 @@ Module System_Log
     ' Function to log login time
     Public Function LogLoginTime() As Boolean
         Dim loginTime As DateTime = DateTime.Now
+        Dim ipAddress As String = GetLocalIPAddress()
+
         Try
             connection.Open()
-            Dim commandText As String = $"INSERT INTO sys_log (user_id, user_name, login_time) VALUES ( '{StartPage.userID}', '{StartPage.userName}', '{loginTime}')"
+            Dim commandText As String = $"INSERT INTO sys_log (user_id, user_name, ip_address, login_time) VALUES ( '{StartPage.userID}', '{StartPage.userName}', '{ipAddress}', '{loginTime}')"
             Using cmd As New NpgsqlCommand(commandText, connection)
                 cmd.ExecuteNonQuery()
             End Using
@@ -20,6 +23,21 @@ Module System_Log
         Finally
             connection.Close()
         End Try
+    End Function
+
+    ' Function to retrieve local IP address
+    Private Function GetLocalIPAddress() As String
+        Dim hostName As String = Dns.GetHostName()
+        Dim ipAddresses() As IPAddress = Dns.GetHostAddresses(hostName)
+
+        ' Filter IPv4 addresses
+        For Each ip As IPAddress In ipAddresses
+            If ip.AddressFamily = System.Net.Sockets.AddressFamily.InterNetwork Then
+                Return ip.ToString()
+            End If
+        Next
+
+        Return "Unknown"
     End Function
 
     ' Function to log logout time

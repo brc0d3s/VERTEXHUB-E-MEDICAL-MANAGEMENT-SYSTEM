@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\system_log.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\system_log.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
@@ -26,57 +30,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdministratorPage.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "ViewState": "AQIAAPIAAAAAAAAAAAAswAABAAApAAAA",
+              "DocumentIndex": 0,
+              "Title": "System_Log.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\System_Log.vb",
+              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\System_Log.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\System_Log.vb",
+              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\System_Log.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-03-20T23:19:25.236Z",
+              "WhenOpened": "2024-03-22T11:09:55.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AdministratorPage.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
+              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
+              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAswC4BAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-03-20T23:19:25.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TableUpdate.vb [Design]",
               "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb [Design]",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\TableUpdate.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-03-16T05:19:09.499Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-16T05:19:09.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TableUpdate.vb",
               "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAmwGsAAADHAAAA",
+              "ViewState": "AQIAAPEAAAAAAAAAAAAAAMUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-03-16T13:31:00.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T13:31:00.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AdministratorPage.vb [Design]",
               "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb [Design]",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-03-16T05:21:30.475Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-16T05:21:30.475Z"
             }
           ]
         }
