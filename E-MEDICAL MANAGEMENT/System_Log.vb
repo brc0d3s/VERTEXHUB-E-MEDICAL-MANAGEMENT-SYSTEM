@@ -1,5 +1,6 @@
 ﻿Imports Npgsql
 Imports System.Net
+Imports System.IO
 
 Module System_Log
 
@@ -8,7 +9,7 @@ Module System_Log
     ' Function to log login time
     Public Function LogLoginTime() As Boolean
         Dim loginTime As DateTime = DateTime.Now
-        Dim ipAddress As String = GetLocalIPAddress()
+        Dim ipAddress As String = GetPublicIPAddress()
 
         Try
             connection.Open()
@@ -25,19 +26,14 @@ Module System_Log
         End Try
     End Function
 
-    ' Function to retrieve local IP address
-    Private Function GetLocalIPAddress() As String
-        Dim hostName As String = Dns.GetHostName()
-        Dim ipAddresses() As IPAddress = Dns.GetHostAddresses(hostName)
-
-        ' Filter IPv4 addresses
-        For Each ip As IPAddress In ipAddresses
-            If ip.AddressFamily = System.Net.Sockets.AddressFamily.InterNetwork Then
-                Return ip.ToString()
-            End If
-        Next
-
-        Return "Unknown"
+    ' Function to retrieve public IP address
+    Private Function GetPublicIPAddress() As String
+        Dim request As HttpWebRequest = WebRequest.Create("https://api.ipify.org")
+        Dim response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
+        Dim reader As New StreamReader(response.GetResponseStream())
+        Dim ipAddress As String = reader.ReadToEnd()
+        response.Close()
+        Return ipAddress
     End Function
 
     ' Function to log logout time
