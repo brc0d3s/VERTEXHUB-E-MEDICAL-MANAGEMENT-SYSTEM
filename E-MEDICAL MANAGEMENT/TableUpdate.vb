@@ -42,11 +42,35 @@ Public Class TableUpdate
     End Sub
 
     Private Sub btnAddNew_Click(sender As Object, e As EventArgs) Handles btnAddNew.Click
-        'Hash Passwords before storing
-        UserpassHash = PasswordUtility.HashPassword(txt6.Text)
-        AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
-
         Try
+            'Check if the fields are not empty
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                If txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" OrElse txt6.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                If txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf AdministratorPage.TName = "administrator" Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf AdministratorPage.TName = "SignUpPage" Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" OrElse txt6.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            End If
+
+            'Hash Passwords before storing
+            UserpassHash = PasswordUtility.HashPassword(txt6.Text)
+            AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
+
+
             Dim query As String = ""
 
             If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
@@ -67,6 +91,11 @@ Public Class TableUpdate
 
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Try
+            If txt1.Text.Trim() = "" Then
+                MsgBox("Please fill in the ID/S.NO field.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             Dim query As String = ""
 
             If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
@@ -90,12 +119,39 @@ Public Class TableUpdate
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        'Hash Passwords before updating
-        UserpassHash = PasswordUtility.HashPassword(txt6.Text)
-        AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
-
-        'update to be corrected
         Try
+            'Check if the fields are not empty
+            If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" OrElse txt6.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.")
+                    Return
+                End If
+            ElseIf {"General", "Specialized", "Preventive"}.Contains(AdministratorPage.TName) Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf AdministratorPage.TName = "administrator" Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf AdministratorPage.TName = "SignUpPage" Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" OrElse txt6.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            ElseIf AdministratorPage.TName = "bookings" Then
+                If txt1.Text.Trim() = "" OrElse txt2.Text.Trim() = "" OrElse txt3.Text.Trim() = "" OrElse txt4.Text.Trim() = "" OrElse txt5.Text.Trim() = "" OrElse txt6.Text.Trim() = "" Then
+                    MsgBox("Please fill all the required fields.", MsgBoxStyle.Exclamation)
+                    Return
+                End If
+            End If
+
+            'Hash Passwords before updating
+            UserpassHash = PasswordUtility.HashPassword(txt6.Text)
+            AdminpassHash = PasswordUtility.HashPassword(txt3.Text)
+
             Dim query As String = ""
 
             If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then
@@ -118,6 +174,11 @@ Public Class TableUpdate
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Try
+            If txt1.Text.Trim() = "" Then
+                MsgBox("Please fill in the ID/S.NO field.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             Dim query As String = ""
 
             If {"Laboratories", "diagnosis"}.Contains(AdministratorPage.TName) Then

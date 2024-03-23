@@ -8,7 +8,7 @@ Public Class ForgotPassword
         Try
             connection.Open()
             If txtName.Text = "" Or txtPhone.Text = "" Or txtUserId.Text = "" Then
-                MsgBox("Please enter all the fields")
+                MsgBox("Please enter all the fields", MsgBoxStyle.Exclamation)
                 txtUserId.Text = ""
                 txtPhone.Text = ""
                 txtName.Text = ""
@@ -28,7 +28,7 @@ Public Class ForgotPassword
                         txtConfirmPassword.Visible = True
                         txtPassword.Visible = True
                     Else
-                        MsgBox("Please enter valid information")
+                        MsgBox("Please enter valid information", MsgBoxStyle.Exclamation)
                     End If
                 End Using
             End If
@@ -57,7 +57,7 @@ Public Class ForgotPassword
         Try
             connection.Open()
             If txtPassword.Text = "" Or txtConfirmPassword.Text = "" Then
-                MsgBox("Please enter password")
+                MsgBox("Please enter password", MsgBoxStyle.Exclamation)
             Else
                 If txtPassword.Text = txtConfirmPassword.Text Then
                     Using cmd As New NpgsqlCommand("UPDATE SignUpPage SET Password = @Password WHERE UserId = @UserId and Name = @Name and Phone = @Phone", connection)
@@ -70,13 +70,13 @@ Public Class ForgotPassword
                             MsgBox("Password has been changed")
                             Me.Close()
                         Else
-                            MsgBox("No records updated. Please check your information.")
+                            MsgBox("No records updated. Please check your information.", MsgBoxStyle.Exclamation)
                             txtPassword.Text = ""
                             txtConfirmPassword.Text = ""
                         End If
                     End Using
                 Else
-                    MsgBox("Passwords do not match")
+                    MsgBox("Passwords do not match", MsgBoxStyle.Exclamation)
                 End If
             End If
         Catch ex As Exception

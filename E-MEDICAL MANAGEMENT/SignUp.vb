@@ -22,7 +22,7 @@ Public Class SignUp
         Try
             connection.Open()
             If Not AreTextBoxesFilled() Then
-                MsgBox("Fill all the Information")
+                MsgBox("Fill all the Information", MsgBoxStyle.Exclamation)
             Else
                 Using cmd As New NpgsqlCommand("INSERT INTO SignUpPage(UserId, Name, Sex, Age, Phone, Password) VALUES(@UserId, @Name, @Sex, @Age, @Phone, @Password)", connection)
                     cmd.Parameters.AddWithValue("@UserId", txtUserId.Text)
