@@ -16,6 +16,7 @@ Public Class Dispaly
     Private Sub Dispaly_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblName1.Text = StartPage.userName.ToString()
         dtpkConsult.Value = DateTime.Today
+        Me.DoubleBuffered = True
     End Sub
 
     Private Sub Dispaly_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

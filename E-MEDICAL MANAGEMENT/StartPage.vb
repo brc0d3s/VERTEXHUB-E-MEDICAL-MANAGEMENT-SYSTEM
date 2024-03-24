@@ -27,6 +27,12 @@ Public Class StartPage
 
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        ' Check for internet connectivity
+        If Not My.Computer.Network.IsAvailable Then
+            MessageBox.Show("Please connect to the internet to use the system.", "No Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Return
+        End If
+
         If cmbUserType.Text.ToString().ToUpper() = "ADMIN" Then
             adminLogin()
         Else
