@@ -1,4 +1,7 @@
-﻿Public Class UserHomePage
+﻿Imports Npgsql
+
+Public Class UserHomePage
+    Private connection As New NpgsqlConnection(GetConnectionString())
 
     Private lastTickTime As DateTime = DateTime.Now
 
@@ -50,7 +53,29 @@
     End Sub
 
     Private Sub btnAppointments_Click(sender As Object, e As EventArgs) Handles btnAppointments.Click
-        Me.Close()
-        BookedAppointments.Show()
+        Try
+            ' Check if there are any appointments available
+            Dim sql As String = "SELECT COUNT(*) FROM bookings WHERE user_id = @userId AND consultation_date >= @today"
+            Using cmd As New NpgsqlCommand(sql, connection)
+                cmd.Parameters.AddWithValue("userId", StartPage.userID)
+                cmd.Parameters.AddWithValue("today", DateTime.Today)
+                connection.Open()
+                Dim count As Integer = CInt(cmd.ExecuteScalar())
+                If count > 0 Then
+                    ' If appointments are available, close the UserHomePage form and open the BookedAppointments form
+                    Me.Close()
+                    BookedAppointments.Show()
+                Else
+                    ' If no appointments are available, show a message
+                    MessageBox.Show("You have no appointments booked.", "No Appointments", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+            End Using
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            ' Ensure the connection is properly closed
+            connection.Close()
+        End Try
     End Sub
+
 End Class
