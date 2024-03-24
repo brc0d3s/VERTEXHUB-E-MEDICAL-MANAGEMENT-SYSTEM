@@ -32,14 +32,20 @@ Public Class TableUpdate
             Dim ad As New NpgsqlDataAdapter(cmd)
             Dim table As New DataTable
             ad.Fill(table)
-            dgvAdmin.DataSource = table
-            MsgBox("Operation successful!")
+
+            If table.Rows.Count > 0 Then
+                dgvAdmin.DataSource = table
+                MsgBox("Operation successful!")
+            Else
+                MsgBox("No record found with the provided ID/S.No.", MsgBoxStyle.Exclamation)
+            End If
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         Finally
             connection.Close()
         End Try
     End Sub
+
 
     Private Sub btnAddNew_Click(sender As Object, e As EventArgs) Handles btnAddNew.Click
         Try
