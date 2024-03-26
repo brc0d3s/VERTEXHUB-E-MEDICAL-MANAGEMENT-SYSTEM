@@ -122,7 +122,7 @@ Public Class AdministratorPage
             llPreventiveStore.Visible = False
             llGeneralStore.Visible = False
             llSpecializedStore.Visible = False
-            TableUpdate.lbl1.Text = "ID"
+            TableUpdate.lbl1.Text = "USER ID"
             TableUpdate.lbl2.Text = "NAME"
             TableUpdate.lbl3.Text = "SEX"
             TableUpdate.lbl4.Text = "AGE"
@@ -254,11 +254,11 @@ Public Class AdministratorPage
             llSpecializedStore.Visible = False
             TableUpdate.btnAddNew.Visible = False
             TableUpdate.lbl1.Text = "BK ID"
-            TableUpdate.lbl2.Text = "ID"
-            TableUpdate.lbl3.Text = "Service"
-            TableUpdate.lbl4.Text = "Doc Name"
-            TableUpdate.lbl5.Text = "Con Date"
-            TableUpdate.lbl6.Text = "Address"
+            TableUpdate.lbl2.Text = "USER ID"
+            TableUpdate.lbl3.Text = "SERVICE"
+            TableUpdate.lbl4.Text = "DOC NAME"
+            TableUpdate.lbl5.Text = "CON. DATE"
+            TableUpdate.lbl6.Text = "ADDRESS"
             TableUpdate.lblTableName.Text = "USER BOOKINGS TABLE"
         Catch ex As Exception
             MsgBox("An error occurred: " & ex.Message)

@@ -12,7 +12,7 @@ Module System_Log
         Dim loginTime As DateTime = DateTime.Now
         Dim ipAddress As String = GetPublicIPAddress()
         Dim deviceLocation As String = GetLocation(ipAddress)
-        
+
         Try
             connection.Open()
             Dim commandText As String = $"INSERT INTO sys_log (user_id, user_name, ip_address, login_time, device_location) VALUES ('{StartPage.userID}', '{StartPage.userName}', '{ipAddress}', '{loginTime}', '{deviceLocation}')"
@@ -46,18 +46,34 @@ Module System_Log
         Dim reader As New StreamReader(response.GetResponseStream())
         Dim jsonResponse As String = reader.ReadToEnd()
         response.Close()
-        
+
         ' Parse JSON response to extract location information
         Dim location As String = ""
         Dim json As JObject = JObject.Parse(jsonResponse)
         If json("status").ToString() = "success" Then
             Dim city As String = json("city").ToString()
-            Dim region As String = json("regionName").ToString()
             Dim country As String = json("country").ToString()
-            location = $"{city}, {region}, {country}"
+            location = $"{city}, {country}"
         End If
-        
+
         Return location
     End Function
 
+    ' Function to log logout time
+    Public Function LogLogoutTime() As Boolean
+        Dim logoutTime As DateTime = DateTime.Now
+        Try
+            connection.Open()
+            Dim commandText As String = $"UPDATE sys_log SET logout_time = '{logoutTime}' WHERE user_name = '{StartPage.userName}' AND user_id = '{StartPage.userID}' AND logout_time IS NULL"
+            Using cmd As New NpgsqlCommand(commandText, connection)
+                cmd.ExecuteNonQuery()
+            End Using
+            Return True ' Log out time successfully recorded
+        Catch ex As Exception
+            MsgBox("Error logging logout time: " & ex.Message)
+            Return False ' Failed to log out time
+        Finally
+            connection.Close()
+        End Try
+    End Function
 End Module

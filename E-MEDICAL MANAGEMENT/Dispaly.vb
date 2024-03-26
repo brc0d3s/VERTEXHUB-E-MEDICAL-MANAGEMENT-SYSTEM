@@ -156,7 +156,7 @@ Public Class Dispaly
                 End Using
 
                 If (i > 0) Then
-                    MsgBox("Service Successfully Booked! Please Wait Printing your Receipt")
+                    MsgBox("Service Successfully Booked! Please Wait Printing your Receipt", MsgBoxStyle.Information)
 
                     ' Call the RefreshAppointmentsDisplay method
                     BookedAppointments.RefreshAppointmentsDisplay()

@@ -58,6 +58,8 @@ Public Class ForgotPassword
             connection.Open()
             If txtPassword.Text = "" Or txtConfirmPassword.Text = "" Then
                 MsgBox("Please enter password", MsgBoxStyle.Exclamation)
+            ElseIf Not IsValidPassword(txtPassword.Text) Then
+                MsgBox("Password must be at least 8 characters long and contain a mixture of letters, numbers, and special characters.", MsgBoxStyle.Exclamation)
             Else
                 If txtPassword.Text = txtConfirmPassword.Text Then
                     Using cmd As New NpgsqlCommand("UPDATE SignUpPage SET Password = @Password WHERE UserId = @UserId and Name = @Name and Phone = @Phone", connection)
@@ -67,7 +69,7 @@ Public Class ForgotPassword
                         cmd.Parameters.AddWithValue("@Phone", txtPhone.Text)
                         Dim i As Integer = cmd.ExecuteNonQuery()
                         If (i > 0) Then
-                            MsgBox("Password has been changed")
+                            MsgBox("Password has been changed", MsgBoxStyle.Information)
                             Me.Close()
                         Else
                             MsgBox("No records updated. Please check your information.", MsgBoxStyle.Exclamation)
@@ -87,4 +89,27 @@ Public Class ForgotPassword
             End If
         End Try
     End Sub
+
+    Private Function IsValidPassword(password As String) As Boolean
+        ' Password must be at least 8 characters long and contain a mixture of letters, numbers, and special characters
+        If password.Length < 8 Then
+            Return False
+        End If
+
+        Dim hasLetter As Boolean = False
+        Dim hasNumber As Boolean = False
+        Dim hasSpecialChar As Boolean = False
+
+        For Each c As Char In password
+            If Char.IsLetter(c) Then
+                hasLetter = True
+            ElseIf Char.IsDigit(c) Then
+                hasNumber = True
+            ElseIf Not Char.IsLetterOrDigit(c) Then
+                hasSpecialChar = True
+            End If
+        Next
+
+        Return hasLetter AndAlso hasNumber AndAlso hasSpecialChar
+    End Function
 End Class
