@@ -27,9 +27,9 @@ Partial Class Launcher
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,15 +61,24 @@ Partial Class Launcher
         Me.Panel1.Size = New System.Drawing.Size(728, 20)
         Me.Panel1.TabIndex = 5
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Navy
+        Me.Panel2.ForeColor = System.Drawing.Color.Navy
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(28, 20)
+        Me.Panel2.TabIndex = 6
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Perpetua Titling MT", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Blue
-        Me.Label1.Location = New System.Drawing.Point(65, 177)
+        Me.Label1.Font = New System.Drawing.Font("Perpetua Titling MT", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Label1.Location = New System.Drawing.Point(26, 177)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(618, 34)
+        Me.Label1.Size = New System.Drawing.Size(680, 38)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "EMPOWERING HEALTHCARE DIGITALY"
         '
@@ -84,15 +93,6 @@ Partial Class Launcher
         Me.Label2.Size = New System.Drawing.Size(208, 44)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "LOADING..."
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Navy
-        Me.Panel2.ForeColor = System.Drawing.Color.Navy
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(28, 20)
-        Me.Panel2.TabIndex = 6
         '
         'Launcher
         '

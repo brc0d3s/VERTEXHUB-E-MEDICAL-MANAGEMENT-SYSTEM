@@ -20,8 +20,8 @@
 
             If Panel2.Width >= Panel1.Width Then
                 Timer1.Stop()
-                Me.Hide()
                 StartPage.Show()
+                Me.Hide()
                 Timer1.Enabled = False
             End If
         Catch ex As Exception

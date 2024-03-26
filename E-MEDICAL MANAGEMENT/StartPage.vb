@@ -40,12 +40,23 @@ Public Class StartPage
         End If
     End Sub
 
+    'check if the id is integer
+    Private Function IsInteger(input As String) As Boolean
+        Dim result As Integer
+        Return Integer.TryParse(input, result)
+    End Function
 
     Private Sub adminLogin()
         'Hash the Entered password before comparison
         LoginPasswordHash = PasswordUtility.HashPassword(txtPassword.Text)
 
         Try
+
+            If Not IsInteger(txtUserID.Text) Then
+                MsgBox("Please integer value for ID", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             connection.Open()
             Dim command As New NpgsqlCommand("SELECT * FROM administrator WHERE UserId = @UserId AND Password = @Password", connection)
             command.Parameters.AddWithValue("@UserId", txtUserID.Text)
@@ -55,9 +66,9 @@ Public Class StartPage
             adapter.Fill(table)
 
             If cmbUserType.Text.ToString().ToUpper() = "" Then
-                MsgBox("Please Select Your Category.")
+                MsgBox("Please Select Your Category.", MsgBoxStyle.Exclamation)
             ElseIf table.Rows.Count() <= 0 Then
-                MsgBox("Incorrect username or password.")
+                MsgBox("Incorrect ADMIN ID or password.", MsgBoxStyle.Exclamation)
                 txtPassword.Text = ""
                 txtUserID.Text = ""
             Else
@@ -84,6 +95,12 @@ Public Class StartPage
         LoginPasswordHash = PasswordUtility.HashPassword(txtPassword.Text)
 
         Try
+
+            If Not IsInteger(txtUserID.Text) Then
+                MsgBox("Please integer value for ID", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             connection.Open()
             Dim command As New NpgsqlCommand("SELECT * FROM SignUpPage WHERE UserId = @UserId AND Password = @Password", connection)
             command.Parameters.AddWithValue("@UserId", txtUserID.Text)
@@ -93,9 +110,9 @@ Public Class StartPage
             table.Load(reader)
 
             If cmbUserType.Text.ToString().ToUpper() = "" Then
-                MsgBox("Please Select Your Category.")
+                MsgBox("Please Select Your Category.", MsgBoxStyle.Exclamation)
             ElseIf table.Rows.Count() <= 0 Then
-                MsgBox("Incorrect username or password.")
+                MsgBox("Incorrect USER ID or password.", MsgBoxStyle.Exclamation)
                 txtPassword.Text = ""
                 txtUserID.Text = ""
             Else

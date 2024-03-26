@@ -50,6 +50,7 @@ Partial Class TableUpdate
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnPrintData = New System.Windows.Forms.Button()
+        Me.btnReload = New System.Windows.Forms.Button()
         CType(Me.dgvAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -346,12 +347,24 @@ Partial Class TableUpdate
         Me.btnPrintData.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnPrintData.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrintData.ForeColor = System.Drawing.Color.Red
-        Me.btnPrintData.Location = New System.Drawing.Point(408, 593)
+        Me.btnPrintData.Location = New System.Drawing.Point(651, 592)
         Me.btnPrintData.Name = "btnPrintData"
         Me.btnPrintData.Size = New System.Drawing.Size(298, 54)
         Me.btnPrintData.TabIndex = 41
         Me.btnPrintData.Text = "PRINT TABLE DATA"
         Me.btnPrintData.UseVisualStyleBackColor = False
+        '
+        'btnReload
+        '
+        Me.btnReload.BackColor = System.Drawing.Color.RoyalBlue
+        Me.btnReload.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReload.ForeColor = System.Drawing.Color.Red
+        Me.btnReload.Location = New System.Drawing.Point(103, 592)
+        Me.btnReload.Name = "btnReload"
+        Me.btnReload.Size = New System.Drawing.Size(298, 54)
+        Me.btnReload.TabIndex = 42
+        Me.btnReload.Text = "RELOAD DATA"
+        Me.btnReload.UseVisualStyleBackColor = False
         '
         'TableUpdate
         '
@@ -360,6 +373,7 @@ Partial Class TableUpdate
         Me.BackColor = System.Drawing.Color.DimGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.btnReload)
         Me.Controls.Add(Me.btnPrintData)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
@@ -420,4 +434,5 @@ Partial Class TableUpdate
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnPrintData As Button
+    Friend WithEvents btnReload As Button
 End Class

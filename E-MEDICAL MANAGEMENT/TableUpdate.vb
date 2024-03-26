@@ -39,40 +39,26 @@ Public Class TableUpdate
             dgvAdmin.DataSource = table
             MsgBox("Operation successful!", MsgBoxStyle.Information)
             'empty textboxes after a successful operation
-            txt1.Text = ""
-            txt2.Text = ""
-            txt3.Text = ""
-            txt4.Text = ""
-            txt5.Text = ""
-            txt6.Text = ""
+            txt1.Clear()
+            txt2.Clear()
+            txt3.Clear()
+            txt4.Clear()
+            txt5.Clear()
+            txt6.Clear()
 
-            ' Dictionary to map table names to SQL queries
-            Dim queries As New Dictionary(Of String, String) From {
-            {"DIAGNOSIS TABLE", "SELECT * FROM Laboratories"},
-            {"USERS DETAILS", "SELECT * FROM SignUpPage"},
-            {"ADMINISTRATOR TABLE", "SELECT * FROM administrator"},
-            {"GENERAL STORE TABLE", "SELECT * FROM General"},
-            {"SPECIALIZED STORE TABLE", "SELECT * FROM Specialized"},
-            {"PREVENTIVE STORE TABLE", "SELECT * FROM Preventive"},
-            {"USER BOOKINGS TABLE", "SELECT * FROM bookings"},
-            {"SYSTEM LOGS", "SELECT * FROM sys_log"}
-        }
-
-            ' Check if the table name exists in the dictionary
-            If queries.ContainsKey(lblTableName.Text) Then
-                Dim sqlQuery As String = queries(lblTableName.Text)
-                cmd = New NpgsqlCommand(sqlQuery, connection)
-                ad = New NpgsqlDataAdapter(cmd)
-                table = New DataTable()
-                ad.Fill(table)
-                dgvAdmin.DataSource = table
-            End If
         Catch ex As Exception
             MsgBox("Error: " & ex.Message)
         Finally
             connection.Close()
         End Try
     End Sub
+
+    'check if the id is integer
+    Private Function IsInteger(input As String) As Boolean
+        Dim result As Integer
+        Return Integer.TryParse(input, result)
+    End Function
+
 
     ' fUNCTION TO CHECK IF RECORD EXIST BEFORE EXECUTING QUERIES
     Private Function RecordExists(tableName As String, value As String) As Boolean
@@ -131,6 +117,11 @@ Public Class TableUpdate
                 End If
             End If
 
+            If Not IsInteger(txt1.Text) Then
+                MsgBox("Please enter a valid integer for ID/S.NO.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             If RecordExists(AdministratorPage.TName, txt1.Text) Then
                 MsgBox("Record with ID/S.NO " & txt1.Text & " already exists.", MsgBoxStyle.Exclamation)
                 Return
@@ -163,6 +154,11 @@ Public Class TableUpdate
         Try
             If txt1.Text.Trim() = "" Then
                 MsgBox("Please fill in the ID/S.NO field.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
+            If Not IsInteger(txt1.Text) Then
+                MsgBox("Please enter a valid integer for ID/S.NO.", MsgBoxStyle.Exclamation)
                 Return
             End If
 
@@ -223,6 +219,11 @@ Public Class TableUpdate
                 End If
             End If
 
+            If Not IsInteger(txt1.Text) Then
+                MsgBox("Please enter a valid integer for ID/S.NO.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             If Not RecordExists(AdministratorPage.TName, txt1.Text) Then
                 MsgBox("Record with ID/S.NO " & txt1.Text & " does not exist.", MsgBoxStyle.Exclamation)
                 Return
@@ -256,6 +257,11 @@ Public Class TableUpdate
         Try
             If txt1.Text.Trim() = "" Then
                 MsgBox("Please fill in the ID/S.NO field.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
+            If Not IsInteger(txt1.Text) Then
+                MsgBox("Please enter a valid integer for ID/S.NO.", MsgBoxStyle.Exclamation)
                 Return
             End If
 
@@ -293,11 +299,47 @@ Public Class TableUpdate
         txt1.Clear()
         txt2.Clear()
         txt4.Clear()
-
         txt5.Clear()
         txt6.Clear()
     End Sub
 
+
+    Private Sub btnReload_Click(sender As Object, e As EventArgs) Handles btnReload.Click
+        Try
+            connection.Open()
+
+            ' Define the SQL query based on the selected table name
+            Dim sqlQuery As String = ""
+            Dim tableName As String = lblTableName.Text
+            Dim queries As New Dictionary(Of String, String) From {
+            {"DIAGNOSIS TABLE", "SELECT * FROM diagnosis"},
+            {"LABORATORIES TABLE", "SELECT * FROM Laboratories"},
+            {"USERS DETAILS", "SELECT * FROM SignUpPage"},
+            {"ADMINISTRATOR TABLE", "SELECT * FROM administrator"},
+            {"GENERAL STORE TABLE", "SELECT * FROM General"},
+            {"SPECIALIZED STORE TABLE", "SELECT * FROM Specialized"},
+            {"PREVENTIVE STORE TABLE", "SELECT * FROM Preventive"},
+            {"USER BOOKINGS TABLE", "SELECT * FROM bookings"},
+            {"SYSTEM LOGS", "SELECT * FROM sys_log"}
+        }
+
+            ' Check if the table name exists in the dictionary
+            If queries.ContainsKey(tableName) Then
+                sqlQuery = queries(tableName)
+                Dim cmd As New NpgsqlCommand(sqlQuery, connection)
+                Dim ad As New NpgsqlDataAdapter(cmd)
+                Dim table As New DataTable()
+                ad.Fill(table)
+                dgvAdmin.DataSource = table
+            Else
+                MsgBox("No query found for the selected table.", MsgBoxStyle.Exclamation)
+            End If
+        Catch ex As Exception
+            MsgBox("Error: " & ex.Message)
+        Finally
+            connection.Close()
+        End Try
+    End Sub
 
     ' Print functionalities
     Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
