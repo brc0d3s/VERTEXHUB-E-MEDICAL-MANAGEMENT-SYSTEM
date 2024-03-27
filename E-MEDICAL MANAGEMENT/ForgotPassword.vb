@@ -6,18 +6,26 @@ Public Class ForgotPassword
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnVerify.Click
         Try
-            connection.Open()
+            ' Check for internet connectivity
+            If Not My.Computer.Network.IsAvailable Then
+                MessageBox.Show("Please connect to the internet to use the system.", "No Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
+
+
             If txtName.Text = "" Or txtPhone.Text = "" Or txtUserId.Text = "" Then
-                MsgBox("Please enter all the fields", MsgBoxStyle.Exclamation)
+                MsgBox("Please fill in all the fields.", MsgBoxStyle.Exclamation)
                 txtUserId.Text = ""
                 txtPhone.Text = ""
                 txtName.Text = ""
             Else
+                connection.Open()
                 Using command As New NpgsqlCommand("SELECT * FROM SignUpPage WHERE UserId=@UserId and Name=@Name and Phone=@Phone", connection)
                     command.Parameters.AddWithValue("@UserId", txtUserId.Text)
                     command.Parameters.AddWithValue("@Name", txtName.Text)
                     command.Parameters.AddWithValue("@Phone", txtPhone.Text)
                     Dim reader As NpgsqlDataReader = command.ExecuteReader()
+
                     If reader.Read() Then
                         MsgBox("Verified")
                         Me.Height = 500
@@ -29,11 +37,15 @@ Public Class ForgotPassword
                         txtPassword.Visible = True
                     Else
                         MsgBox("Please enter valid information", MsgBoxStyle.Exclamation)
+                        connection.Close()
                     End If
                 End Using
             End If
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             If connection.State = ConnectionState.Open Then
                 connection.Close()
@@ -82,11 +94,12 @@ Public Class ForgotPassword
                 End If
             End If
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
-            If connection.State = ConnectionState.Open Then
-                connection.Close()
-            End If
+            connection.Close()
         End Try
     End Sub
 

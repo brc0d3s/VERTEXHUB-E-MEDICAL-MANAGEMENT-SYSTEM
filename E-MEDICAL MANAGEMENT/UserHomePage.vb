@@ -71,7 +71,10 @@ Public Class UserHomePage
                 End If
             End Using
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             ' Ensure the connection is properly closed
             connection.Close()

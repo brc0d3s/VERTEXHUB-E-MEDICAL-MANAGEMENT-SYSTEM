@@ -25,7 +25,10 @@
                 Timer1.Enabled = False
             End If
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 End Class

@@ -30,7 +30,10 @@ Public Class Dispaly
             txtTime.Text = table.Rows(i)(4).ToString
             general = table
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
 
     End Sub
@@ -40,7 +43,10 @@ Public Class Dispaly
             i = Math.Floor(i / 2)
             result(general)
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -166,7 +172,10 @@ Public Class Dispaly
                 End If
             End If
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             If connection.State = ConnectionState.Open Then
                 connection.Close()
@@ -185,5 +194,3 @@ Public Class Dispaly
         End If
     End Function
 End Class
-
-'is there no a better appealing way of alerting the user that booking succefully done apart from this borring messagebox

@@ -47,7 +47,10 @@ Public Class TableUpdate
             txt6.Clear()
 
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try
@@ -83,7 +86,10 @@ Public Class TableUpdate
             Dim cmd As New NpgsqlCommand(query, connection)
             recordCount = Convert.ToInt32(cmd.ExecuteScalar())
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try
@@ -146,7 +152,10 @@ Public Class TableUpdate
 
             ExecuteQueryAndLoadData(query)
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -185,7 +194,10 @@ Public Class TableUpdate
 
             ExecuteQueryAndLoadData(query)
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -249,7 +261,10 @@ Public Class TableUpdate
 
             ExecuteQueryAndLoadData(query)
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -288,7 +303,10 @@ Public Class TableUpdate
 
             ExecuteQueryAndLoadData(query)
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -335,7 +353,10 @@ Public Class TableUpdate
                 MsgBox("No query found for the selected table.", MsgBoxStyle.Exclamation)
             End If
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try

@@ -36,6 +36,7 @@ Partial Class StartPage
         Me.lblID = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.llHelp = New System.Windows.Forms.LinkLabel()
+        Me.btnEXIT = New System.Windows.Forms.Button()
         Me.GrpBx.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -203,6 +204,18 @@ Partial Class StartPage
         Me.llHelp.Text = "Help and Support"
         Me.llHelp.VisitedLinkColor = System.Drawing.Color.SkyBlue
         '
+        'btnEXIT
+        '
+        Me.btnEXIT.BackColor = System.Drawing.Color.IndianRed
+        Me.btnEXIT.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEXIT.ForeColor = System.Drawing.Color.White
+        Me.btnEXIT.Location = New System.Drawing.Point(954, 588)
+        Me.btnEXIT.Name = "btnEXIT"
+        Me.btnEXIT.Size = New System.Drawing.Size(105, 55)
+        Me.btnEXIT.TabIndex = 12
+        Me.btnEXIT.Text = "EXIT"
+        Me.btnEXIT.UseVisualStyleBackColor = False
+        '
         'StartPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
@@ -210,6 +223,7 @@ Partial Class StartPage
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1071, 655)
+        Me.Controls.Add(Me.btnEXIT)
         Me.Controls.Add(Me.llHelp)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GrpBx)
@@ -242,4 +256,5 @@ Partial Class StartPage
     Friend WithEvents cmbUserType As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents llHelp As LinkLabel
+    Friend WithEvents btnEXIT As Button
 End Class

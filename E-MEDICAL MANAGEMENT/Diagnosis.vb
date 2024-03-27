@@ -42,7 +42,10 @@ Public Class Diagnosis
             Dispaly.result(gen) ' Pass the DataTable to the result method
             Dispaly.Show()
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try

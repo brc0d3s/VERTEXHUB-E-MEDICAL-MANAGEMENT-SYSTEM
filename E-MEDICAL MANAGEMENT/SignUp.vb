@@ -1,4 +1,5 @@
 Imports Npgsql
+Imports System.Console
 
 Public Class SignUp
     Dim sex As String
@@ -7,22 +8,28 @@ Public Class SignUp
     Dim connection As New NpgsqlConnection(GetConnectionString())
 
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
-        ' Check if all details are filled
-        If Not AreTextBoxesFilled() Then
-            MsgBox("Fill all the Information", MsgBoxStyle.Exclamation)
-            Return
-        End If
-
-        ' Hash the password before storing it in the database
-        passwordHash = PasswordUtility.HashPassword(txtPassword.Text)
-
-        If rbtnMale.Checked = True Then
-            sex = "M"
-        ElseIf rbtnFemale.Checked Then
-            sex = "F"
-        End If
-
         Try
+            ' Check for internet connectivity
+            If Not My.Computer.Network.IsAvailable Then
+                MessageBox.Show("Please connect to the internet to use the system.", "No Internet Connection", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
+
+            ' Check if all details are filled
+            If Not AreTextBoxesFilled() Then
+                MsgBox("Please fill in all the fields.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
+            ' Hash the password before storing it in the database
+            passwordHash = PasswordUtility.HashPassword(txtPassword.Text)
+
+            If rbtnMale.Checked = True Then
+                sex = "M"
+            ElseIf rbtnFemale.Checked Then
+                sex = "F"
+            End If
+
             connection.Open() ' Open the connection here
 
             ' Check if user already exists
@@ -54,7 +61,10 @@ Public Class SignUp
                 End If
             End Using
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try
@@ -106,10 +116,18 @@ Public Class SignUp
     End Function
 
     Private Function UserExists(userId As String) As Boolean
-        Using cmd As New NpgsqlCommand("SELECT COUNT(*) FROM SignUpPage WHERE UserId = @UserId", connection)
-            cmd.Parameters.AddWithValue("@UserId", userId)
-            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
-            Return count > 0
-        End Using
+        Try
+            Using cmd As New NpgsqlCommand("SELECT COUNT(*) FROM SignUpPage WHERE UserId = @UserId", connection)
+                cmd.Parameters.AddWithValue("@UserId", userId)
+                Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+                Return count > 0
+            End Using
+        Catch ex As Exception
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
+            Return False ' Return false to indicate that user existence cannot be determined due to error
+        End Try
     End Function
 End Class

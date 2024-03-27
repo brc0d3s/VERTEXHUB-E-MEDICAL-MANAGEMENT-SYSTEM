@@ -25,7 +25,6 @@ Public Class StartPage
         End If
     End Sub
 
-
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         ' Check for internet connectivity
         If Not My.Computer.Network.IsAvailable Then
@@ -33,30 +32,43 @@ Public Class StartPage
             Return
         End If
 
-        If cmbUserType.Text.ToString().ToUpper() = "ADMIN" Then
+        ' Check if category is selected
+        If String.IsNullOrEmpty(cmbUserType.Text) Then
+            MsgBox("Please select your category.", MsgBoxStyle.Exclamation)
+            Return
+        End If
+
+        ' Check if the fields have been filled
+        If String.IsNullOrEmpty(txtUserID.Text) OrElse String.IsNullOrEmpty(txtPassword.Text) Then
+            MsgBox("Please fill in all the fields.", MsgBoxStyle.Exclamation)
+            Return
+        End If
+
+        ' Check if the id is integer
+        If Not IsInteger(txtUserID.Text) Then
+            MsgBox("Please enter an integer value for ID.", MsgBoxStyle.Exclamation)
+            Return
+        End If
+
+        ' Check if the id exists and details are correct
+        If cmbUserType.Text.ToUpper() = "ADMIN" Then
             adminLogin()
         Else
             userLogin()
         End If
     End Sub
 
-    'check if the id is integer
+    ' Check if the id is integer
     Private Function IsInteger(input As String) As Boolean
         Dim result As Integer
         Return Integer.TryParse(input, result)
     End Function
 
     Private Sub adminLogin()
-        'Hash the Entered password before comparison
+        ' Hash the Entered password before comparison
         LoginPasswordHash = PasswordUtility.HashPassword(txtPassword.Text)
 
         Try
-
-            If Not IsInteger(txtUserID.Text) Then
-                MsgBox("Please integer value for ID", MsgBoxStyle.Exclamation)
-                Return
-            End If
-
             connection.Open()
             Dim command As New NpgsqlCommand("SELECT * FROM administrator WHERE UserId = @UserId AND Password = @Password", connection)
             command.Parameters.AddWithValue("@UserId", txtUserID.Text)
@@ -65,9 +77,7 @@ Public Class StartPage
             Dim table As New DataTable()
             adapter.Fill(table)
 
-            If cmbUserType.Text.ToString().ToUpper() = "" Then
-                MsgBox("Please Select Your Category.", MsgBoxStyle.Exclamation)
-            ElseIf table.Rows.Count() <= 0 Then
+            If table.Rows.Count() <= 0 Then
                 MsgBox("Incorrect ADMIN ID or password.", MsgBoxStyle.Exclamation)
                 txtPassword.Text = ""
                 txtUserID.Text = ""
@@ -84,23 +94,20 @@ Public Class StartPage
                 cmbUserType.SelectedIndex = -1
             End If
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try
     End Sub
 
     Private Sub userLogin()
-        'Hash the Entered password before comparison
+        ' Hash the Entered password before comparison
         LoginPasswordHash = PasswordUtility.HashPassword(txtPassword.Text)
 
         Try
-
-            If Not IsInteger(txtUserID.Text) Then
-                MsgBox("Please integer value for ID", MsgBoxStyle.Exclamation)
-                Return
-            End If
-
             connection.Open()
             Dim command As New NpgsqlCommand("SELECT * FROM SignUpPage WHERE UserId = @UserId AND Password = @Password", connection)
             command.Parameters.AddWithValue("@UserId", txtUserID.Text)
@@ -109,9 +116,7 @@ Public Class StartPage
             Dim reader As NpgsqlDataReader = command.ExecuteReader()
             table.Load(reader)
 
-            If cmbUserType.Text.ToString().ToUpper() = "" Then
-                MsgBox("Please Select Your Category.", MsgBoxStyle.Exclamation)
-            ElseIf table.Rows.Count() <= 0 Then
+            If table.Rows.Count() <= 0 Then
                 MsgBox("Incorrect USER ID or password.", MsgBoxStyle.Exclamation)
                 txtPassword.Text = ""
                 txtUserID.Text = ""
@@ -128,7 +133,10 @@ Public Class StartPage
                 cmbUserType.SelectedIndex = -1
             End If
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
             connection.Close()
         End Try
@@ -144,5 +152,9 @@ Public Class StartPage
 
     Private Sub llHelp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llHelp.LinkClicked
         Help.Show()
+    End Sub
+
+    Private Sub btnEXIT_Click(sender As Object, e As EventArgs) Handles btnEXIT.Click
+        Application.Exit()
     End Sub
 End Class

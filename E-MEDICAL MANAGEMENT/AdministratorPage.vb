@@ -44,7 +44,10 @@ Public Class AdministratorPage
             llGeneralStore.Visible = True
             llSpecializedStore.Visible = True
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
     End Sub
 
@@ -71,7 +74,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Text = "TIME"
             TableUpdate.lblTableName.Text = "LABORATORIES TABLE"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -101,7 +107,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Text = "TIME"
             TableUpdate.lblTableName.Text = "DIAGNOSIS TABLE"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -131,7 +140,10 @@ Public Class AdministratorPage
             TableUpdate.txt6.UseSystemPasswordChar = True
             TableUpdate.lblTableName.Text = "USERS DETAILS"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -164,7 +176,10 @@ Public Class AdministratorPage
             TableUpdate.txt3.UseSystemPasswordChar = True
             TableUpdate.lblTableName.Text = "ADMINISTRATOR TABLE"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -186,7 +201,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -208,7 +226,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -230,7 +251,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Visible = False
             TableUpdate.txt6.Visible = False
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -261,7 +285,10 @@ Public Class AdministratorPage
             TableUpdate.lbl6.Text = "ADDRESS"
             TableUpdate.lblTableName.Text = "USER BOOKINGS TABLE"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()
@@ -297,7 +324,10 @@ Public Class AdministratorPage
             TableUpdate.lbl1.Text = "LOG ID"
             TableUpdate.lblTableName.Text = "SYSTEM LOGS"
         Catch ex As Exception
-            MsgBox("An error occurred: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         End Try
         If connection.State = ConnectionState.Open Then
             connection.Close()

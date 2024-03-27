@@ -21,7 +21,8 @@ Module System_Log
             End Using
             Return True ' Log in time successfully recorded
         Catch ex As Exception
-            MsgBox("Error logging login time: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
             Return False ' Failed to log in time
         Finally
             connection.Close()
@@ -70,7 +71,8 @@ Module System_Log
             End Using
             Return True ' Log out time successfully recorded
         Catch ex As Exception
-            MsgBox("Error logging logout time: " & ex.Message)
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
             Return False ' Failed to log out time
         Finally
             connection.Close()
