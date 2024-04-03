@@ -62,6 +62,11 @@ E-MEDICAL MANAGEMENT
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.Capture">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.Chronic_Disease_Mgmnt">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -88,6 +93,21 @@ E-MEDICAL MANAGEMENT
 </summary>
 </member>
 <member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.ekg_monitor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.exit_btn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.exit_btn1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:E_MEDICAL_MANAGEMENT.My.Resources.Resources.exit_btn2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

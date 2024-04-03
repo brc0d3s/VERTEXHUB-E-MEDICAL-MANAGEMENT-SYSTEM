@@ -34,10 +34,11 @@ Partial Class StartPage
         Me.txtUserID = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblID = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.llHelp = New System.Windows.Forms.LinkLabel()
-        Me.btnEXIT = New System.Windows.Forms.Button()
+        Me.pictEXIT = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GrpBx.SuspendLayout()
+        CType(Me.pictEXIT, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -179,16 +180,6 @@ Partial Class StartPage
         Me.lblID.TabIndex = 7
         Me.lblID.Text = "USER ID"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'llHelp
         '
         Me.llHelp.AutoSize = True
@@ -204,17 +195,26 @@ Partial Class StartPage
         Me.llHelp.Text = "Help and Support"
         Me.llHelp.VisitedLinkColor = System.Drawing.Color.SkyBlue
         '
-        'btnEXIT
+        'pictEXIT
         '
-        Me.btnEXIT.BackColor = System.Drawing.Color.IndianRed
-        Me.btnEXIT.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEXIT.ForeColor = System.Drawing.Color.White
-        Me.btnEXIT.Location = New System.Drawing.Point(954, 588)
-        Me.btnEXIT.Name = "btnEXIT"
-        Me.btnEXIT.Size = New System.Drawing.Size(105, 55)
-        Me.btnEXIT.TabIndex = 12
-        Me.btnEXIT.Text = "EXIT"
-        Me.btnEXIT.UseVisualStyleBackColor = False
+        Me.pictEXIT.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.exit_btn2
+        Me.pictEXIT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pictEXIT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pictEXIT.Location = New System.Drawing.Point(950, 543)
+        Me.pictEXIT.Name = "pictEXIT"
+        Me.pictEXIT.Size = New System.Drawing.Size(100, 97)
+        Me.pictEXIT.TabIndex = 12
+        Me.pictEXIT.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'StartPage
         '
@@ -223,7 +223,7 @@ Partial Class StartPage
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1071, 655)
-        Me.Controls.Add(Me.btnEXIT)
+        Me.Controls.Add(Me.pictEXIT)
         Me.Controls.Add(Me.llHelp)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GrpBx)
@@ -237,6 +237,7 @@ Partial Class StartPage
         Me.Text = "E-MEDICAL MANAGEMENT"
         Me.GrpBx.ResumeLayout(False)
         Me.GrpBx.PerformLayout()
+        CType(Me.pictEXIT, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -256,5 +257,5 @@ Partial Class StartPage
     Friend WithEvents cmbUserType As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents llHelp As LinkLabel
-    Friend WithEvents btnEXIT As Button
+    Friend WithEvents pictEXIT As PictureBox
 End Class

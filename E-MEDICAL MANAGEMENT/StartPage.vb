@@ -154,7 +154,43 @@ Public Class StartPage
         Help.Show()
     End Sub
 
-    Private Sub btnEXIT_Click(sender As Object, e As EventArgs) Handles btnEXIT.Click
+    Private Sub pictEXIT_Click(sender As Object, e As EventArgs) Handles pictEXIT.Click
         Application.Exit()
+    End Sub
+
+    Private Sub StartPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Set button properties
+        btnLogin.FlatStyle = FlatStyle.Flat
+        btnLogin.FlatAppearance.BorderSize = 1
+        btnLogin.FlatAppearance.BorderColor = Color.RoyalBlue ' Border color set to royal blue
+
+        ' Add code for button shape customization here
+        Dim radius As Integer = 20 ' Adjust the radius for desired roundness
+        Dim path As New Drawing2D.GraphicsPath()
+        path.AddArc(New Rectangle(0, 0, radius * 2, radius * 2), 180, 90)
+        path.AddLine(radius, 0, btnLogin.Width - radius, 0)
+        path.AddArc(New Rectangle(btnLogin.Width - 2 * radius, 0, radius * 2, radius * 2), -90, 90)
+        path.AddLine(btnLogin.Width, radius, btnLogin.Width, btnLogin.Height - radius)
+        path.AddArc(New Rectangle(btnLogin.Width - 2 * radius, btnLogin.Height - 2 * radius, radius * 2, radius * 2), 0, 90)
+        path.AddLine(btnLogin.Width - radius, btnLogin.Height, radius, btnLogin.Height)
+        path.AddArc(New Rectangle(0, btnLogin.Height - 2 * radius, radius * 2, radius * 2), 90, 90)
+        path.AddLine(0, btnLogin.Height - radius, 0, radius)
+        btnLogin.Region = New Region(path)
+
+        ' Add event handlers for smooth color transitions
+        AddHandler btnLogin.MouseEnter, AddressOf btnLogin_MouseEnter
+        AddHandler btnLogin.MouseLeave, AddressOf btnLogin_MouseLeave
+    End Sub
+
+    Private Sub btnLogin_MouseEnter(sender As Object, e As EventArgs)
+        ' Smooth transition for hover effect
+        Dim hoverColor As Color = Color.FromArgb(220, 150, 150) ' Adjusted background color
+        CType(sender, Button).BackColor = hoverColor
+    End Sub
+
+    Private Sub btnLogin_MouseLeave(sender As Object, e As EventArgs)
+        ' Smooth transition for hover effect
+        Dim originalColor As Color = Color.FromArgb(255, 128, 128) ' Original background color
+        CType(sender, Button).BackColor = originalColor
     End Sub
 End Class
