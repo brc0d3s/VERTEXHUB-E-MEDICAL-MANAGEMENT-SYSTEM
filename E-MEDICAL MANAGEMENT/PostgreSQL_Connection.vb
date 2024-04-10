@@ -5,11 +5,11 @@ Module PostgreSQL_Connection
 
     Public Function GetConnectionString() As String
 
-        Dim host As String = "Host=aws-0-us-west-1.pooler.supabase.com;"
+        Dim host As String = "Host=ep-hidden-night-a5bx4vqf-pooler.us-east-2.aws.neon.tech;"
         Dim port As String = "Port=5432;"
-        Dim db As String = "Database=postgres;"
-        Dim user As String = "Username=postgres.wuhhyphxwlxldxbgzmfu;"
-        Dim pass As String = "Password=vertexhubDBpassword;"
+        Dim db As String = "Database=VertexhubDB;"
+        Dim user As String = "Username=neondb_owner;"
+        Dim pass As String = "Password=M6uzyPULT5RA;"
 
 
 

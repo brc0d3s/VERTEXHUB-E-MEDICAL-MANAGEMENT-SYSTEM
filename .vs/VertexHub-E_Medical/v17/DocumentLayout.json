@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\",
+  "WorkspaceRootPath": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\documents\\cmt 307_ .net programming\\vertexhub-e-medical-management-system\\e-medical management\\postgresql_connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\postgresql_connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\documents\\cmt 307_ .net programming\\vertexhub-e-medical-management-system\\e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -39,10 +43,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PostgreSQL_Connection.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
+              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
+              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-10T06:30:18.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StartPage.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\StartPage.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\StartPage.vb",
               "ViewState": "AQIAAJIAAAAAAAAAAAAkwKIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -51,23 +68,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StartPage.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\StartPage.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb [Design]",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\StartPage.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-03T18:08:13.474Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T18:08:13.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Launcher.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Launcher.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Launcher.vb",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -75,22 +91,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Launcher.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Launcher.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb [Design]",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Launcher.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-03-27T06:52:58.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TableUpdate.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
+              "ToolTip": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "ViewState": "AQIAAK4BAAAAAAAAAAAkwMEBAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -98,12 +114,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TableUpdate.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
+              "DocumentMoniker": "C:\\Users\\brc0d3s\\Documents\\CMT 307_ .NET PROGRAMMING\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb [Design]",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\TableUpdate.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-03-27T06:22:55.516Z"
             }
