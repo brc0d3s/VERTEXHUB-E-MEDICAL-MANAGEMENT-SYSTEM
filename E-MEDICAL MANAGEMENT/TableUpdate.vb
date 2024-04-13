@@ -1,5 +1,5 @@
-﻿Imports System.Drawing.Printing
-Imports System.IO
+﻿Imports System.IO
+Imports ClosedXML.Excel
 Imports Npgsql
 
 Public Class TableUpdate
@@ -10,10 +10,6 @@ Public Class TableUpdate
     Dim UserpassHash As String
     Dim AdminpassHash As String
 
-    'Printing variables
-    Dim WithEvents PD As New PrintDocument
-    Dim PPD As New PrintPreviewDialog
-    Dim Longpaper As Integer
 
     Private Sub llLogOut_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llLogOut.LinkClicked
         ' Log logout time
@@ -362,90 +358,93 @@ Public Class TableUpdate
         End Try
     End Sub
 
-    ' Print functionalities
-    Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
-        Dim pagesetup As New PageSettings
-        pagesetup.PaperSize = New PaperSize("Custom", 1900, 1000) ' Adjusted paper size
-        PD.DefaultPageSettings = pagesetup
+
+    Private Sub btnExportData_Click(sender As Object, e As EventArgs) Handles btnExportData.Click
+        Try
+            If dgvAdmin Is Nothing Then
+                MsgBox("DataGridView is not initialized.", MsgBoxStyle.Critical)
+                Return
+            End If
+
+            ' Set default file name
+            Dim defaultFileName As String = $"{lblTableName.Text}_{StartPage.userName}_{DateTime.Now.ToString("yyyyMMdd")}.xlsx"
+
+            Using workbook As XLWorkbook = New XLWorkbook()
+                ' Add a worksheet to the workbook
+                Dim worksheet As IXLWorksheet = workbook.Worksheets.Add("Data")
+
+                ' Set headers formatting
+                Dim boldStyle As IXLFont = worksheet.Cell(1, 1).Style.Font
+                boldStyle.Bold = True
+                boldStyle.FontSize = 14
+
+                ' Add headers
+                worksheet.Cell(1, 1).Value = "VertexHub E-Medical"
+                worksheet.Cell(2, 1).Value = "Table:"
+                worksheet.Cell(2, 2).Value = lblTableName.Text
+                worksheet.Cell(3, 1).Value = "Admin ID:"
+                worksheet.Cell(3, 2).Value = If(StartPage.userID IsNot Nothing, StartPage.userID.ToString(), "")
+                worksheet.Cell(4, 1).Value = "Admin Name:"
+                worksheet.Cell(4, 2).Value = If(StartPage.userName IsNot Nothing, StartPage.userName.ToString(), "")
+                worksheet.Cell(5, 1).Value = "Printing Date:"
+                worksheet.Cell(5, 2).Value = DateTime.Now.ToString("dd/MM/yyyy")
+
+                If dgvAdmin.Rows.Count > 0 Then
+                    ' Add column headers from the DataGridView
+                    For colIndex As Integer = 0 To dgvAdmin.Columns.Count - 1
+                        worksheet.Cell(7, colIndex + 1).Value = dgvAdmin.Columns(colIndex).HeaderText.ToString()
+                    Next
+
+                    ' Set column headers formatting
+                    Dim headersBoldStyle As IXLFont = worksheet.Range("A7:" & ConvertToLetter(dgvAdmin.Columns.Count) & "7").Style.Font
+                    headersBoldStyle.Bold = True
+                    headersBoldStyle.FontSize = 12
+
+                    ' Add data rows from the DataGridView
+                    For rowIndex As Integer = 0 To dgvAdmin.Rows.Count - 1
+                        For colIndex As Integer = 0 To dgvAdmin.Columns.Count - 1
+                            worksheet.Cell(rowIndex + 8, colIndex + 1).Value = If(dgvAdmin.Rows(rowIndex).Cells(colIndex).Value IsNot Nothing, dgvAdmin.Rows(rowIndex).Cells(colIndex).Value.ToString(), "")
+                        Next
+                    Next
+                End If
+
+                ' Create and configure SaveFileDialog
+                Dim saveDialog As New SaveFileDialog()
+                saveDialog.Filter = "Excel Files (*.xlsx)|*.xlsx"
+                saveDialog.FileName = defaultFileName
+
+                ' Show SaveFileDialog and check if the user clicked OK
+                If saveDialog.ShowDialog() = DialogResult.OK Then
+                    Dim filePath As String = saveDialog.FileName
+
+                    ' Save the workbook with the specified file name and path
+                    workbook.SaveAs(filePath)
+
+                    ' Inform the user that exporting has completed
+                    MsgBox("Exporting Completed!", MsgBoxStyle.Information)
+                End If
+            End Using
+        Catch ex As Exception
+            ' Log the error to console
+            Console.WriteLine("Error: " & ex.Message)
+            ' Display user-friendly error message
+            MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
+        End Try
     End Sub
 
-    Private Sub PD_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD.PrintPage
-        Dim f8 As New Font("Calibri", 8, FontStyle.Regular)
-        Dim f10 As New Font("Calibri", 10, FontStyle.Regular)
-        Dim f10b As New Font("Calibri", 10, FontStyle.Bold)
-        Dim f14 As New Font("Calibri", 14, FontStyle.Bold)
+    Private Function ConvertToLetter(num As Integer) As String
+        Dim modnum As Integer
+        Dim letter As String = ""
 
-        Dim leftmargin As Integer = 50 ' Adjusted left margin
+        While num > 0
+            modnum = (num - 1) Mod 26
+            letter = Chr(65 + modnum) & letter
+            num = (num - modnum) \ 26
+        End While
 
-        ' Define the default name for the PDF
-        Dim pdfName As String = $"{lblTableName.Text}_{StartPage.userName}_{DateTime.Now.ToString("yyyyMMdd")}.pdf"
-
-        ' Define string formats for alignment
-        Dim leftFormat As New StringFormat()
-        leftFormat.Alignment = StringAlignment.Near
-
-        ' Define spacing between lines
-        Dim lineHeight As Integer = 20
-        Dim startY As Integer = 50 ' Starting position for drawing
-
-        'Get time of printing the record
-        Dim PrintingTime As DateTime = DateTime.Now
-        Dim tableHeader As String = lblTableName.Text
-
-        ' Draw Header
-        e.Graphics.DrawString("VertexHub E-Medical", f14, Brushes.RoyalBlue, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString(tableHeader, f14, Brushes.Black, leftmargin, startY)
-        startY += lineHeight * 2 ' Add extra space after header
-
-        ' Draw ADMIN Information
-        e.Graphics.DrawString("Admin ID: " & StartPage.userID, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Admin Name: " & StartPage.userName, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight * 2 ' Add extra space after user info
-
-        ' Draw Printing Date
-        e.Graphics.DrawString("Printing Date: " & PrintingTime.ToString("dd/MM/yyyy"), f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-
-        ' Draw Data table (Data Grid View) dgv
-        Dim dgv As DataGridView = dgvAdmin ' Assuming "dvg" is the name of your DataGridView
-        Dim columnLeft As Integer = leftmargin ' Start drawing from the left margin
-        Dim rowTop As Integer = startY ' Start drawing from the current Y position
-
-        ' Loop through each column in the DataGridView
-        For Each column As DataGridViewColumn In dgv.Columns
-            ' Draw column header
-            e.Graphics.DrawString(column.HeaderText, f10b, Brushes.Black, columnLeft, rowTop)
-            columnLeft += column.Width ' Move to the right based on column width
-        Next
-
-        rowTop += lineHeight ' Move to the next row
-        columnLeft = leftmargin ' Reset drawing position to the left margin
-
-        ' Loop through each row in the DataGridView
-        For Each row As DataGridViewRow In dgv.Rows
-            ' Loop through each cell in the row
-            For Each cell As DataGridViewCell In row.Cells
-                ' Draw cell content
-                e.Graphics.DrawString(cell.FormattedValue.ToString(), f10, Brushes.Black, columnLeft, rowTop)
-                columnLeft += dgv.Columns(cell.ColumnIndex).Width ' Move to the right based on column width
-            Next
-            rowTop += lineHeight ' Move to the next row
-            columnLeft = leftmargin ' Reset drawing position to the left margin
-        Next
+        Return letter
+    End Function
 
 
-        ' Save the PDF with the default name
-        PD.DocumentName = pdfName
-        Dim filePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfName)
-        PD.PrinterSettings.PrintToFile = True
-        PD.PrinterSettings.PrintFileName = filePath
-    End Sub
 
-    Private Sub btnPrintData_Click(sender As Object, e As EventArgs) Handles btnPrintData.Click
-        MsgBox("Printing Started! Please Wait", MsgBoxStyle.Information)
-        PPD.Document = PD
-        PPD.ShowDialog()
-    End Sub
 End Class

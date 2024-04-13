@@ -162,13 +162,19 @@ Public Class Dispaly
                 End Using
 
                 If (i > 0) Then
-                    MsgBox("Service Successfully Booked! Please Wait Printing your Receipt", MsgBoxStyle.Information)
+                    MsgBox("Service Successfully Booked! Please Wait Processing your Receipt", MsgBoxStyle.Information)
 
                     ' Call the RefreshAppointmentsDisplay method
                     BookedAppointments.RefreshAppointmentsDisplay()
 
                     PPD.Document = PD
                     PPD.ShowDialog()
+
+                    ' Check if the print preview dialog has been closed by printing/saving the document
+                    If PPD.DialogResult = DialogResult.OK Then
+                        ' Inform the user about successful printing/saving
+                        MsgBox("Receipt successfully printed/saved to desktop.", MsgBoxStyle.Information)
+                    End If
                 End If
             End If
         Catch ex As Exception

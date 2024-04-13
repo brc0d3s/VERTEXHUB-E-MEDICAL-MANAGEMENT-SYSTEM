@@ -49,7 +49,7 @@ Partial Class TableUpdate
         Me.btnBak = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnPrintData = New System.Windows.Forms.Button()
+        Me.btnExportData = New System.Windows.Forms.Button()
         Me.btnReload = New System.Windows.Forms.Button()
         CType(Me.dgvAdmin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -342,17 +342,17 @@ Partial Class TableUpdate
         Me.Panel2.Size = New System.Drawing.Size(1078, 11)
         Me.Panel2.TabIndex = 39
         '
-        'btnPrintData
+        'btnExportData
         '
-        Me.btnPrintData.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPrintData.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPrintData.ForeColor = System.Drawing.Color.Red
-        Me.btnPrintData.Location = New System.Drawing.Point(651, 592)
-        Me.btnPrintData.Name = "btnPrintData"
-        Me.btnPrintData.Size = New System.Drawing.Size(298, 54)
-        Me.btnPrintData.TabIndex = 41
-        Me.btnPrintData.Text = "PRINT TABLE DATA"
-        Me.btnPrintData.UseVisualStyleBackColor = False
+        Me.btnExportData.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnExportData.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExportData.ForeColor = System.Drawing.Color.Red
+        Me.btnExportData.Location = New System.Drawing.Point(611, 592)
+        Me.btnExportData.Name = "btnExportData"
+        Me.btnExportData.Size = New System.Drawing.Size(338, 54)
+        Me.btnExportData.TabIndex = 41
+        Me.btnExportData.Text = "EXPORT TABLE DATA"
+        Me.btnExportData.UseVisualStyleBackColor = False
         '
         'btnReload
         '
@@ -374,7 +374,7 @@ Partial Class TableUpdate
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1075, 659)
         Me.Controls.Add(Me.btnReload)
-        Me.Controls.Add(Me.btnPrintData)
+        Me.Controls.Add(Me.btnExportData)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBak)
@@ -433,6 +433,6 @@ Partial Class TableUpdate
     Friend WithEvents btnBak As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnPrintData As Button
+    Friend WithEvents btnExportData As Button
     Friend WithEvents btnReload As Button
 End Class
