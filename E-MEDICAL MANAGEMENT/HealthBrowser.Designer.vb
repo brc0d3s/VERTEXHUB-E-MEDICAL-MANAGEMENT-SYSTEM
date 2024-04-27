@@ -23,11 +23,11 @@ Partial Class HealthBrowser
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblHealth = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.HealthWebView = New Microsoft.Web.WebView2.WinForms.WebView2()
-        Me.lblHealth = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HealthWebView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,6 +45,18 @@ Partial Class HealthBrowser
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1075, 82)
         Me.Panel1.TabIndex = 18
+        '
+        'lblHealth
+        '
+        Me.lblHealth.AutoSize = True
+        Me.lblHealth.BackColor = System.Drawing.Color.Transparent
+        Me.lblHealth.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHealth.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.lblHealth.Location = New System.Drawing.Point(296, 45)
+        Me.lblHealth.Name = "lblHealth"
+        Me.lblHealth.Size = New System.Drawing.Size(385, 31)
+        Me.lblHealth.TabIndex = 22
+        Me.lblHealth.Text = "Health Education Resources"
         '
         'btnBack
         '
@@ -88,21 +100,9 @@ Partial Class HealthBrowser
         Me.HealthWebView.Location = New System.Drawing.Point(0, 82)
         Me.HealthWebView.Name = "HealthWebView"
         Me.HealthWebView.Size = New System.Drawing.Size(1075, 577)
-        Me.HealthWebView.Source = New System.Uri("https://www.healthline.com/", System.UriKind.Absolute)
+        Me.HealthWebView.Source = New System.Uri("https://health.gov/", System.UriKind.Absolute)
         Me.HealthWebView.TabIndex = 19
         Me.HealthWebView.ZoomFactor = 1.0R
-        '
-        'lblHealth
-        '
-        Me.lblHealth.AutoSize = True
-        Me.lblHealth.BackColor = System.Drawing.Color.Transparent
-        Me.lblHealth.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHealth.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.lblHealth.Location = New System.Drawing.Point(296, 45)
-        Me.lblHealth.Name = "lblHealth"
-        Me.lblHealth.Size = New System.Drawing.Size(385, 31)
-        Me.lblHealth.TabIndex = 22
-        Me.lblHealth.Text = "Health Education Resources"
         '
         'HealthBrowser
         '
