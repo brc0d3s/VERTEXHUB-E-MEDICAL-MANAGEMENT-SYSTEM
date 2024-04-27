@@ -130,8 +130,14 @@
   <data name="68201749-doctor-wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\68201749-doctor-wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wallpaper-lost-password-reset-reddit-grey-backgrounds-vmware-wallpapers-desktop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper-lost-password-reset-reddit-grey-backgrounds-vmware-wallpapers-desktop2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit-btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit-btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +172,9 @@
   <data name="I-Pharmacy-by-Marketing-Jazz-Sevilla-Spain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\I-Pharmacy-by-Marketing-Jazz-Sevilla-Spain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PANASONIC Plasma Display TH-50PF20ER (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PANASONIC Plasma Display TH-50PF20ER (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,12 +183,6 @@
   </data>
   <data name="diagnosis-microsoft-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diagnosis-microsoft-image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SpecializedMedicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SpecializedMedicine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="appointment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appointment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5acf8eb495b617c7c64e32dde78eae1b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5acf8eb495b617c7c64e32dde78eae1b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,13 +220,13 @@
   <data name="login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wallpaper-lost-password-reset-reddit-grey-backgrounds-vmware-wallpapers-desktop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wallpaper-lost-password-reset-reddit-grey-backgrounds-vmware-wallpapers-desktop2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SpecializedMedicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpecializedMedicine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vector-laboratory-chemical-medical-test-logo-icon-colorful-modern-design-bulbs-bottles-49926491.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="appointment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appointment.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit-btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit-btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="browser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\browser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -81,4 +81,8 @@ Public Class UserHomePage
         End Try
     End Sub
 
+    Private Sub btnHealthBrowser_Click(sender As Object, e As EventArgs) Handles btnHealthBrowser.Click
+        Me.Close()
+        HealthBrowser.Show()
+    End Sub
 End Class

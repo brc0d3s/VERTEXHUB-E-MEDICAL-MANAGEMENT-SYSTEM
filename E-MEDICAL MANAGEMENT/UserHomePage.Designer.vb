@@ -27,14 +27,15 @@ Partial Class UserHomePage
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.llLogOut = New System.Windows.Forms.LinkLabel()
         Me.lblName = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.btnHealthBrowser = New System.Windows.Forms.Button()
         Me.btnAppointments = New System.Windows.Forms.Button()
         Me.btnMedicalStore = New System.Windows.Forms.Button()
         Me.btnLaboratories = New System.Windows.Forms.Button()
         Me.btnDiagnosis = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,60 +84,6 @@ Partial Class UserHomePage
         Me.lblName.TabIndex = 17
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
-        'btnAppointments
-        '
-        Me.btnAppointments.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.home_appontment
-        Me.btnAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnAppointments.Location = New System.Drawing.Point(593, 466)
-        Me.btnAppointments.Name = "btnAppointments"
-        Me.btnAppointments.Size = New System.Drawing.Size(389, 181)
-        Me.btnAppointments.TabIndex = 18
-        Me.btnAppointments.UseVisualStyleBackColor = True
-        '
-        'btnMedicalStore
-        '
-        Me.btnMedicalStore.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.b_logo5
-        Me.btnMedicalStore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnMedicalStore.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnMedicalStore.Location = New System.Drawing.Point(78, 466)
-        Me.btnMedicalStore.Name = "btnMedicalStore"
-        Me.btnMedicalStore.Size = New System.Drawing.Size(389, 181)
-        Me.btnMedicalStore.TabIndex = 15
-        Me.btnMedicalStore.UseVisualStyleBackColor = True
-        '
-        'btnLaboratories
-        '
-        Me.btnLaboratories.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.vector_laboratory_chemical_medical_test_logo_icon_colorful_modern_design_bulbs_bottles_49926491__2_
-        Me.btnLaboratories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnLaboratories.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnLaboratories.Location = New System.Drawing.Point(593, 234)
-        Me.btnLaboratories.Name = "btnLaboratories"
-        Me.btnLaboratories.Size = New System.Drawing.Size(389, 181)
-        Me.btnLaboratories.TabIndex = 14
-        Me.btnLaboratories.UseVisualStyleBackColor = True
-        '
-        'btnDiagnosis
-        '
-        Me.btnDiagnosis.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.diagnosis_microsoft_image
-        Me.btnDiagnosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnDiagnosis.Location = New System.Drawing.Point(78, 232)
-        Me.btnDiagnosis.Name = "btnDiagnosis"
-        Me.btnDiagnosis.Size = New System.Drawing.Size(389, 183)
-        Me.btnDiagnosis.TabIndex = 12
-        Me.btnDiagnosis.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -159,12 +106,78 @@ Partial Class UserHomePage
         'Timer1
         '
         '
+        'btnHealthBrowser
+        '
+        Me.btnHealthBrowser.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.browser
+        Me.btnHealthBrowser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHealthBrowser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnHealthBrowser.Location = New System.Drawing.Point(8, 193)
+        Me.btnHealthBrowser.Name = "btnHealthBrowser"
+        Me.btnHealthBrowser.Size = New System.Drawing.Size(368, 53)
+        Me.btnHealthBrowser.TabIndex = 20
+        Me.btnHealthBrowser.UseVisualStyleBackColor = True
+        '
+        'btnAppointments
+        '
+        Me.btnAppointments.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.home_appontment
+        Me.btnAppointments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnAppointments.Location = New System.Drawing.Point(593, 475)
+        Me.btnAppointments.Name = "btnAppointments"
+        Me.btnAppointments.Size = New System.Drawing.Size(389, 163)
+        Me.btnAppointments.TabIndex = 18
+        Me.btnAppointments.UseVisualStyleBackColor = True
+        '
+        'btnMedicalStore
+        '
+        Me.btnMedicalStore.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.b_logo5
+        Me.btnMedicalStore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMedicalStore.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnMedicalStore.Location = New System.Drawing.Point(78, 475)
+        Me.btnMedicalStore.Name = "btnMedicalStore"
+        Me.btnMedicalStore.Size = New System.Drawing.Size(389, 163)
+        Me.btnMedicalStore.TabIndex = 15
+        Me.btnMedicalStore.UseVisualStyleBackColor = True
+        '
+        'btnLaboratories
+        '
+        Me.btnLaboratories.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.vector_laboratory_chemical_medical_test_logo_icon_colorful_modern_design_bulbs_bottles_49926491__2_
+        Me.btnLaboratories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLaboratories.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnLaboratories.Location = New System.Drawing.Point(593, 278)
+        Me.btnLaboratories.Name = "btnLaboratories"
+        Me.btnLaboratories.Size = New System.Drawing.Size(389, 163)
+        Me.btnLaboratories.TabIndex = 14
+        Me.btnLaboratories.UseVisualStyleBackColor = True
+        '
+        'btnDiagnosis
+        '
+        Me.btnDiagnosis.BackgroundImage = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.diagnosis_microsoft_image
+        Me.btnDiagnosis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnDiagnosis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnDiagnosis.Location = New System.Drawing.Point(78, 278)
+        Me.btnDiagnosis.Name = "btnDiagnosis"
+        Me.btnDiagnosis.Size = New System.Drawing.Size(389, 163)
+        Me.btnDiagnosis.TabIndex = 12
+        Me.btnDiagnosis.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.E_MEDICAL_MANAGEMENT.My.Resources.Resources.Logo
+        Me.PictureBox1.Location = New System.Drawing.Point(28, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(118, 98)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'UserHomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1075, 659)
+        Me.Controls.Add(Me.btnHealthBrowser)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAppointments)
@@ -198,4 +211,5 @@ Partial Class UserHomePage
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents btnHealthBrowser As Button
 End Class
