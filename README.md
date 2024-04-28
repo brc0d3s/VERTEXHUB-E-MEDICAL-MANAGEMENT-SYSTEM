@@ -30,3 +30,10 @@
 <div align="center">
 <img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/adminHome.PNG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL2FkbWluSG9tZS5QTkciLCJpYXQiOjE3MTEwMjk2MTcsImV4cCI6MzEzMDE0OTYxN30.Ktnj8zM_xD7i1uFE778yan2C5sRtXqoVx2WypZxy5Hg&t=2024-03-21T14%3A00%3A18.721Z"/>
 </div>
+
+## DB Structure
+
+<div align="center">
+<img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/VertexhubDB%20-%20public.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL1ZlcnRleGh1YkRCIC0gcHVibGljLnBuZyIsImlhdCI6MTcxNDI3NzkxMSwiZXhwIjozMjkxMDc3OTExfQ.wZdogcYz2VjmCwmmIl1-cjOFVkIeV7MRha96j6ouRDE&t=2024-04-28T04%3A18%3A31.637Z"/>
+</div>
+
