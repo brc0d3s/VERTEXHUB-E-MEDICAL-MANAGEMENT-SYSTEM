@@ -29,7 +29,7 @@ Module System_Log
         End Try
     End Function
 
-    ' Function to retrieve public IP address
+    ' Function to retrieve public IP address  form ipify API
     Private Function GetPublicIPAddress() As String
         Dim request As HttpWebRequest = WebRequest.Create("https://api.ipify.org")
         Dim response As HttpWebResponse = CType(request.GetResponse(), HttpWebResponse)
@@ -39,7 +39,7 @@ Module System_Log
         Return ipAddress
     End Function
 
-    ' Function to retrieve location based on public IP address
+    ' Function to retrieve location from ip-api based on public IP address retrieved from ipify API
     Private Function GetLocation(ipAddress As String) As String
         Dim apiUrl As String = $"http://ip-api.com/json/{ipAddress}"
         Dim request As HttpWebRequest = WebRequest.Create(apiUrl)
