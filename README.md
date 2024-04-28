@@ -36,3 +36,10 @@
 <div align="center">
 <img width="60%" src="https://wuhhyphxwlxldxbgzmfu.supabase.co/storage/v1/object/sign/VertexhubResources/Snipes/VertexhubDB%20-%20public.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJWZXJ0ZXhodWJSZXNvdXJjZXMvU25pcGVzL1ZlcnRleGh1YkRCIC0gcHVibGljLnBuZyIsImlhdCI6MTcxNDI3NzQwOCwiZXhwIjozMjkxMDc3NDA4fQ.yJt6rcKyBKe6dxKUkSORoPFYR8OAhaWmFNvLA-CQzWw&t=2024-04-28T04%3A10%3A08.570Z"/>
 </div>
+
+
+## System Structure & Guide
+
+<div align="center">
+<img width="60%" src="System_Guide.pdf"/>
+</div>
