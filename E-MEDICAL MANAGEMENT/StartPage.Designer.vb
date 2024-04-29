@@ -118,7 +118,7 @@ Partial Class StartPage
         Me.lblForgotPassword.AutoSize = True
         Me.lblForgotPassword.BackColor = System.Drawing.Color.Transparent
         Me.lblForgotPassword.ForeColor = System.Drawing.Color.Lime
-        Me.lblForgotPassword.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblForgotPassword.LinkColor = System.Drawing.Color.Red
         Me.lblForgotPassword.Location = New System.Drawing.Point(202, 412)
         Me.lblForgotPassword.Name = "lblForgotPassword"
         Me.lblForgotPassword.Size = New System.Drawing.Size(189, 25)

@@ -36,7 +36,7 @@ Public Class MedicalStore
             End Using
             Dispaly.grpDetails.Text = displayText
             Dispaly.result(gen)
-            Dispaly.Show()
+            Dispaly.ShowDialog()
         Catch ex As Exception
             ' Log the error to console
             Console.WriteLine("Error: " & ex.Message)

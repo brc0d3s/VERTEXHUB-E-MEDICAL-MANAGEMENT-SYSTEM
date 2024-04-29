@@ -40,7 +40,7 @@ Public Class Laboratories
                 Dispaly.lstName.Items.Add(vbNewLine)
             Next
             Dispaly.result(gen)
-            Dispaly.Show()
+            Dispaly.ShowDialog()
         Catch ex As Exception
             ' Log the error to console
             Console.WriteLine("Error: " & ex.Message)

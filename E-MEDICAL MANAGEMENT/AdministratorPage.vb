@@ -60,7 +60,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False
@@ -93,7 +93,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False
@@ -125,7 +125,7 @@ Public Class AdministratorPage
             Dim table As New DataTable
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False
@@ -158,7 +158,7 @@ Public Class AdministratorPage
             Dim table As New DataTable
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False
@@ -195,7 +195,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "GENERAL STORE TABLE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             TableUpdate.lbl6.Visible = False
@@ -220,7 +220,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "SPECIALIZED STORE TABLE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             TableUpdate.lbl6.Visible = False
@@ -245,7 +245,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lblTableName.Text = "PREVENTIVE STORE TABLE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             TableUpdate.lbl6.Visible = False
@@ -270,7 +270,7 @@ Public Class AdministratorPage
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
             TableUpdate.lbl1.Text = "TYPE"
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False
@@ -303,7 +303,7 @@ Public Class AdministratorPage
             Dim table As New DataTable
             ad.Fill(table)
             TableUpdate.dgvAdmin.DataSource = table
-            TableUpdate.Show()
+            TableUpdate.ShowDialog()
             Me.Hide()
             TableUpdate.lblName.Text = str1
             llPreventiveStore.Visible = False

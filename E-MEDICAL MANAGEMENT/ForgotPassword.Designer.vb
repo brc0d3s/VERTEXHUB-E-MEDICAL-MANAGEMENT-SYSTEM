@@ -33,9 +33,12 @@ Partial Class ForgotPassword
         Me.btnVerify = New System.Windows.Forms.Button()
         Me.txtConfirmPassword = New System.Windows.Forms.TextBox()
         Me.lblConfirmPassword = New System.Windows.Forms.Label()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.btnChange = New System.Windows.Forms.Button()
+        Me.txtMatch = New System.Windows.Forms.TextBox()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtUserId
@@ -142,15 +145,6 @@ Partial Class ForgotPassword
         Me.lblConfirmPassword.TabIndex = 35
         Me.lblConfirmPassword.Text = "CONFIRM PASSWORD"
         '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(358, 277)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(306, 31)
-        Me.txtPassword.TabIndex = 34
-        Me.txtPassword.UseSystemPasswordChar = True
-        '
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
@@ -174,17 +168,62 @@ Partial Class ForgotPassword
         Me.btnChange.Text = "CHANGE"
         Me.btnChange.UseVisualStyleBackColor = False
         '
+        'txtMatch
+        '
+        Me.txtMatch.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.txtMatch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtMatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMatch.Location = New System.Drawing.Point(682, 343)
+        Me.txtMatch.Name = "txtMatch"
+        Me.txtMatch.ReadOnly = True
+        Me.txtMatch.Size = New System.Drawing.Size(167, 24)
+        Me.txtMatch.TabIndex = 38
+        '
+        'btnClose
+        '
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.btnClose.Location = New System.Drawing.Point(554, 255)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(110, 51)
+        Me.btnClose.TabIndex = 39
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(358, 280)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(306, 31)
+        Me.txtPassword.TabIndex = 40
+        Me.txtPassword.UseSystemPasswordChar = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Button1.Location = New System.Drawing.Point(554, 382)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(110, 51)
+        Me.Button1.TabIndex = 41
+        Me.Button1.Text = "Close"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'ForgotPassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(709, 445)
+        Me.ClientSize = New System.Drawing.Size(861, 445)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.txtMatch)
         Me.Controls.Add(Me.btnChange)
         Me.Controls.Add(Me.txtConfirmPassword)
         Me.Controls.Add(Me.lblConfirmPassword)
-        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.btnVerify)
         Me.Controls.Add(Me.txtPhone)
@@ -214,7 +253,10 @@ Partial Class ForgotPassword
     Friend WithEvents btnVerify As Button
     Friend WithEvents txtConfirmPassword As TextBox
     Friend WithEvents lblConfirmPassword As Label
-    Friend WithEvents txtPassword As TextBox
     Friend WithEvents lblPassword As Label
     Friend WithEvents btnChange As Button
+    Friend WithEvents txtMatch As TextBox
+    Friend WithEvents btnClose As Button
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents Button1 As Button
 End Class

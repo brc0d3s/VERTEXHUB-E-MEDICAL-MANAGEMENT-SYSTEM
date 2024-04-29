@@ -30,6 +30,7 @@ Public Class ForgotPassword
                         MsgBox("Verified")
                         Me.Height = 500
                         btnVerify.Visible = False
+                        btnClose.Visible = False
                         lblPassword.Visible = True
                         lblConfirmPassword.Visible = True
                         btnChange.Visible = True
@@ -125,4 +126,25 @@ Public Class ForgotPassword
 
         Return hasLetter AndAlso hasNumber AndAlso hasSpecialChar
     End Function
+
+    Private Sub txtConfirmPassword_TextChanged(sender As Object, e As EventArgs) Handles txtConfirmPassword.TextChanged
+        If txtPassword.Text = txtConfirmPassword.Text Then
+            txtMatch.Text = "Match"
+            txtMatch.ForeColor = Color.Green
+
+        Else
+            txtMatch.Text = "Not match"
+            txtMatch.ForeColor = Color.Red
+        End If
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+        StartPage.Show()
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+        StartPage.Show()
+    End Sub
 End Class

@@ -38,15 +38,19 @@ Partial Class SignUp
         Me.Label7 = New System.Windows.Forms.Label()
         Me.rbtnMale = New System.Windows.Forms.RadioButton()
         Me.rbtnFemale = New System.Windows.Forms.RadioButton()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtConfirm = New System.Windows.Forms.TextBox()
+        Me.txtMatch = New System.Windows.Forms.TextBox()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnSignUp
         '
         Me.btnSignUp.BackColor = System.Drawing.Color.White
         Me.btnSignUp.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSignUp.Location = New System.Drawing.Point(229, 514)
+        Me.btnSignUp.Location = New System.Drawing.Point(266, 529)
         Me.btnSignUp.Name = "btnSignUp"
-        Me.btnSignUp.Size = New System.Drawing.Size(138, 46)
+        Me.btnSignUp.Size = New System.Drawing.Size(138, 43)
         Me.btnSignUp.TabIndex = 25
         Me.btnSignUp.Text = "SIGN UP"
         Me.btnSignUp.UseVisualStyleBackColor = False
@@ -54,7 +58,7 @@ Partial Class SignUp
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(229, 459)
+        Me.txtPassword.Location = New System.Drawing.Point(258, 412)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(306, 31)
         Me.txtPassword.TabIndex = 24
@@ -63,7 +67,7 @@ Partial Class SignUp
         'txtPhone
         '
         Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(229, 386)
+        Me.txtPhone.Location = New System.Drawing.Point(258, 351)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(306, 31)
         Me.txtPhone.TabIndex = 23
@@ -71,7 +75,7 @@ Partial Class SignUp
         'txtAge
         '
         Me.txtAge.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAge.Location = New System.Drawing.Point(229, 312)
+        Me.txtAge.Location = New System.Drawing.Point(258, 283)
         Me.txtAge.Name = "txtAge"
         Me.txtAge.Size = New System.Drawing.Size(60, 31)
         Me.txtAge.TabIndex = 22
@@ -79,7 +83,7 @@ Partial Class SignUp
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(229, 172)
+        Me.txtName.Location = New System.Drawing.Point(258, 147)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(306, 31)
         Me.txtName.TabIndex = 20
@@ -87,7 +91,7 @@ Partial Class SignUp
         'txtUserId
         '
         Me.txtUserId.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserId.Location = New System.Drawing.Point(229, 99)
+        Me.txtUserId.Location = New System.Drawing.Point(258, 81)
         Me.txtUserId.Name = "txtUserId"
         Me.txtUserId.Size = New System.Drawing.Size(306, 31)
         Me.txtUserId.TabIndex = 19
@@ -98,7 +102,7 @@ Partial Class SignUp
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(19, 459)
+        Me.Label6.Location = New System.Drawing.Point(19, 409)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(180, 31)
         Me.Label6.TabIndex = 18
@@ -110,7 +114,7 @@ Partial Class SignUp
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(43, 99)
+        Me.Label5.Location = New System.Drawing.Point(27, 81)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(132, 31)
         Me.Label5.TabIndex = 17
@@ -122,7 +126,7 @@ Partial Class SignUp
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(111, 312)
+        Me.Label4.Location = New System.Drawing.Point(30, 280)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(74, 31)
         Me.Label4.TabIndex = 16
@@ -134,7 +138,7 @@ Partial Class SignUp
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(114, 237)
+        Me.Label3.Location = New System.Drawing.Point(31, 211)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 31)
         Me.Label3.TabIndex = 15
@@ -146,7 +150,7 @@ Partial Class SignUp
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(71, 386)
+        Me.Label2.Location = New System.Drawing.Point(27, 348)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(116, 31)
         Me.Label2.TabIndex = 14
@@ -158,7 +162,7 @@ Partial Class SignUp
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(86, 172)
+        Me.Label1.Location = New System.Drawing.Point(33, 147)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 31)
         Me.Label1.TabIndex = 13
@@ -179,7 +183,7 @@ Partial Class SignUp
         'rbtnMale
         '
         Me.rbtnMale.AutoSize = True
-        Me.rbtnMale.Location = New System.Drawing.Point(229, 241)
+        Me.rbtnMale.Location = New System.Drawing.Point(258, 215)
         Me.rbtnMale.Name = "rbtnMale"
         Me.rbtnMale.Size = New System.Drawing.Size(81, 29)
         Me.rbtnMale.TabIndex = 27
@@ -190,7 +194,7 @@ Partial Class SignUp
         'rbtnFemale
         '
         Me.rbtnFemale.AutoSize = True
-        Me.rbtnFemale.Location = New System.Drawing.Point(380, 241)
+        Me.rbtnFemale.Location = New System.Drawing.Point(438, 215)
         Me.rbtnFemale.Name = "rbtnFemale"
         Me.rbtnFemale.Size = New System.Drawing.Size(107, 29)
         Me.rbtnFemale.TabIndex = 28
@@ -198,12 +202,59 @@ Partial Class SignUp
         Me.rbtnFemale.Text = "Female"
         Me.rbtnFemale.UseVisualStyleBackColor = True
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(12, 472)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(323, 31)
+        Me.Label8.TabIndex = 29
+        Me.Label8.Text = "CONFIRM PASSWORD"
+        '
+        'txtConfirm
+        '
+        Me.txtConfirm.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConfirm.Location = New System.Drawing.Point(354, 472)
+        Me.txtConfirm.Name = "txtConfirm"
+        Me.txtConfirm.Size = New System.Drawing.Size(306, 31)
+        Me.txtConfirm.TabIndex = 30
+        Me.txtConfirm.UseSystemPasswordChar = True
+        '
+        'txtMatch
+        '
+        Me.txtMatch.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.txtMatch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtMatch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMatch.Location = New System.Drawing.Point(680, 472)
+        Me.txtMatch.Name = "txtMatch"
+        Me.txtMatch.ReadOnly = True
+        Me.txtMatch.Size = New System.Drawing.Size(157, 24)
+        Me.txtMatch.TabIndex = 31
+        '
+        'btnClose
+        '
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.btnClose.Location = New System.Drawing.Point(517, 521)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(110, 51)
+        Me.btnClose.TabIndex = 32
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'SignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(737, 585)
+        Me.ClientSize = New System.Drawing.Size(849, 585)
+        Me.Controls.Add(Me.btnClose)
+        Me.Controls.Add(Me.txtMatch)
+        Me.Controls.Add(Me.txtConfirm)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.rbtnFemale)
         Me.Controls.Add(Me.rbtnMale)
         Me.Controls.Add(Me.Label7)
@@ -246,4 +297,8 @@ Partial Class SignUp
     Friend WithEvents Label7 As Label
     Friend WithEvents rbtnMale As RadioButton
     Friend WithEvents rbtnFemale As RadioButton
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtConfirm As TextBox
+    Friend WithEvents txtMatch As TextBox
+    Friend WithEvents btnClose As Button
 End Class

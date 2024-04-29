@@ -30,17 +30,17 @@ Public Class SignUp
                 sex = "F"
             End If
 
+            ' Check if password meets criteria
+            If Not IsValidPassword(txtPassword.Text) Then
+                MsgBox("Password must be at least 8 characters long and contain a mixture of letters, numbers, and special characters.", MsgBoxStyle.Exclamation)
+                Return
+            End If
+
             connection.Open() ' Open the connection here
 
             ' Check if user already exists
             If UserExists(txtUserId.Text) Then
                 MsgBox("User ID already exists. Please Login to continue.", MsgBoxStyle.Exclamation)
-                Return
-            End If
-
-            ' Check if password meets criteria
-            If Not IsValidPassword(txtPassword.Text) Then
-                MsgBox("Password must be at least 8 characters long and contain a mixture of letters, numbers, and special characters.", MsgBoxStyle.Exclamation)
                 Return
             End If
 
@@ -130,4 +130,20 @@ Public Class SignUp
             Return False ' Return false to indicate that user existence cannot be determined due to error
         End Try
     End Function
+
+    Private Sub txtConfirm_TextChanged(sender As Object, e As EventArgs) Handles txtConfirm.TextChanged
+        If txtPassword.Text = txtConfirm.Text Then
+            txtMatch.Text = "Match"
+            txtMatch.ForeColor = Color.Green
+
+        Else
+            txtMatch.Text = "Not match"
+            txtMatch.ForeColor = Color.Red
+        End If
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+        StartPage.Show()
+    End Sub
 End Class

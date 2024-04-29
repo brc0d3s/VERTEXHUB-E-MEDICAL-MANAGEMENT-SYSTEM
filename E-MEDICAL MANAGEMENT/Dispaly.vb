@@ -1,6 +1,4 @@
-﻿Imports System.Drawing.Printing
-Imports System.IO
-Imports Npgsql
+﻿Imports Npgsql
 
 Public Class Dispaly
     Public Property i As Integer = 0
@@ -8,10 +6,6 @@ Public Class Dispaly
     Dim general As New DataTable
     Private connection As New NpgsqlConnection(GetConnectionString())
 
-    'Printing variables
-    Dim WithEvents PD As New PrintDocument
-    Dim PPD As New PrintPreviewDialog
-    Dim Longpaper As Integer
 
     Private Sub Dispaly_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblName1.Text = StartPage.userName.ToString()
@@ -61,75 +55,17 @@ Public Class Dispaly
         Me.Close()
     End Sub
 
-    ' Print functionalities
-    Private Sub PD_BeginPrint(sender As Object, e As Printing.PrintEventArgs) Handles PD.BeginPrint
-        Dim pagesetup As New PageSettings
-        pagesetup.PaperSize = New PaperSize("Custom", 500, 700) ' Adjusted paper size
-        PD.DefaultPageSettings = pagesetup
-    End Sub
 
-    Private Sub PD_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PD.PrintPage
-        Dim f8 As New Font("Calibri", 8, FontStyle.Regular)
-        Dim f10 As New Font("Calibri", 10, FontStyle.Regular)
-        Dim f10b As New Font("Calibri", 10, FontStyle.Bold)
-        Dim f14 As New Font("Calibri", 14, FontStyle.Bold)
-
-        Dim leftmargin As Integer = 50 ' Adjusted left margin
-
-        ' Define the default name for the PDF
-        Dim pdfName As String = $"{StartPage.userName}_{DateTime.Now.ToString("yyyyMMdd")}.pdf"
-
-        ' Booking data
-        Dim bookingDate As DateTime = DateTime.Now
-        Dim service As String = grpDetails.Text
-        Dim DocCenterName As String = txtName.Text
-        Dim consultDate As Date = dtpkConsult.Value
-        Dim Address As String = txtAddress.Text
-        Dim Phone As String = txtPhone.Text
-        Dim Ohours As String = txtTime.Text
-
-        ' Define string formats for alignment
-        Dim leftFormat As New StringFormat()
-        leftFormat.Alignment = StringAlignment.Near
-
-        ' Define spacing between lines
-        Dim lineHeight As Integer = 20
-        Dim startY As Integer = 50 ' Starting position for drawing
-
-        ' Draw Header
-        e.Graphics.DrawString("VertexHub E-Medical", f14, Brushes.RoyalBlue, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Medical Appointment Receipt", f14, Brushes.Black, leftmargin, startY)
-        startY += lineHeight * 2 ' Add extra space after header
-
-        ' Draw User Information
-        e.Graphics.DrawString("User ID: " & StartPage.userID, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("User Name: " & StartPage.userName, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight * 2 ' Add extra space after user info
-
-        ' Draw Booking Information
-        e.Graphics.DrawString("Booking Date: " & bookingDate.ToString("dd/MM/yyyy"), f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Consultation Date: " & consultDate.ToString("dd/MM/yyyy"), f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Service: " & service, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Doctor/Facility Name: " & DocCenterName, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Doctor/Facility Address: " & Address, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Phone: " & Phone, f10b, Brushes.Black, leftmargin, startY)
-        startY += lineHeight
-        e.Graphics.DrawString("Operation Hours: " & Ohours, f10b, Brushes.Black, leftmargin, startY)
-
-
-
-        ' Save the PDF with the default name
-        PD.DocumentName = pdfName
-        Dim filePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfName)
-        PD.PrinterSettings.PrintToFile = True
-        PD.PrinterSettings.PrintFileName = filePath
+    'Set Print functionalities
+    Private Sub setPrints()
+        'service, DocCenterName, consultDate, Address, Phone, Ohours
+        Print_Appointment_Receipt.service = grpDetails.Text
+        Print_Appointment_Receipt.DocCenterName = txtName.Text
+        Print_Appointment_Receipt.consultDate = dtpkConsult.Value
+        Print_Appointment_Receipt.Address = txtAddress.Text
+        Print_Appointment_Receipt.Phone = txtPhone.Text
+        Print_Appointment_Receipt.Ohours = txtTime.Text
+        Print_Appointment_Receipt.ShowDialog()
     End Sub
 
 
@@ -167,14 +103,8 @@ Public Class Dispaly
                     ' Call the RefreshAppointmentsDisplay method
                     BookedAppointments.RefreshAppointmentsDisplay()
 
-                    PPD.Document = PD
-                    PPD.ShowDialog()
+                    setPrints()
 
-                    ' Check if the print preview dialog has been closed by printing/saving the document
-                    If PPD.DialogResult = DialogResult.OK Then
-                        ' Inform the user about successful printing/saving
-                        MsgBox("Receipt successfully printed/saved to desktop.", MsgBoxStyle.Information)
-                    End If
                 End If
             End If
         Catch ex As Exception
@@ -183,9 +113,7 @@ Public Class Dispaly
             ' Display user-friendly error message
             MsgBox("An error occurred while processing your request. Please try again later.", MsgBoxStyle.Critical)
         Finally
-            If connection.State = ConnectionState.Open Then
-                connection.Close()
-            End If
+            connection.Close()
         End Try
     End Sub
 

@@ -143,15 +143,15 @@ Public Class StartPage
     End Sub
 
     Private Sub lblForgotPassword_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblForgotPassword.LinkClicked
-        ForgotPassword.Show()
+        ForgotPassword.ShowDialog()
     End Sub
 
     Private Sub llSignUp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llSignUp.LinkClicked
-        SignUp.Show()
+        SignUp.ShowDialog()
     End Sub
 
     Private Sub llHelp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llHelp.LinkClicked
-        Help.Show()
+        Help.ShowDialog()
     End Sub
 
     Private Sub pictEXIT_Click(sender As Object, e As EventArgs) Handles pictEXIT.Click

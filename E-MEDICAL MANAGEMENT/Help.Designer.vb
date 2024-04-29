@@ -36,6 +36,7 @@ Partial Class Help
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -185,12 +186,24 @@ Partial Class Help
         Me.Label14.TabIndex = 14
         Me.Label14.Text = "Thank you for choosing us for your needs"
         '
+        'btnClose
+        '
+        Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClose.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.btnClose.Location = New System.Drawing.Point(621, 474)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(110, 43)
+        Me.btnClose.TabIndex = 15
+        Me.btnClose.Text = "Close"
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'Help
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(740, 525)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label9)
@@ -227,4 +240,5 @@ Partial Class Help
     Friend WithEvents Label9 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents btnClose As Button
 End Class

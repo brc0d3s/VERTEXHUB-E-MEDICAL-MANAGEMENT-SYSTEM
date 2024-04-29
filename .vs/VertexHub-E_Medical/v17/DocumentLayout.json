@@ -3,68 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\diagnosis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\diagnosis.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\forgotpassword.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\forgotpassword.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\system_log.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\system_log.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\passwordutility.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\passwordutility.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\postgresql_connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\postgresql_connection.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\bookedappointments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\bookedappointments.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\administratorpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\administratorpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\healthbrowser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\healthbrowser.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\help.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\help.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\laboratories.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\laboratories.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\launcher.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\medicalstore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\medicalstore.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\startpage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\tableupdate.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\userhomepage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\userhomepage.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|c:\\users\\brc0d3s\\desktop\\vertexhub-e-medical-management-system\\e-medical management\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D517298A-9657-4CF2-A32A-07B5B77EBA11}|E-MEDICAL MANAGEMENT\\E-MEDICAL MANAGEMENT.vbproj|solutionrelative:e-medical management\\signup.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,214 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "System_Log.vb",
               "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\System_Log.vb",
               "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\System_Log.vb",
               "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\System_Log.vb",
               "RelativeToolTip": "E-MEDICAL MANAGEMENT\\System_Log.vb",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwFEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-04-28T05:48:33.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ForgotPassword.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\ForgotPassword.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\ForgotPassword.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\ForgotPassword.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\ForgotPassword.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:41:20.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Diagnosis.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Diagnosis.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Diagnosis.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Diagnosis.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Diagnosis.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:41:28.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookedAppointments.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\BookedAppointments.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\BookedAppointments.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\BookedAppointments.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\BookedAppointments.vb",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowD8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:41:52.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostgreSQL_Connection.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\PostgreSQL_Connection.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:40:08.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PasswordUtility.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PasswordUtility.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\PasswordUtility.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\PasswordUtility.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\PasswordUtility.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:34:48.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HealthBrowser.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\HealthBrowser.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\HealthBrowser.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\HealthBrowser.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\HealthBrowser.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:41:07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Help.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Help.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Help.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Help.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Help.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:40:56.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Laboratories.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Laboratories.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Laboratories.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Laboratories.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Laboratories.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:40:46.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdministratorPage.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\AdministratorPage.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:42:03.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Launcher.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\Launcher.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\Launcher.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\Launcher.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:40:36.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MedicalStore.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\MedicalStore.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\MedicalStore.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\MedicalStore.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\MedicalStore.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:40:25.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StartPage.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\StartPage.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\StartPage.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\StartPage.vb",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:38:32.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TableUpdate.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\TableUpdate.vb",
-              "ViewState": "AQIAAMEBAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:39:22.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserHomePage.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\UserHomePage.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\UserHomePage.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\UserHomePage.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\UserHomePage.vb",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:39:07.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SignUp.vb",
-              "DocumentMoniker": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\SignUp.vb",
-              "RelativeDocumentMoniker": "E-MEDICAL MANAGEMENT\\SignUp.vb",
-              "ToolTip": "C:\\Users\\brc0d3s\\Desktop\\VERTEXHUB-E-MEDICAL-MANAGEMENT-SYSTEM\\E-MEDICAL MANAGEMENT\\SignUp.vb",
-              "RelativeToolTip": "E-MEDICAL MANAGEMENT\\SignUp.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-28T05:37:53.388Z",
               "EditorCaption": ""
             }
           ]

@@ -40,7 +40,7 @@ Public Class Diagnosis
             End Using
             Dispaly.grpDetails.Text = displayText
             Dispaly.result(gen) ' Pass the DataTable to the result method
-            Dispaly.Show()
+            Dispaly.ShowDialog()
         Catch ex As Exception
             ' Log the error to console
             Console.WriteLine("Error: " & ex.Message)
