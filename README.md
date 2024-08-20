@@ -36,6 +36,6 @@
 ## DB Structure
 
 <div align="center">
-<img src="VertexhubDB-public.png"/>
+<img src="snipes/VertexhubDB - public.png"/>
 </div>
 
